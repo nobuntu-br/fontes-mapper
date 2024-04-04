@@ -421,7 +421,7 @@
 </node>
 <node CREATED="1657542298359" ID="ID_648190111" MODIFIED="1709670445066" POSITION="right" TEXT="generators">
 <icon BUILTIN="element"/>
-<node CREATED="1638532646585" FOLDED="true" ID="ID_1972588312" MODIFIED="1711474916283" TEXT="mean">
+<node CREATED="1638532646585" ID="ID_1972588312" MODIFIED="1712242046920" TEXT="mean">
 <icon BUILTIN="element"/>
 <node CREATED="1638532674425" FOLDED="true" ID="ID_279417295" MODIFIED="1707424493799" TEXT="mongoModel">
 <icon BUILTIN="element"/>
@@ -2966,7 +2966,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1659305381937" ID="ID_517392480" MODIFIED="1711474480529" TEXT="routes">
+<node CREATED="1659305381937" FOLDED="true" ID="ID_517392480" MODIFIED="1712242048487" TEXT="routes">
 <icon BUILTIN="element"/>
 <node CREATED="1559604105984" FOLDED="true" ID="ID_432220773" MODIFIED="1707335081129" TEXT="parameters">
 <font BOLD="true" NAME="Dialog" SIZE="14"/>
@@ -5320,7 +5320,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1657626244020" FOLDED="true" ID="ID_942090299" MODIFIED="1709847047292" STYLE="fork" TEXT="bashGenerateAll">
+<node CREATED="1657626244020" ID="ID_942090299" MODIFIED="1712242074427" STYLE="fork" TEXT="bashGenerateAll">
 <icon BUILTIN="element"/>
 <node CREATED="1657626258273" ID="ID_893440910" MODIFIED="1708002602284" TEXT="start">
 <icon BUILTIN="element"/>
@@ -5558,7 +5558,7 @@
 </node>
 <node CREATED="1657626270312" ID="ID_1210412099" MODIFIED="1709060139427" TEXT="patterns">
 <icon BUILTIN="element"/>
-<node CREATED="1665524991570" ID="ID_464460846" MODIFIED="1708002602285" TEXT="geraPastas">
+<node CREATED="1665524991570" FOLDED="true" ID="ID_464460846" MODIFIED="1712242120557" TEXT="geraPastas">
 <icon BUILTIN="element"/>
 <node CREATED="1665525835355" ID="ID_226146924" MODIFIED="1708002602285" TEXT="#!/bin/bash">
 <icon BUILTIN="tag_green"/>
@@ -5639,6 +5639,9 @@
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1707486488085" ID="ID_294093281" MODIFIED="1708002602289" TEXT="mkdir frontend/src/assets/dicionario">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1712242083566" ID="ID_306876680" MODIFIED="1712242093969" TEXT="mkdir frontend/src/assets/dicionario/menu">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1708004121716" ID="ID_644554152" MODIFIED="1708004137513" TEXT="cd frontend">
@@ -5816,7 +5819,7 @@
 </node>
 <node CREATED="1665525444242" ID="ID_1230338233" MODIFIED="1709840215628" TEXT="geraMenuJson">
 <icon BUILTIN="element"/>
-<node CREATED="1666309353525" ID="ID_1876334223" MODIFIED="1709840117131" TEXT="mi g app json jsonMenu &gt; frontend/src/assets/dicionario/menu.json">
+<node CREATED="1666309353525" ID="ID_1876334223" MODIFIED="1712242138162" TEXT="mi g app json jsonMenu &gt; frontend/src/assets/dicionario/menu/menu.json">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -14511,7 +14514,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1705684947385" ID="ID_1602823819" MODIFIED="1711474917210" TEXT="json">
+<node CREATED="1705684947385" FOLDED="true" ID="ID_1602823819" MODIFIED="1712242045708" TEXT="json">
 <icon BUILTIN="element"/>
 <node CREATED="1642422161038" FOLDED="true" ID="ID_277975724" MODIFIED="1711475471446" TEXT="jsonClass">
 <font NAME="SansSerif" SIZE="12"/>
