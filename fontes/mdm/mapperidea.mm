@@ -2,7 +2,7 @@
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
 <node CREATED="1657542279705" ID="ID_1013142300" LINK="mdm.mm" MODIFIED="1665771090502" TEXT="mapperidea">
 <icon BUILTIN="element"/>
-<node CREATED="1657623820787" FOLDED="true" ID="ID_767139045" MODIFIED="1712246395637" POSITION="right" TEXT="maps">
+<node CREATED="1657623820787" FOLDED="true" ID="ID_767139045" MODIFIED="1713210004314" POSITION="right" TEXT="maps">
 <icon BUILTIN="element"/>
 <node CREATED="1657623825688" ID="ID_624595418" MODIFIED="1697220928226" TEXT="toMongooseTypes">
 <icon BUILTIN="element"/>
@@ -406,7 +406,7 @@
 </node>
 <node CREATED="1657542298359" ID="ID_648190111" MODIFIED="1709670445066" POSITION="right" TEXT="generators">
 <icon BUILTIN="element"/>
-<node CREATED="1638532646585" ID="ID_1972588312" MODIFIED="1713192214462" TEXT="mean">
+<node CREATED="1638532646585" FOLDED="true" ID="ID_1972588312" MODIFIED="1713208532909" TEXT="mean">
 <icon BUILTIN="element"/>
 <node CREATED="1638532674425" FOLDED="true" ID="ID_279417295" MODIFIED="1712609992002" TEXT="mongoModel">
 <icon BUILTIN="element"/>
@@ -6063,7 +6063,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1658084023442" ID="ID_239109345" MODIFIED="1713192212650" TEXT="angular">
+<node CREATED="1658084023442" FOLDED="true" ID="ID_239109345" MODIFIED="1713292294786" TEXT="angular">
 <icon BUILTIN="element"/>
 <node CREATED="1638532674425" FOLDED="true" ID="ID_926807748" MODIFIED="1712609925998" TEXT="model">
 <icon BUILTIN="element"/>
@@ -13741,7 +13741,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1665771103506" FOLDED="true" ID="ID_572701783" MODIFIED="1712608835190" TEXT="appRouting">
+<node CREATED="1665771103506" FOLDED="true" ID="ID_572701783" MODIFIED="1713283619218" TEXT="appRouting">
 <icon BUILTIN="element"/>
 <node CREATED="1638532918770" ID="ID_323857040" MODIFIED="1707423632042" TEXT="start">
 <font BOLD="true" NAME="Dialog" SIZE="16"/>
@@ -13766,18 +13766,6 @@
 <node CREATED="1665859515862" ID="ID_1494428145" MODIFIED="1665859535991" TEXT="write-pattern">
 <icon BUILTIN="element"/>
 <node CREATED="1665859523421" ID="ID_1546483214" MODIFIED="1665859532492" TEXT="inicioRotas">
-<icon BUILTIN="tag_green"/>
-</node>
-</node>
-<node CREATED="1665859515862" ID="ID_1473977419" MODIFIED="1708541586076" TEXT="write-pattern">
-<icon BUILTIN="element"/>
-<node CREATED="1665859523421" ID="ID_175844610" MODIFIED="1708541584697" TEXT="guestRotas">
-<icon BUILTIN="tag_green"/>
-</node>
-</node>
-<node CREATED="1665859515862" ID="ID_802332032" MODIFIED="1708542714622" TEXT="write-pattern">
-<icon BUILTIN="element"/>
-<node CREATED="1665859523421" ID="ID_1837488125" MODIFIED="1708542830779" TEXT="authRotas">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -13855,7 +13843,7 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1708541439483" ID="ID_1734769697" MODIFIED="1708551234752" TEXT="guestRotas">
+<node CREATED="1708541439483" FOLDED="true" ID="ID_1734769697" MODIFIED="1713283225078" TEXT="guestRotas">
 <icon BUILTIN="element"/>
 <node CREATED="1708541451575" ID="ID_1521385169" MODIFIED="1708541535389" TEXT="    // Auth routes for guests ">
 <icon BUILTIN="tag_green"/>
@@ -13906,7 +13894,7 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1708541769295" ID="ID_1708302301" MODIFIED="1708551239777" TEXT="authRotas">
+<node CREATED="1708541769295" FOLDED="true" ID="ID_1708302301" MODIFIED="1713283226601" TEXT="authRotas">
 <icon BUILTIN="element"/>
 <node CREATED="1708541841786" ID="ID_1387781383" MODIFIED="1708541871899" TEXT="">
 <icon BUILTIN="tag_green"/>
@@ -13977,7 +13965,7 @@
 </node>
 <node CREATED="1665859606821" ID="ID_657819424" MODIFIED="1666586626103" TEXT="declaraRotasList">
 <icon BUILTIN="element"/>
-<node CREATED="1674504579077" ID="ID_1293342557" MODIFIED="1707488262424" TEXT="&#x9;{ path: &apos;{{ mi:first-lower(@name) }}&apos;, loadChildren: () =&gt; import(&apos;./modules/{{ mi:lower-case-add-hifen(@name,&apos;&apos;) }}/{{ mi:lower-case-add-hifen(@name,&apos;&apos;) }}.module&apos; ).then(m =&gt; m.{{ @name }}Module) },">
+<node CREATED="1674504579077" ID="ID_1293342557" MODIFIED="1713283325818" TEXT="&#x9;{ path: &apos;{{ properties/frontPath/value }}&apos;, loadChildren: () =&gt; import(&apos;./modules/{{ mi:lower-case-add-hifen(@name,&apos;&apos;) }}/{{ mi:lower-case-add-hifen(@name,&apos;&apos;) }}.module&apos; ).then(m =&gt; m.{{ @name }}Module) },">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -14407,7 +14395,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1707938366417" FOLDED="true" ID="ID_1835092214" MODIFIED="1712260228517" TEXT="environment">
+<node CREATED="1707938366417" FOLDED="true" ID="ID_1835092214" MODIFIED="1713292125618" TEXT="environment">
 <icon BUILTIN="element"/>
 <node CREATED="1638532918770" ID="ID_1514846485" MODIFIED="1707423632042" TEXT="start">
 <font BOLD="true" NAME="Dialog" SIZE="16"/>
@@ -14526,9 +14514,9 @@
 </node>
 </node>
 </node>
-<node CREATED="1705684947385" FOLDED="true" ID="ID_1602823819" MODIFIED="1712261034939" TEXT="json">
+<node CREATED="1705684947385" ID="ID_1602823819" MODIFIED="1713292295814" TEXT="json">
 <icon BUILTIN="element"/>
-<node CREATED="1642422161038" FOLDED="true" ID="ID_277975724" MODIFIED="1711475471446" TEXT="jsonClass">
+<node CREATED="1642422161038" FOLDED="true" ID="ID_277975724" MODIFIED="1713299858571" TEXT="jsonClass">
 <font NAME="SansSerif" SIZE="12"/>
 <icon BUILTIN="element"/>
 <node CREATED="1641817891685" FOLDED="true" ID="ID_1703168411" MODIFIED="1707335081258" TEXT="parameters">
@@ -14657,7 +14645,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1642422420686" ID="ID_337222305" MODIFIED="1709580747617" TEXT="patterns">
+<node CREATED="1642422420686" FOLDED="true" ID="ID_337222305" MODIFIED="1713299857445" TEXT="patterns">
 <icon BUILTIN="element"/>
 <node CREATED="1705685212135" FOLDED="true" ID="ID_1489856792" MODIFIED="1707335081260" TEXT="iniciaJson">
 <icon BUILTIN="element"/>
@@ -14693,11 +14681,11 @@
 <node CREATED="1706295887020" ID="ID_116059821" MODIFIED="1706295997522" TEXT="        &quot;apiUrl&quot;: &quot;http://localhost:8080/{{ properties/apiUrl/value }}&quot;,">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1708538456678" ID="ID_217828828" MODIFIED="1708538558135" TEXT="        &quot;route&quot;: &quot;{{ mi:first-lower(@name) }}&quot;,">
+<node CREATED="1708538456678" ID="ID_217828828" MODIFIED="1713292309493" TEXT="        &quot;route&quot;: &quot;{{ properties/frontPath/value }}&quot;,">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1705953921287" FOLDED="true" ID="ID_984042190" MODIFIED="1707335081262" TEXT="declaraBoolean">
+<node CREATED="1705953921287" FOLDED="true" ID="ID_984042190" MODIFIED="1713283640173" TEXT="declaraBoolean">
 <icon BUILTIN="Descriptor.grouping"/>
 <node CREATED="1705947387749" FOLDED="true" ID="ID_665202811" MODIFIED="1707335081260" TEXT="localStorageDefault">
 <icon BUILTIN="element"/>
@@ -14808,13 +14796,13 @@
 </node>
 </node>
 </node>
-<node CREATED="1705954017646" FOLDED="true" ID="ID_341502079" MODIFIED="1707335081262" TEXT="formTabs">
+<node CREATED="1705954017646" ID="ID_341502079" MODIFIED="1713283631856" TEXT="formTabs">
 <icon BUILTIN="element"/>
 <node CREATED="1705954047837" ID="ID_236491059" MODIFIED="1706210022486" TEXT="        &quot;formTabs&quot;: [{{ properties/formTabs/value }}], ">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1642422902977" FOLDED="true" ID="ID_1915429987" MODIFIED="1707335081262" TEXT="finalizaConfig">
+<node CREATED="1642422902977" ID="ID_1915429987" MODIFIED="1713283633159" TEXT="finalizaConfig">
 <icon BUILTIN="element"/>
 <node CREATED="1642423153433" ID="ID_115025781" MODIFIED="1705685292543" TEXT="    }, ">
 <icon BUILTIN="tag_green"/>
@@ -16259,7 +16247,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1665098578835" FOLDED="true" ID="ID_1703071828" MODIFIED="1709147622880" TEXT="jsonTransloco">
+<node CREATED="1665098578835" FOLDED="true" ID="ID_1703071828" MODIFIED="1713377921788" TEXT="jsonTransloco">
 <icon BUILTIN="element"/>
 <node CREATED="1641817891685" ID="ID_768817321" MODIFIED="1707335188853" TEXT="parameters">
 <icon BUILTIN="element"/>
@@ -16371,13 +16359,13 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1665023445703" FOLDED="true" ID="ID_1112271822" MODIFIED="1709065142769" TEXT="default">
+<node CREATED="1665023445703" ID="ID_1112271822" MODIFIED="1713299873009" TEXT="default">
 <icon BUILTIN="element"/>
 <node CREATED="1665023570119" ID="ID_417372702" MODIFIED="1709065081402" TEXT="        &quot;{{ @name }}&quot;: &quot;{{ functx:camel-case-to-words(@name,&apos; &apos;) }}&quot;{{ mi:if-else(position() = last(), &apos;&apos;, &apos;,&apos;) }}">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1708973132646" FOLDED="true" ID="ID_294279179" MODIFIED="1708975210739" TEXT="declaraFixoEn">
+<node CREATED="1708973132646" FOLDED="true" ID="ID_294279179" MODIFIED="1713299879526" TEXT="declaraFixoEn">
 <icon BUILTIN="element"/>
 <node CREATED="1708973400051" ID="ID_335786206" MODIFIED="1708973850141" TEXT="    &quot;base-resource-filter-component&quot;: { ">
 <icon BUILTIN="tag_green"/>
@@ -17115,7 +17103,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1642422161038" FOLDED="true" ID="ID_448655928" MODIFIED="1709583896314" TEXT="jsonMenu">
+<node CREATED="1642422161038" ID="ID_448655928" MODIFIED="1713377922764" TEXT="jsonMenu">
 <font NAME="SansSerif" SIZE="12"/>
 <icon BUILTIN="element"/>
 <node CREATED="1642422213408" ID="ID_1717382611" MODIFIED="1709578845368" TEXT="start">
@@ -17244,7 +17232,7 @@
 <node CREATED="1709579529565" ID="ID_1960672562" MODIFIED="1709579641140" TEXT="            &quot;name&quot;: &quot;{{ @name }}&quot;, ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1709579537667" ID="ID_1761118269" MODIFIED="1709580813170" TEXT="            &quot;routeUrl&quot;: &quot;{{ mi:first-lower(@name) }}&quot;, ">
+<node CREATED="1709579537667" ID="ID_1761118269" MODIFIED="1713377943155" TEXT="            &quot;routeUrl&quot;: &quot;{{ properties/frontPath/value }}&quot;, ">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
