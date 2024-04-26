@@ -406,7 +406,7 @@
 </node>
 <node CREATED="1657542298359" ID="ID_648190111" MODIFIED="1713469216587" POSITION="right" TEXT="generators">
 <icon BUILTIN="element"/>
-<node CREATED="1638532646585" ID="ID_1972588312" MODIFIED="1714073425434" TEXT="mean">
+<node CREATED="1638532646585" ID="ID_1972588312" MODIFIED="1714149608220" TEXT="mean">
 <icon BUILTIN="element"/>
 <node CREATED="1638532674425" FOLDED="true" ID="ID_279417295" MODIFIED="1714149250569" TEXT="mongoModel">
 <icon BUILTIN="element"/>
@@ -912,7 +912,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1639135901068" FOLDED="true" ID="ID_1332630707" MODIFIED="1714073075156" TEXT="apiController">
+<node CREATED="1639135901068" ID="ID_1332630707" MODIFIED="1714149610384" TEXT="apiController">
 <icon BUILTIN="element"/>
 <node CREATED="1559604105984" FOLDED="true" ID="ID_1157198066" MODIFIED="1707335081118" TEXT="parameters">
 <font BOLD="true" NAME="Dialog" SIZE="14"/>
@@ -1944,6 +1944,9 @@
 <node CREATED="1713379285092" ID="ID_927078118" MODIFIED="1713379288978" TEXT="const customQuery = require(&quot;./customQuery.util&quot;); ">
 <icon BUILTIN="tag_green"/>
 </node>
+<node CREATED="1714149696194" ID="ID_1692876849" MODIFIED="1714149698531" TEXT="const getSchemaRefs = require(&quot;../utils/getSchemaRefs.utils&quot;); ">
+<icon BUILTIN="tag_green"/>
+</node>
 </node>
 <node CREATED="1639399355056" FOLDED="true" ID="ID_1293345364" MODIFIED="1708716649753" TEXT="functionValidaRequeridos">
 <icon BUILTIN="Descriptor.grouping"/>
@@ -2041,7 +2044,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1639137201051" ID="ID_1721750932" MODIFIED="1713475854445" TEXT="create">
+<node CREATED="1639137201051" FOLDED="true" ID="ID_1721750932" MODIFIED="1714149706597" TEXT="create">
 <icon BUILTIN="Descriptor.grouping"/>
 <node CREATED="1639137206451" FOLDED="true" ID="ID_975789483" MODIFIED="1707335081124" TEXT="inicioCreate">
 <icon BUILTIN="element"/>
@@ -2136,7 +2139,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1639741342682" FOLDED="true" ID="ID_1012888515" MODIFIED="1707335081124" TEXT="findAll">
+<node CREATED="1639741342682" ID="ID_1012888515" MODIFIED="1714149880879" TEXT="findAll">
 <icon BUILTIN="Descriptor.grouping"/>
 <node CREATED="1639137206451" FOLDED="true" ID="ID_1514168916" MODIFIED="1707335081124" TEXT="inicioFindAll">
 <icon BUILTIN="element"/>
@@ -2159,62 +2162,56 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1639742936877" FOLDED="true" ID="ID_737402351" MODIFIED="1707335081124" TEXT="declaraCampoFiltroFindAll">
+<node CREATED="1639742936877" ID="ID_737402351" MODIFIED="1714149883097" TEXT="declaraCampoFiltroFindAll">
 <icon BUILTIN="element"/>
-<node CREATED="1639742952348" ID="ID_825633126" MODIFIED="1639742992011" TEXT="">
-<icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1639742953261" ID="ID_1866532480" MODIFIED="1639743012230" TEXT="    const {{ @name }} = req.query.{{ @name }};">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1639742965244" ID="ID_140054261" MODIFIED="1639743018295" TEXT="    if ({{ @name }}) {">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1639742976036" ID="ID_1905823566" MODIFIED="1639743033710" TEXT="        condition.{{ @name }} = { $regex: new RegExp({{ @name }}), $options: &quot;i&quot; };">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1639742987676" ID="ID_396964043" MODIFIED="1639742992012" TEXT="    }">
-<icon BUILTIN="tag_green"/>
-</node>
-</node>
-<node CREATED="1639743121582" FOLDED="true" ID="ID_439157863" MODIFIED="1707335081124" TEXT="executaBuscaFindAll">
+<node CREATED="1639743121582" ID="ID_439157863" MODIFIED="1714149884006" TEXT="executaBuscaFindAll">
 <icon BUILTIN="element"/>
 <node CREATED="1639744537890" ID="ID_1207283612" MODIFIED="1639744540160" TEXT="">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1639743131622" ID="ID_1020922176" MODIFIED="1639743349027" TEXT="    {{ @name }}.find(condition)">
+<node CREATED="1714149934126" ID="ID_350174417" MODIFIED="1714150032416" TEXT="    let populate = populateGeneric(db.{{ mi:first-lower(@name) }}.schema.obj); ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1639743153189" ID="ID_133288500" MODIFIED="1639743306225" TEXT="      .then(data =&gt; {">
+<node CREATED="1714149937851" ID="ID_1906090815" MODIFIED="1714150032416" TEXT="    let query = {{ @name }}.find(); ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1639743166796" ID="ID_1914030768" MODIFIED="1639743306224" TEXT="        res.send(data);">
+<node CREATED="1714149954637" ID="ID_431040721" MODIFIED="1714150032416" TEXT="    if (populate.length &gt; 0) { ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1639743190156" ID="ID_1878428586" MODIFIED="1639743306224" TEXT="      })">
+<node CREATED="1714149957278" ID="ID_294099484" MODIFIED="1714150032415" TEXT="        query = query.populate(populate.join(&quot; &quot;)); ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1639743201395" ID="ID_1986766674" MODIFIED="1639743306224" TEXT="      .catch(err =&gt; {">
+<node CREATED="1714149960181" ID="ID_1634217515" MODIFIED="1714150032415" TEXT="    } ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1639743211731" ID="ID_1963736237" MODIFIED="1639743306224" TEXT="        res.status(500).send({">
+<node CREATED="1714149962626" ID="ID_852418350" MODIFIED="1714150032415" TEXT="    query.then(data =&gt; { ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1639743230699" ID="ID_1764973748" MODIFIED="1639743306224" TEXT="          message:">
+<node CREATED="1714149965509" ID="ID_1779997140" MODIFIED="1714150032415" TEXT="        res.send(data); ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1639743248074" ID="ID_1574023854" MODIFIED="1639743407312" TEXT="            err.message || &quot;Algum erro desconhecido ocorreu ao buscar {{ @name }}.&quot;">
+<node CREATED="1714149968238" ID="ID_386720094" MODIFIED="1714150032415" TEXT="    }).catch(err =&gt; { ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1639743272849" ID="ID_263644168" MODIFIED="1639743306223" TEXT="        });">
+<node CREATED="1714149971316" ID="ID_385223551" MODIFIED="1714150032415" TEXT="        res.status(500).send({ ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1639743295289" ID="ID_1147646600" MODIFIED="1639743306223" TEXT="      });">
+<node CREATED="1714149974175" ID="ID_37479999" MODIFIED="1714150032414" TEXT="            message: ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1714149976515" ID="ID_247548164" MODIFIED="1714150032414" TEXT="            err.message || &quot;Ocorreu um erro de servidor ao tentar buscar {{ @name }}.&quot; ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1714149978830" ID="ID_1210914635" MODIFIED="1714150032414" TEXT="        }); ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1714149983372" ID="ID_205248027" MODIFIED="1714150032414" TEXT="    }); ">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
 </node>
-<node CREATED="1639998794663" ID="ID_730891388" MODIFIED="1708716651802" TEXT="findOne">
+<node CREATED="1639998794663" ID="ID_730891388" MODIFIED="1714150036667" TEXT="findOne">
 <icon BUILTIN="Descriptor.grouping"/>
 <node CREATED="1639137206451" ID="ID_1933844437" MODIFIED="1708716652877" TEXT="inicioFindOne">
 <icon BUILTIN="element"/>
@@ -2234,7 +2231,7 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1639743121582" ID="ID_1941620490" MODIFIED="1708716658106" TEXT="executaBuscaFindById">
+<node CREATED="1639743121582" ID="ID_1941620490" MODIFIED="1714150038323" TEXT="executaBuscaFindById">
 <icon BUILTIN="element"/>
 <node CREATED="1708716677485" ID="ID_1132915953" MODIFIED="1708716682383" TEXT="    const id = req.params.id; ">
 <icon BUILTIN="tag_green"/>
@@ -2242,40 +2239,55 @@
 <node CREATED="1639744537890" ID="ID_1145518924" MODIFIED="1639744540160" TEXT="">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1639743131622" ID="ID_973837173" MODIFIED="1639998957469" TEXT="    {{ @name }}.findById(id)">
+<node CREATED="1714149765682" ID="ID_755398787" MODIFIED="1714150052712" TEXT="  let populate = getSchemaRefs(db.{{ mi:first-lower(@name) }}.schema.obj); ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1639743153189" ID="ID_410228658" MODIFIED="1639743306225" TEXT="      .then(data =&gt; {">
+<node CREATED="1714149812524" ID="ID_1388304163" MODIFIED="1714149873915" TEXT="">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1639743166796" ID="ID_876067071" MODIFIED="1639999074241" TEXT="        if (!data)">
+<node CREATED="1714149813781" ID="ID_699203024" MODIFIED="1714149873915" TEXT="  // Se houver refer&#xea;ncias estrangeiras fazer o populate ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1639999092044" ID="ID_1576122999" MODIFIED="1639999191834" TEXT="          res.status(404).send({ message: &quot;A entidade {{ @name }} com id &quot; + id + &quot; n&#xe3;o encontrada!&quot; });">
+<node CREATED="1714149818229" ID="ID_1399044129" MODIFIED="1714150061842" TEXT="  let query = {{ @name }}.findOne({ _id: id }); ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1639743166796" ID="ID_899298220" MODIFIED="1639999226294" TEXT="        else res.send(data);">
+<node CREATED="1714149830689" ID="ID_1819725041" MODIFIED="1714149873914" TEXT="  if (populate.length &gt; 0) { ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1639743190156" ID="ID_491726265" MODIFIED="1639743306224" TEXT="      })">
+<node CREATED="1714149834472" ID="ID_566920843" MODIFIED="1714149873914" TEXT="      query = query.populate(populate.join(&quot; &quot;)); ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1639743201395" ID="ID_325605837" MODIFIED="1639743306224" TEXT="      .catch(err =&gt; {">
+<node CREATED="1714149839077" ID="ID_1864541770" MODIFIED="1714149873914" TEXT="  } ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1639743211731" ID="ID_320146619" MODIFIED="1639743306224" TEXT="        res.status(500).send({">
+<node CREATED="1714149842556" ID="ID_667482882" MODIFIED="1714149873914" TEXT="">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1639743230699" ID="ID_652982356" MODIFIED="1639743306224" TEXT="          message:">
+<node CREATED="1714149843073" ID="ID_1007353955" MODIFIED="1714149873914" TEXT="  query.then(data =&gt; { ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1639743248074" ID="ID_795560125" MODIFIED="1639999344254" TEXT="            err.message || &quot;Erro desconhecido ocorreu ao buscar a entidade {{ @name }} com o id &quot; + id + &quot;.&quot;">
+<node CREATED="1714149845876" ID="ID_399173128" MODIFIED="1714149873914" TEXT="      if (!data) { ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1639743272849" ID="ID_1434092489" MODIFIED="1639743306223" TEXT="        });">
+<node CREATED="1714149850030" ID="ID_1490752578" MODIFIED="1714150071141" TEXT="          res.status(404).send({ message: &quot;N&#xe3;o foi encontrado {{ @name }} com o id &quot; + id }); ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1639743295289" ID="ID_1653372438" MODIFIED="1639743306223" TEXT="      });">
+<node CREATED="1714149853093" ID="ID_1579565871" MODIFIED="1714149873913" TEXT="      } else { ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1714149855919" ID="ID_161650539" MODIFIED="1714149873913" TEXT="          res.send(data); ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1714149859199" ID="ID_1066154373" MODIFIED="1714149873913" TEXT="      } ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1714149862437" ID="ID_1685522057" MODIFIED="1714149873913" TEXT="  }).catch(err =&gt; { ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1714149865088" ID="ID_808733149" MODIFIED="1714150076749" TEXT="      res.status(500).send({ message: &quot;Erro ao buscar {{ @name }} com o id=&quot; + id }); ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1714149868834" ID="ID_1195099485" MODIFIED="1714149873912" TEXT="  }); ">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -3482,7 +3494,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1665098578835" ID="ID_298308379" MODIFIED="1714149252494" TEXT="server">
+<node CREATED="1665098578835" FOLDED="true" ID="ID_298308379" MODIFIED="1714149531668" TEXT="server">
 <icon BUILTIN="element"/>
 <node CREATED="1659305492723" ID="ID_360526106" MODIFIED="1709580421404" TEXT="start">
 <icon BUILTIN="element"/>
