@@ -406,7 +406,7 @@
 </node>
 <node CREATED="1657542298359" ID="ID_648190111" MODIFIED="1713469216587" POSITION="right" TEXT="generators">
 <icon BUILTIN="element"/>
-<node CREATED="1638532646585" FOLDED="true" ID="ID_1972588312" MODIFIED="1714625933503" TEXT="mean">
+<node CREATED="1638532646585" ID="ID_1972588312" MODIFIED="1714675985644" TEXT="mean">
 <icon BUILTIN="element"/>
 <node CREATED="1638532674425" FOLDED="true" ID="ID_279417295" MODIFIED="1714424660554" TEXT="mongoModel">
 <icon BUILTIN="element"/>
@@ -5927,7 +5927,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1706644403625" FOLDED="true" ID="ID_1935406017" MODIFIED="1714425260173" TEXT="envBackend">
+<node CREATED="1706644403625" ID="ID_1935406017" MODIFIED="1714675987491" TEXT="envBackend">
 <icon BUILTIN="element"/>
 <node CREATED="1659305492723" ID="ID_1421286075" MODIFIED="1714424744968" TEXT="start">
 <icon BUILTIN="element"/>
@@ -5951,33 +5951,6 @@
 <icon BUILTIN="element"/>
 <node CREATED="1706646958835" ID="ID_887647623" MODIFIED="1714424857442" TEXT="geraEnv">
 <icon BUILTIN="element"/>
-<node CREATED="1714424816007" ID="ID_1162040033" LINK="https://allystore.b2clogin.com/allystore.onmicrosoft.com/B2C_1_susi1/oauth2/v2.0/token" MODIFIED="1714424832352" TEXT="TOKEN_URL = &quot;https://allystore.b2clogin.com/allystore.onmicrosoft.com/B2C_1_susi1/oauth2/v2.0/token&quot;">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1714424816011" ID="ID_716131464" MODIFIED="1714424832351" TEXT="GRANT_TYPE=&quot;authorization_code&quot;">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1714424816012" ID="ID_724833279" MODIFIED="1714424832351" TEXT="GRANT_TYPE_REFRESH=&quot;refresh_token&quot;">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1714424816013" ID="ID_697216419" MODIFIED="1714424832351" TEXT="CLIENT_ID= &quot;c3965db2-c74a-4d13-8a85-cea18afbe9fa&quot;">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1714424816015" ID="ID_800183925" LINK="https://allystore.onmicrosoft.com/tasks-api2/tasks.read" MODIFIED="1714424832351" TEXT="SCOPE=&quot;https://allystore.onmicrosoft.com/tasks-api2/tasks.read offline_access&quot;">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1714424816016" ID="ID_1449897156" LINK="https://jwt.ms" MODIFIED="1714424832351" TEXT="REDIRECT_URI= &quot;https://jwt.ms&quot;">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1714424816017" ID="ID_1854283593" MODIFIED="1714424832351" TEXT="CLIENT_SECRET=&quot;ZPz8Q~DxmSjUqYnjZf5Hkfv.gqbtD-j5w0HXlbih&quot;">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1714424816022" ID="ID_814171432" LINK="https://allystore.b2clogin.com/allystore.onmicrosoft.com/b2c_1_susi1/discovery/keys" MODIFIED="1714424832350" TEXT="JWKsUri=&quot;https://allystore.b2clogin.com/allystore.onmicrosoft.com/b2c_1_susi1/discovery/keys&quot;">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1714424816023" ID="ID_1282620452" LINK="http://localhost:8080" MODIFIED="1714424832350" TEXT="CORS_ORIGIN = &quot;http://localhost:8080&quot;">
-<icon BUILTIN="tag_green"/>
-</node>
 </node>
 </node>
 </node>
@@ -8046,7 +8019,7 @@
 </node>
 <node CREATED="1658500604383" ID="ID_1500156651" MODIFIED="1714630699584" TEXT="details">
 <icon BUILTIN="Descriptor.grouping"/>
-<node CREATED="1642422161038" ID="ID_957406446" MODIFIED="1714630700710" TEXT="detailsComponentTS">
+<node CREATED="1642422161038" FOLDED="true" ID="ID_957406446" MODIFIED="1714675982177" TEXT="detailsComponentTS">
 <icon BUILTIN="element"/>
 <node CREATED="1641817891685" ID="ID_911661603" MODIFIED="1707490852984" TEXT="parameters">
 <icon BUILTIN="element"/>
@@ -8135,7 +8108,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1642422420686" ID="ID_290871460" MODIFIED="1707490862887" TEXT="patterns">
+<node CREATED="1642422420686" FOLDED="true" ID="ID_290871460" MODIFIED="1714675980242" TEXT="patterns">
 <icon BUILTIN="element"/>
 <node CREATED="1642422423951" ID="ID_1794596430" MODIFIED="1707490885234" TEXT="declaraImport">
 <icon BUILTIN="element"/>
