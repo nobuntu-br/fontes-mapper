@@ -14245,7 +14245,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1707938366417" FOLDED="true" ID="ID_1835092214" MODIFIED="1714629834666" TEXT="environment">
+<node CREATED="1707938366417" ID="ID_1835092214" MODIFIED="1714676138952" TEXT="environment">
 <icon BUILTIN="element"/>
 <node CREATED="1638532918770" ID="ID_1514846485" MODIFIED="1707423632042" TEXT="start">
 <font BOLD="true" NAME="Dialog" SIZE="16"/>
@@ -14337,36 +14337,6 @@
 </node>
 <node CREATED="1714626006295" ID="ID_160630535" MODIFIED="1714626017240" TEXT="declaraAuthConfig">
 <icon BUILTIN="element"/>
-<node CREATED="1714626026879" ID="ID_1654025632" MODIFIED="1714626085843" TEXT="    authConfig: { ">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1714626031851" ID="ID_1887803552" MODIFIED="1714626085843" TEXT="        issuer: &apos;https://allystore.b2clogin.com/b46b5b87-aose-187b-aeob-fec17229a90b/v2.0/&apos;, //Link pra fazer o login ">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1714626043856" ID="ID_727120010" MODIFIED="1714626085843" TEXT="        grant_type: &quot;authorization code&quot;, ">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1714626050206" ID="ID_1854099569" MODIFIED="1714626085843" TEXT="        client_id: &quot;c3965db2-c74a-4d13-8a85-cealsafbeofa&quot;, ">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1714626056914" ID="ID_182679056" MODIFIED="1714626085843" TEXT="        scope: &quot;https://allystore.onmicrosoft.com/tasks-api2/tasks.read offline access&quot;, ">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1714626062484" ID="ID_133937204" MODIFIED="1714626085843" TEXT="        redirect_uri: &quot;http://localhost:4200/callback&quot;, ">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1714626065764" ID="ID_647507654" MODIFIED="1714626085843" TEXT="        tenantId: &quot;ba6b5b87-aose-187b-aeob-fecl1/229a290b&quot;, ">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1714626069409" ID="ID_401727681" MODIFIED="1714626085843" TEXT="        getAccessTokenuri: &quot;https://allystore.b2clogin.com/b46b5bs7-aose-487b-aeob-fec17229a90b/B2C 1 susi1/oauth2/v2.6/token&quot;, ">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1714626073081" ID="ID_1405520068" MODIFIED="1714626085843" TEXT="        tokenEndpoint: &apos;https://login.microsoftonline.com/b46b5bs7-aose-187b-aeob-fec17229a90b/cauth2/v2.0/token&apos; ">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1714626076559" ID="ID_961092495" MODIFIED="1714626085843" TEXT="        }, ">
-<icon BUILTIN="tag_green"/>
-</node>
 </node>
 </node>
 <node CREATED="1638534256478" ID="ID_282685467" MODIFIED="1674788044547" TEXT="templates">
