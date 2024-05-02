@@ -1,6 +1,7 @@
 #!/bin/bash
 cd ..
 git clone https://github.com/JoaoVictorNobuntu/frontend
+git clone https://github.com/JoaoVictorNobuntu/backend
 cd frontend
 ng add @angular/material
 npm install bootstrap@4.1.3 jquery@3.3.1 popper.js@1.14.3 --save 
@@ -17,12 +18,6 @@ mkdir services
 cd ..
 mkdir modules
 cd ../../..
-mkdir backend
-mkdir backend/routes
-mkdir backend/models
-mkdir backend/app
-mkdir backend/app/controllers
-mkdir backend/app/middleware
 mkdir frontend/src/enviroment
 mkdir frontend/src/assets/dicionario
 mkdir frontend/src/assets/dicionario/menu
