@@ -56,8 +56,8 @@ mi g app angular detailsComponentHTML editorName=Customers >  frontend/src/app/m
 mi g app angular detailsComponentTS editorName=Customers >  frontend/src/app/modules/customers/customers-form/customers-form.component.ts
 mi g app json jsonClass entityName=Customers > frontend/src/assets/dicionario/customers.json
 mi g app mean customQuery > backend/app/controllers/customQuery.util.js
-mi g app mean checkIfDateIsOlder > backend/app/middleware/checkIfDateIsOlder.middleware.js
 mi g app json jsonTransloco translate=en > frontend/src/assets/i18n/en.json
 mi g app json jsonTransloco translate=pt > frontend/src/assets/i18n/pt.json
 mi g app angular environment > frontend/src/enviroment/environment.ts
 mi g app json jsonMenu > frontend/src/assets/dicionario/menu/menu.json
+mi g app mean envBackend > backend/.env

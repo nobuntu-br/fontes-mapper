@@ -13,6 +13,33 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
+<node CREATED="1715020955427" ID="ID_1876492091" MODIFIED="1715020962911" TEXT="env">
+<icon BUILTIN="element"/>
+<node CREATED="1715021157337" ID="ID_788852568" MODIFIED="1715021250222" TEXT="issuer">
+<icon BUILTIN="element"/>
+</node>
+<node CREATED="1715021165243" ID="ID_139977462" MODIFIED="1715021250222" TEXT="grant_type">
+<icon BUILTIN="element"/>
+</node>
+<node CREATED="1715021171131" ID="ID_173361083" MODIFIED="1715021250222" TEXT="client_id">
+<icon BUILTIN="element"/>
+</node>
+<node CREATED="1715021200852" ID="ID_444193100" MODIFIED="1715021250223" TEXT="scope">
+<icon BUILTIN="element"/>
+</node>
+<node CREATED="1715021207271" ID="ID_197000096" MODIFIED="1715021250223" TEXT="redirect_uri">
+<icon BUILTIN="element"/>
+</node>
+<node CREATED="1715021213570" ID="ID_403755425" MODIFIED="1715021250223" TEXT="tenantId">
+<icon BUILTIN="element"/>
+</node>
+<node CREATED="1715021226272" ID="ID_759134147" MODIFIED="1715021250223" TEXT="getAccessTokenUri">
+<icon BUILTIN="element"/>
+</node>
+<node CREATED="1715021236766" ID="ID_1113192830" MODIFIED="1715021250223" TEXT="tokenEndpoint">
+<icon BUILTIN="element"/>
+</node>
+</node>
 </node>
 </node>
 <node CREATED="1642160626075" ID="ID_1462344668" MODIFIED="1710747683662" POSITION="right" TEXT="patterns">

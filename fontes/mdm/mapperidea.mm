@@ -406,7 +406,7 @@
 </node>
 <node CREATED="1657542298359" ID="ID_648190111" MODIFIED="1713469216587" POSITION="right" TEXT="generators">
 <icon BUILTIN="element"/>
-<node CREATED="1638532646585" ID="ID_1972588312" MODIFIED="1714675985644" TEXT="mean">
+<node CREATED="1638532646585" FOLDED="true" ID="ID_1972588312" MODIFIED="1715020874299" TEXT="mean">
 <icon BUILTIN="element"/>
 <node CREATED="1638532674425" FOLDED="true" ID="ID_279417295" MODIFIED="1714424660554" TEXT="mongoModel">
 <icon BUILTIN="element"/>
@@ -5927,7 +5927,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1706644403625" ID="ID_1935406017" MODIFIED="1714675987491" TEXT="envBackend">
+<node CREATED="1706644403625" ID="ID_1935406017" MODIFIED="1715020729725" TEXT="envBackend">
 <icon BUILTIN="element"/>
 <node CREATED="1659305492723" ID="ID_1421286075" MODIFIED="1714424744968" TEXT="start">
 <icon BUILTIN="element"/>
@@ -5955,7 +5955,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1658084023442" ID="ID_239109345" MODIFIED="1714625937343" TEXT="angular">
+<node CREATED="1658084023442" ID="ID_239109345" MODIFIED="1715020880601" TEXT="angular">
 <icon BUILTIN="element"/>
 <node CREATED="1638532674425" FOLDED="true" ID="ID_926807748" MODIFIED="1712609925998" TEXT="model">
 <icon BUILTIN="element"/>
@@ -14245,7 +14245,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1707938366417" ID="ID_1835092214" MODIFIED="1714676138952" TEXT="environment">
+<node CREATED="1707938366417" ID="ID_1835092214" MODIFIED="1715020883561" TEXT="environment">
 <icon BUILTIN="element"/>
 <node CREATED="1638532918770" ID="ID_1514846485" MODIFIED="1707423632042" TEXT="start">
 <font BOLD="true" NAME="Dialog" SIZE="16"/>
@@ -14337,6 +14337,36 @@
 </node>
 <node CREATED="1714626006295" ID="ID_160630535" MODIFIED="1714626017240" TEXT="declaraAuthConfig">
 <icon BUILTIN="element"/>
+<node CREATED="1715020893490" ID="ID_1813398971" MODIFIED="1715020949539" TEXT="    authConfig: { ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1715020900028" ID="ID_310292397" MODIFIED="1715021403303" TEXT="        issuer: &apos;{{ package/properties/env/issuer/value }}&apos;, //Link pra fazer o login ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1715020911074" ID="ID_91865366" MODIFIED="1715021410472" TEXT="        grant_type: &quot;{{ package/properties/env/grant_type/value }}&quot;, ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1715020915081" ID="ID_1813308249" MODIFIED="1715021429517" TEXT="        client_id: &quot;{{ package/properties/env/client_id/value }}&quot;, ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1715020919726" ID="ID_1619969766" MODIFIED="1715021443292" TEXT="        scope: &quot;{{ package/properties/env/scope/value }}&quot;, ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1715020923568" ID="ID_1023031076" MODIFIED="1715021463244" TEXT="        redirect_uri: &quot;{{ package/properties/env/redirect_uri/value }}&quot;, ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1715020930946" ID="ID_1237332690" MODIFIED="1715021481096" TEXT="        tenantId: &quot;{{ package/properties/env/tenantId/value }}&quot;, ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1715020934148" ID="ID_242675349" MODIFIED="1715021504755" TEXT="        getAccessTokenUri: &quot;{{ package/properties/env/getAccessTokenUri/value }}&quot;, ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1715020937325" ID="ID_368818520" MODIFIED="1715021523765" TEXT="        tokenEndpoint: &apos;{{ package/properties/env/tokenEndpoint/value }}&apos; ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1715020944072" ID="ID_1271022959" MODIFIED="1715020949535" TEXT="      }, ">
+<icon BUILTIN="tag_green"/>
+</node>
 </node>
 </node>
 <node CREATED="1638534256478" ID="ID_282685467" MODIFIED="1674788044547" TEXT="templates">
@@ -14373,7 +14403,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1705684947385" FOLDED="true" ID="ID_1602823819" MODIFIED="1714625934862" TEXT="json">
+<node CREATED="1705684947385" FOLDED="true" ID="ID_1602823819" MODIFIED="1715020879810" TEXT="json">
 <icon BUILTIN="element"/>
 <node CREATED="1642422161038" FOLDED="true" ID="ID_277975724" MODIFIED="1714079856236" TEXT="jsonClass">
 <font NAME="SansSerif" SIZE="12"/>
