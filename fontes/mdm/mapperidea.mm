@@ -406,7 +406,7 @@
 </node>
 <node CREATED="1657542298359" ID="ID_648190111" MODIFIED="1713469216587" POSITION="right" TEXT="generators">
 <icon BUILTIN="element"/>
-<node CREATED="1638532646585" FOLDED="true" ID="ID_1972588312" MODIFIED="1715020874299" TEXT="mean">
+<node CREATED="1638532646585" ID="ID_1972588312" MODIFIED="1715031001305" TEXT="mean">
 <icon BUILTIN="element"/>
 <node CREATED="1638532674425" FOLDED="true" ID="ID_279417295" MODIFIED="1714424660554" TEXT="mongoModel">
 <icon BUILTIN="element"/>
@@ -5206,7 +5206,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1657626244020" FOLDED="true" ID="ID_942090299" MODIFIED="1714497181365" STYLE="fork" TEXT="bashGenerateAll">
+<node CREATED="1657626244020" FOLDED="true" ID="ID_942090299" MODIFIED="1715110813403" STYLE="fork" TEXT="bashGenerateAll">
 <icon BUILTIN="element"/>
 <node CREATED="1657626258273" ID="ID_893440910" MODIFIED="1714424685211" TEXT="start">
 <icon BUILTIN="element"/>
@@ -5927,7 +5927,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1706644403625" ID="ID_1935406017" MODIFIED="1715020729725" TEXT="envBackend">
+<node CREATED="1706644403625" FOLDED="true" ID="ID_1935406017" MODIFIED="1715110834453" TEXT="envBackend">
 <icon BUILTIN="element"/>
 <node CREATED="1659305492723" ID="ID_1421286075" MODIFIED="1714424744968" TEXT="start">
 <icon BUILTIN="element"/>
@@ -5951,11 +5951,38 @@
 <icon BUILTIN="element"/>
 <node CREATED="1706646958835" ID="ID_887647623" MODIFIED="1714424857442" TEXT="geraEnv">
 <icon BUILTIN="element"/>
+<node CREATED="1715108623495" ID="ID_594886136" MODIFIED="1715108794654" TEXT="TOKEN_URL = &quot;{{ package/properties/env/back/TOKEN_URL/value }}&quot;">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1715108628082" ID="ID_473159197" MODIFIED="1715108794654" TEXT="GRANT_TYPE=&quot;{{ package/properties/env/back/GRANT_TYPE/value }}&quot; ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1715108633429" ID="ID_1308344658" MODIFIED="1715108794653" TEXT="GRANT_TYPE_REFRESH=&quot;{{ package/properties/env/back/GRANT_TYPE_REFRESH/value }}&quot; ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1715108636615" ID="ID_977184334" MODIFIED="1715108794653" TEXT="CLIENT_ID= &quot;{{ package/properties/env/back/CLIENT_ID/value }}&quot; ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1715108639170" ID="ID_1282478543" MODIFIED="1715108794653" TEXT="SCOPE=&quot;{{ package/properties/env/back/SCOPE/value }}&quot; ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1715108641953" ID="ID_476956902" MODIFIED="1715108794653" TEXT="REDIRECT_URI= &quot;{{ package/properties/env/back/REDIRECT_URI/value }}&quot; ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1715108645516" ID="ID_1060480461" MODIFIED="1715108794653" TEXT="CLIENT_SECRET=&quot;{{ package/properties/env/back/CLIENT_SECRET/value }}&quot; ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1715108648225" ID="ID_589612913" MODIFIED="1715108794653" TEXT="JWKsUri=&quot;{{ package/properties/env/back/JWKsUri/value }}&quot; ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1715108651194" ID="ID_814672821" MODIFIED="1715108794652" TEXT="CORS_ORIGIN = &quot;{{ package/properties/env/back/CORS_ORIGIN/value }}&quot; ">
+<icon BUILTIN="tag_green"/>
 </node>
 </node>
 </node>
 </node>
-<node CREATED="1658084023442" ID="ID_239109345" MODIFIED="1715020880601" TEXT="angular">
+</node>
+<node CREATED="1658084023442" FOLDED="true" ID="ID_239109345" MODIFIED="1715112807882" TEXT="angular">
 <icon BUILTIN="element"/>
 <node CREATED="1638532674425" FOLDED="true" ID="ID_926807748" MODIFIED="1712609925998" TEXT="model">
 <icon BUILTIN="element"/>
@@ -13573,7 +13600,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1665771103506" FOLDED="true" ID="ID_572701783" MODIFIED="1714630606533" TEXT="appRouting">
+<node CREATED="1665771103506" FOLDED="true" ID="ID_572701783" MODIFIED="1715030998878" TEXT="appRouting">
 <icon BUILTIN="element"/>
 <node CREATED="1638532918770" ID="ID_323857040" MODIFIED="1707423632042" TEXT="start">
 <font BOLD="true" NAME="Dialog" SIZE="16"/>
@@ -13585,7 +13612,7 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1638533112349" ID="ID_1264211970" MODIFIED="1665771277481" TEXT="body">
+<node CREATED="1638533112349" ID="ID_1264211970" MODIFIED="1715022580505" TEXT="body">
 <font BOLD="true" NAME="Dialog" SIZE="16"/>
 <icon BUILTIN="element"/>
 <node CREATED="1638533152331" ID="ID_95696650" MODIFIED="1665771307612" TEXT="write-pattern">
@@ -13619,7 +13646,7 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1638534170704" ID="ID_1179820235" MODIFIED="1665771486975" TEXT="apply-templates">
+<node CREATED="1638534170704" ID="ID_1179820235" MODIFIED="1715022577314" TEXT="apply-templates">
 <font BOLD="true" NAME="Dialog" SIZE="16"/>
 <icon BUILTIN="element"/>
 <node CREATED="1638534190031" ID="ID_1381300363" MODIFIED="1665771488034" TEXT="select">
@@ -13637,9 +13664,15 @@
 </node>
 </node>
 </node>
-<node CREATED="1665859515862" ID="ID_41236065" MODIFIED="1665859535991" TEXT="write-pattern">
+<node CREATED="1665859515862" ID="ID_41236065" MODIFIED="1715022581660" TEXT="write-pattern">
 <icon BUILTIN="element"/>
-<node CREATED="1665859523421" ID="ID_1947257534" MODIFIED="1666035551902" TEXT="fimRotas">
+<node CREATED="1665859523421" ID="ID_1947257534" MODIFIED="1715022589942" TEXT="notFoundPages">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1665859515862" ID="ID_841870965" MODIFIED="1715022582088" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1665859523421" ID="ID_1015927483" MODIFIED="1666035551902" TEXT="fimRotas">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -13717,7 +13750,7 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1708541769295" ID="ID_1708302301" MODIFIED="1714630284420" TEXT="errorPages">
+<node CREATED="1708541769295" ID="ID_1708302301" MODIFIED="1715022594084" TEXT="errorPages">
 <icon BUILTIN="element"/>
 <node CREATED="1708541841786" ID="ID_1387781383" MODIFIED="1708541871899" TEXT="">
 <icon BUILTIN="tag_green"/>
@@ -13779,6 +13812,9 @@
 <node CREATED="1714630247659" ID="ID_1862953932" MODIFIED="1714630270676" TEXT="">
 <icon BUILTIN="tag_green"/>
 </node>
+</node>
+<node CREATED="1715022558468" ID="ID_1949112116" MODIFIED="1715022573874" TEXT="notFoundPages">
+<icon BUILTIN="element"/>
 <node CREATED="1714630248195" ID="ID_1633604802" MODIFIED="1714630270676" TEXT="    //404 and catch all ">
 <icon BUILTIN="tag_green"/>
 </node>
@@ -14245,7 +14281,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1707938366417" ID="ID_1835092214" MODIFIED="1715020883561" TEXT="environment">
+<node CREATED="1707938366417" ID="ID_1835092214" MODIFIED="1715110836640" TEXT="environment">
 <icon BUILTIN="element"/>
 <node CREATED="1638532918770" ID="ID_1514846485" MODIFIED="1707423632042" TEXT="start">
 <font BOLD="true" NAME="Dialog" SIZE="16"/>
@@ -14310,7 +14346,10 @@
 <node CREATED="1712242531002" ID="ID_513534691" MODIFIED="1712242701680" TEXT="    applicationTitle: &quot;{{ package/properties/nomeProjeto/value }}&quot;, ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1707938572809" ID="ID_1052826432" MODIFIED="1714077335776" STYLE="fork" TEXT="    backendUrl: &quot;http://localhost:8080&quot;, ">
+<node CREATED="1707938572809" ID="ID_1052826432" MODIFIED="1715107164927" STYLE="fork" TEXT="    backendUrl: &quot;{{ package/properties/backPath/value }}&quot;, ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1715107254607" ID="ID_1497876679" MODIFIED="1715107288710" TEXT="    frontendUrl: &quot;{{ package/properties/frontPath/value }}&quot;, ">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1712257714258" ID="ID_1448326956" MODIFIED="1712257717990" TEXT="    menuPath: &quot;../../../../assets/dicionario/menu/menu.json&quot;, ">
@@ -14337,34 +14376,34 @@
 </node>
 <node CREATED="1714626006295" ID="ID_160630535" MODIFIED="1714626017240" TEXT="declaraAuthConfig">
 <icon BUILTIN="element"/>
-<node CREATED="1715020893490" ID="ID_1813398971" MODIFIED="1715020949539" TEXT="    authConfig: { ">
+<node CREATED="1715020900028" ID="ID_310292397" MODIFIED="1715107383567" TEXT="">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1715020900028" ID="ID_310292397" MODIFIED="1715021403303" TEXT="        issuer: &apos;{{ package/properties/env/issuer/value }}&apos;, //Link pra fazer o login ">
+<node CREATED="1715107384056" ID="ID_740269882" MODIFIED="1715107421718" TEXT="    // Dados Relacionados ao Azure AD B2C ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1715020911074" ID="ID_91865366" MODIFIED="1715021410472" TEXT="        grant_type: &quot;{{ package/properties/env/grant_type/value }}&quot;, ">
+<node CREATED="1715107387790" ID="ID_625932102" MODIFIED="1715108470967" TEXT="    providerUriB2C: &quot;{{ package/properties/env/front/providerUriB2C/value }}&quot;, ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1715020915081" ID="ID_1813308249" MODIFIED="1715021429517" TEXT="        client_id: &quot;{{ package/properties/env/client_id/value }}&quot;, ">
+<node CREATED="1715107390670" ID="ID_1995630868" MODIFIED="1715108480859" TEXT="    providerMicrosoftUri: &quot;{{ package/properties/env/front/providerMicrosoftUri/value }}&quot;, ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1715020919726" ID="ID_1619969766" MODIFIED="1715021443292" TEXT="        scope: &quot;{{ package/properties/env/scope/value }}&quot;, ">
+<node CREATED="1715107394702" ID="ID_1661310884" MODIFIED="1715108484070" TEXT="    microsoftLoginUri: &quot;{{ package/properties/env/front/microsoftLoginUri/value }}&quot;, ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1715020923568" ID="ID_1023031076" MODIFIED="1715021463244" TEXT="        redirect_uri: &quot;{{ package/properties/env/redirect_uri/value }}&quot;, ">
+<node CREATED="1715107397999" ID="ID_1858293184" MODIFIED="1715108487310" TEXT="    tenantId: &quot;{{ package/properties/env/front/tenantId/value }}&quot;, ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1715020930946" ID="ID_1237332690" MODIFIED="1715021481096" TEXT="        tenantId: &quot;{{ package/properties/env/tenantId/value }}&quot;, ">
+<node CREATED="1715107400958" ID="ID_1731378906" MODIFIED="1715108490069" TEXT="    grantType: &quot;{{ package/properties/env/front/grantType/value }}&quot;, ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1715020934148" ID="ID_242675349" MODIFIED="1715021504755" TEXT="        getAccessTokenUri: &quot;{{ package/properties/env/getAccessTokenUri/value }}&quot;, ">
+<node CREATED="1715107403843" ID="ID_1535118219" MODIFIED="1715108493763" TEXT="    redirectUri: &quot;{{ package/properties/env/front/redirectUri/value }}&quot;, ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1715020937325" ID="ID_368818520" MODIFIED="1715021523765" TEXT="        tokenEndpoint: &apos;{{ package/properties/env/tokenEndpoint/value }}&apos; ">
+<node CREATED="1715107407307" ID="ID_1757766618" MODIFIED="1715108497432" TEXT="    clientId: &quot;{{ package/properties/env/front/clientId/value }}&quot;, ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1715020944072" ID="ID_1271022959" MODIFIED="1715020949535" TEXT="      }, ">
+<node CREATED="1715107416463" ID="ID_1222561740" MODIFIED="1715108504389" TEXT="    scope: &quot;{{ package/properties/env/front/scope/value }}&quot;, ">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -14403,9 +14442,9 @@
 </node>
 </node>
 </node>
-<node CREATED="1705684947385" FOLDED="true" ID="ID_1602823819" MODIFIED="1715020879810" TEXT="json">
+<node CREATED="1705684947385" ID="ID_1602823819" MODIFIED="1715112808864" TEXT="json">
 <icon BUILTIN="element"/>
-<node CREATED="1642422161038" FOLDED="true" ID="ID_277975724" MODIFIED="1714079856236" TEXT="jsonClass">
+<node CREATED="1642422161038" ID="ID_277975724" MODIFIED="1715112810000" TEXT="jsonClass">
 <font NAME="SansSerif" SIZE="12"/>
 <icon BUILTIN="element"/>
 <node CREATED="1641817891685" FOLDED="true" ID="ID_1703168411" MODIFIED="1707335081258" TEXT="parameters">
@@ -14550,7 +14589,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1642422420686" FOLDED="true" ID="ID_337222305" MODIFIED="1714079847626" TEXT="patterns">
+<node CREATED="1642422420686" ID="ID_337222305" MODIFIED="1715112821825" TEXT="patterns">
 <icon BUILTIN="element"/>
 <node CREATED="1714073958876" ID="ID_1723662207" MODIFIED="1714073965966" TEXT="debug">
 <icon BUILTIN="element"/>
@@ -14589,7 +14628,7 @@
 <node CREATED="1642422431867" ID="ID_1037663945" MODIFIED="1705688715341" TEXT="        &quot;name&quot;: &quot;{{ @name }}&quot;, ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1706295887020" ID="ID_116059821" MODIFIED="1714079581865" TEXT="        &quot;apiUrl&quot;: &quot;http://localhost:8080/{{ properties/apiUrl/value }}&quot;,">
+<node CREATED="1706295887020" ID="ID_116059821" MODIFIED="1715112835987" TEXT="        &quot;apiUrl&quot;: &quot;{{ properties/apiUrl/value }}&quot;,">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1708538456678" ID="ID_217828828" MODIFIED="1713292309493" TEXT="        &quot;route&quot;: &quot;{{ properties/frontPath/value }}&quot;,">
