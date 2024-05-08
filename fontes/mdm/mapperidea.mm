@@ -406,7 +406,7 @@
 </node>
 <node CREATED="1657542298359" ID="ID_648190111" MODIFIED="1713469216587" POSITION="right" TEXT="generators">
 <icon BUILTIN="element"/>
-<node CREATED="1638532646585" ID="ID_1972588312" MODIFIED="1715031001305" TEXT="mean">
+<node CREATED="1638532646585" FOLDED="true" ID="ID_1972588312" MODIFIED="1715193190192" TEXT="mean">
 <icon BUILTIN="element"/>
 <node CREATED="1638532674425" FOLDED="true" ID="ID_279417295" MODIFIED="1714424660554" TEXT="mongoModel">
 <icon BUILTIN="element"/>
@@ -5982,7 +5982,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1658084023442" FOLDED="true" ID="ID_239109345" MODIFIED="1715112807882" TEXT="angular">
+<node CREATED="1658084023442" ID="ID_239109345" MODIFIED="1715193193557" TEXT="angular">
 <icon BUILTIN="element"/>
 <node CREATED="1638532674425" FOLDED="true" ID="ID_926807748" MODIFIED="1712609925998" TEXT="model">
 <icon BUILTIN="element"/>
@@ -8046,11 +8046,11 @@
 </node>
 <node CREATED="1658500604383" ID="ID_1500156651" MODIFIED="1714630699584" TEXT="details">
 <icon BUILTIN="Descriptor.grouping"/>
-<node CREATED="1642422161038" FOLDED="true" ID="ID_957406446" MODIFIED="1714675982177" TEXT="detailsComponentTS">
+<node CREATED="1642422161038" ID="ID_957406446" MODIFIED="1715193203435" TEXT="detailsComponentTS">
 <icon BUILTIN="element"/>
 <node CREATED="1641817891685" ID="ID_911661603" MODIFIED="1707490852984" TEXT="parameters">
 <icon BUILTIN="element"/>
-<node CREATED="1641817897541" FOLDED="true" ID="ID_365710521" MODIFIED="1707508277037" TEXT="editorName">
+<node CREATED="1641817897541" ID="ID_365710521" MODIFIED="1715193399180" TEXT="editorName">
 <icon BUILTIN="element"/>
 <node CREATED="1641817915788" ID="ID_1425263421" MODIFIED="1641817919037" TEXT="NOT_DEFINED">
 <icon BUILTIN="tag_green"/>
@@ -8135,7 +8135,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1642422420686" FOLDED="true" ID="ID_290871460" MODIFIED="1714675980242" TEXT="patterns">
+<node CREATED="1642422420686" ID="ID_290871460" MODIFIED="1715193208229" TEXT="patterns">
 <icon BUILTIN="element"/>
 <node CREATED="1642422423951" ID="ID_1794596430" MODIFIED="1707490885234" TEXT="declaraImport">
 <icon BUILTIN="element"/>
@@ -8266,10 +8266,7 @@
 <node CREATED="1643199556333" ID="ID_1027324794" MODIFIED="1707936379391" TEXT="    this.formGeneratorService.getJSONFromDicionario(this.JSONPath).pipe(takeUntil(this.ngUnsubscribe)).subscribe((JSONDictionary: any) =&gt; {&#xa;">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1643199562415" ID="ID_1206583438" MODIFIED="1707254046100" TEXT="      this.localStorageIsEnabled = JSONDictionary.config.localStorage; ">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1642592350068" ID="ID_540770976" MODIFIED="1714630715524" TEXT="      this.generatedFormFactoryService.getDataToCreateFrom(this.JSONPath, JSONDictionary, ()=&gt;{this.getDataFromAPI()}, this.resourceForm, ()=&gt;{this.submitForm()}, ()=&gt;{this.deleteResource()}, this.currentAction);&#xa;">
+<node CREATED="1643199562415" ID="ID_1206583438" MODIFIED="1715193229760" TEXT="      this.generatedFormFactoryService.getDataToCreateFrom(JSONDictionary, this.target, ()=&gt;{this.getDataFromAPI()}, this.resourceForm, ()=&gt;{this.submitForm()}, ()=&gt;{this.deleteResource()}, this.currentAction) ">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1642592455482" ID="ID_1997238525" MODIFIED="1707254054069" TEXT="    }); ">
@@ -8767,7 +8764,7 @@
 <node CREATED="1705427621094" ID="ID_353089186" MODIFIED="1705428763986" TEXT="inputDateField.component.ts"/>
 <node CREATED="1705427642139" ID="ID_1017070860" MODIFIED="1705428763915" TEXT=""/>
 </node>
-<node CREATED="1665516345016" FOLDED="true" ID="ID_1029355571" MODIFIED="1709064410233" TEXT="app.component">
+<node CREATED="1665516345016" FOLDED="true" ID="ID_1029355571" MODIFIED="1715193200420" TEXT="app.component">
 <icon BUILTIN="Descriptor.grouping"/>
 <node CREATED="1665516366010" FOLDED="true" ID="ID_1202107284" MODIFIED="1709060283925" TEXT="appComponentTS">
 <icon BUILTIN="element"/>
@@ -14281,7 +14278,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1707938366417" ID="ID_1835092214" MODIFIED="1715110836640" TEXT="environment">
+<node CREATED="1707938366417" FOLDED="true" ID="ID_1835092214" MODIFIED="1715193195277" TEXT="environment">
 <icon BUILTIN="element"/>
 <node CREATED="1638532918770" ID="ID_1514846485" MODIFIED="1707423632042" TEXT="start">
 <font BOLD="true" NAME="Dialog" SIZE="16"/>
@@ -14442,9 +14439,9 @@
 </node>
 </node>
 </node>
-<node CREATED="1705684947385" ID="ID_1602823819" MODIFIED="1715112808864" TEXT="json">
+<node CREATED="1705684947385" FOLDED="true" ID="ID_1602823819" MODIFIED="1715193189051" TEXT="json">
 <icon BUILTIN="element"/>
-<node CREATED="1642422161038" ID="ID_277975724" MODIFIED="1715112810000" TEXT="jsonClass">
+<node CREATED="1642422161038" FOLDED="true" ID="ID_277975724" MODIFIED="1715193185865" TEXT="jsonClass">
 <font NAME="SansSerif" SIZE="12"/>
 <icon BUILTIN="element"/>
 <node CREATED="1641817891685" FOLDED="true" ID="ID_1703168411" MODIFIED="1707335081258" TEXT="parameters">
@@ -14609,7 +14606,7 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1705954216201" ID="ID_262188446" MODIFIED="1714079576092" TEXT="config">
+<node CREATED="1705954216201" FOLDED="true" ID="ID_262188446" MODIFIED="1715113684723" TEXT="config">
 <icon BUILTIN="Descriptor.grouping"/>
 <node CREATED="1642422423951" ID="ID_861302241" MODIFIED="1714077035724" TEXT="iniciaConfig">
 <icon BUILTIN="element"/>

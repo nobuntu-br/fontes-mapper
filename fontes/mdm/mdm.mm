@@ -31,108 +31,57 @@
 <icon BUILTIN="element"/>
 <node CREATED="1715021157337" ID="ID_788852568" MODIFIED="1715107071897" TEXT="providerUriB2C">
 <icon BUILTIN="element"/>
-<node CREATED="1715109496047" ID="ID_1784476946" MODIFIED="1715109499214" TEXT="https://allystore.b2clogin.com">
-<icon BUILTIN="tag_green"/>
-</node>
 </node>
 <node CREATED="1715021165243" ID="ID_139977462" MODIFIED="1715107079439" TEXT="providerMicrosoftUri">
 <icon BUILTIN="element"/>
-<node CREATED="1715109507867" ID="ID_459899145" MODIFIED="1715109579068" TEXT="https://allystore.onmicrosoft.com">
-<icon BUILTIN="tag_green"/>
-</node>
 </node>
 <node CREATED="1715021171131" ID="ID_173361083" MODIFIED="1715107084159" TEXT="microsoftLoginUri">
 <icon BUILTIN="element"/>
-<node CREATED="1715109514381" ID="ID_1278394843" MODIFIED="1715109579067" TEXT="https://login.microsoftonline.com">
-<icon BUILTIN="tag_green"/>
-</node>
 </node>
 <node CREATED="1715021200852" ID="ID_444193100" MODIFIED="1715107088587" TEXT="tenantId">
 <icon BUILTIN="element"/>
-<node CREATED="1715109521177" ID="ID_756293196" MODIFIED="1715109579067" TEXT="b46b5b87-a08e-487b-ae9b-fec172a9a90b">
-<icon BUILTIN="tag_green"/>
-</node>
 </node>
 <node CREATED="1715021207271" ID="ID_197000096" MODIFIED="1715107096067" TEXT="grantType">
 <icon BUILTIN="element"/>
-<node CREATED="1715109529015" ID="ID_706283490" MODIFIED="1715109579068" TEXT="authorization_code">
-<icon BUILTIN="tag_green"/>
-</node>
 </node>
 <node CREATED="1715021213570" ID="ID_403755425" MODIFIED="1715107100748" TEXT="redirectUri">
 <icon BUILTIN="element"/>
-<node CREATED="1715109535708" ID="ID_1981650083" MODIFIED="1715109579068" TEXT="callback">
-<icon BUILTIN="tag_green"/>
-</node>
 </node>
 <node CREATED="1715021226272" ID="ID_759134147" MODIFIED="1715107105267" TEXT="clientId">
 <icon BUILTIN="element"/>
-<node CREATED="1715109560528" ID="ID_934681451" MODIFIED="1715109579068" TEXT="c3965db2-c74a-4d13-8a85-cea18afbe9fa">
-<icon BUILTIN="tag_green"/>
-</node>
 </node>
 <node CREATED="1715107113720" ID="ID_582484372" MODIFIED="1715107117462" TEXT="scope">
 <icon BUILTIN="element"/>
-<node CREATED="1715109566827" ID="ID_1014931206" MODIFIED="1715109570343" TEXT="/tasks-api2/tasks.read offline_access">
-<icon BUILTIN="tag_green"/>
-</node>
 </node>
 </node>
 <node CREATED="1715108413932" ID="ID_1276822385" MODIFIED="1715108417752" TEXT="back">
 <icon BUILTIN="element"/>
 <node CREATED="1715108422635" ID="ID_1786905860" MODIFIED="1715108462041" TEXT="TOKEN_URL">
 <icon BUILTIN="element"/>
-<node CREATED="1715109334091" ID="ID_435114587" MODIFIED="1715109337018" TEXT="https://allystore.b2clogin.com/allystore.onmicrosoft.com/B2C_1_susi1/oauth2/v2.0/token">
-<icon BUILTIN="tag_green"/>
-</node>
 </node>
 <node CREATED="1715108426685" ID="ID_996856432" MODIFIED="1715108462041" TEXT="GRANT_TYPE">
 <icon BUILTIN="element"/>
-<node CREATED="1715109334091" ID="ID_405486893" MODIFIED="1715109409769" TEXT="authorization_code">
-<icon BUILTIN="tag_green"/>
-</node>
 </node>
 <node CREATED="1715108430810" ID="ID_44873259" MODIFIED="1715108462041" TEXT="GRANT_TYPE_REFRESH">
 <icon BUILTIN="element"/>
-<node CREATED="1715109334091" ID="ID_98412463" MODIFIED="1715109414151" TEXT="refresh_token">
-<icon BUILTIN="tag_green"/>
-</node>
 </node>
 <node CREATED="1715108436451" ID="ID_538822233" MODIFIED="1715108462041" TEXT="CLIENT_ID">
 <icon BUILTIN="element"/>
-<node CREATED="1715109334091" ID="ID_993960007" MODIFIED="1715109423710" TEXT="c3965db2-c74a-4d13-8a85-cea18afbe9fa">
-<icon BUILTIN="tag_green"/>
-</node>
 </node>
 <node CREATED="1715108439438" ID="ID_803945459" MODIFIED="1715108462041" TEXT="SCOPE">
 <icon BUILTIN="element"/>
-<node CREATED="1715109334091" ID="ID_169078681" MODIFIED="1715109433808" TEXT="https://allystore.onmicrosoft.com/tasks-api2/tasks.read offline_access">
-<icon BUILTIN="tag_green"/>
-</node>
 </node>
 <node CREATED="1715108442200" ID="ID_610181568" MODIFIED="1715109356587" TEXT="REDIRECT_URI">
 <icon BUILTIN="element"/>
-<node CREATED="1715109334091" ID="ID_1988606104" MODIFIED="1715109441933" TEXT="https://jwt.ms">
-<icon BUILTIN="tag_green"/>
-</node>
 </node>
 <node CREATED="1715108444984" ID="ID_1076894615" MODIFIED="1715108462041" TEXT="CLIENT_SECRET">
 <icon BUILTIN="element"/>
-<node CREATED="1715109334091" ID="ID_1293917518" MODIFIED="1715109465563" TEXT="ZPz8Q~DxmSjUqYnjZf5Hkfv.gqbtD-j5w0HXlbih">
-<icon BUILTIN="tag_green"/>
-</node>
 </node>
 <node CREATED="1715108450833" ID="ID_1305891589" MODIFIED="1715109351391" TEXT="JWKsUri">
 <icon BUILTIN="element"/>
-<node CREATED="1715109334091" ID="ID_1223031334" MODIFIED="1715109472965" TEXT="https://allystore.b2clogin.com/allystore.onmicrosoft.com/b2c_1_susi1/discovery/keys">
-<icon BUILTIN="tag_green"/>
-</node>
 </node>
 <node CREATED="1715108453855" ID="ID_992624323" MODIFIED="1715108462040" TEXT="CORS_ORIGIN">
 <icon BUILTIN="element"/>
-<node CREATED="1715109334091" ID="ID_1436787074" MODIFIED="1715109479925" TEXT="http://localhost:4200">
-<icon BUILTIN="tag_green"/>
-</node>
 </node>
 </node>
 </node>
