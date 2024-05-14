@@ -3539,7 +3539,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1665098578835" ID="ID_298308379" MODIFIED="1715374025387" TEXT="server">
+<node CREATED="1665098578835" FOLDED="true" ID="ID_298308379" MODIFIED="1715622014328" TEXT="server">
 <icon BUILTIN="element"/>
 <node CREATED="1659305492723" ID="ID_360526106" MODIFIED="1715267092864" TEXT="start">
 <icon BUILTIN="element"/>
@@ -6018,7 +6018,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1658084023442" FOLDED="true" ID="ID_239109345" MODIFIED="1715285735793" TEXT="angular">
+<node CREATED="1658084023442" ID="ID_239109345" MODIFIED="1715622016328" TEXT="angular">
 <icon BUILTIN="element"/>
 <node CREATED="1638532674425" FOLDED="true" ID="ID_926807748" MODIFIED="1712609925998" TEXT="model">
 <icon BUILTIN="element"/>
@@ -13633,7 +13633,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1665771103506" FOLDED="true" ID="ID_572701783" MODIFIED="1715030998878" TEXT="appRouting">
+<node CREATED="1665771103506" ID="ID_572701783" MODIFIED="1715622018090" TEXT="appRouting">
 <icon BUILTIN="element"/>
 <node CREATED="1638532918770" ID="ID_323857040" MODIFIED="1707423632042" TEXT="start">
 <font BOLD="true" NAME="Dialog" SIZE="16"/>
@@ -13753,7 +13753,7 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1708541439483" FOLDED="true" ID="ID_1734769697" MODIFIED="1714630345080" TEXT="callbackRotas">
+<node CREATED="1708541439483" ID="ID_1734769697" MODIFIED="1715622024229" TEXT="callbackRotas">
 <icon BUILTIN="element"/>
 <node CREATED="1708541451575" ID="ID_1521385169" MODIFIED="1708541535389" TEXT="    // Auth routes for guests ">
 <icon BUILTIN="tag_green"/>
@@ -13773,7 +13773,10 @@
 <node CREATED="1708541489148" ID="ID_1054628721" MODIFIED="1708541535397" TEXT="        children: [ ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1708541499103" ID="ID_563771958" MODIFIED="1714630042446" TEXT="            {path: &apos;callback&apos;, loadChildren: () =&gt; import(&apos;app/core/pages/callback/callback.module&apos;).then(m =&gt; m.CallbackModule)}&#xa;">
+<node CREATED="1708541499103" ID="ID_563771958" MODIFIED="1715622033104" TEXT="            {path: &apos;callback&apos;, loadChildren: () =&gt; import(&apos;app/core/pages/callback/callback.module&apos;).then(m =&gt; m.CallbackModule)},">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1715622027111" ID="ID_1457556654" MODIFIED="1715622039036" TEXT="            {path: &apos;signin&apos;, loadChildren: () =&gt; import(&apos;app/core/pages/signin/signin.module&apos;).then(m =&gt; m.SigninModule)}, ">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1708541514529" ID="ID_106117682" MODIFIED="1708541535390" TEXT="        ] ">
@@ -13872,7 +13875,7 @@
 <node CREATED="1708542661102" ID="ID_1751352772" MODIFIED="1708542725920" TEXT="        path: &apos;&apos;, ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1708542664613" ID="ID_62459259" MODIFIED="1712246406919" TEXT="        canMatch: [NoAuthGuard], ">
+<node CREATED="1708542664613" ID="ID_62459259" MODIFIED="1715622044851" TEXT="        canMatch: [AuthGuard], ">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1708542669190" ID="ID_625918164" MODIFIED="1709060843475" TEXT="        component: SideNavComponent, ">
