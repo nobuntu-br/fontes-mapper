@@ -44,6 +44,7 @@ mi g app angular appRouting > frontend/src/app/app-routing.module.ts
 mi g app angular appComponentHTML > frontend/src/app/app.component.html
 mi g app angular appComponentTS > frontend/src/app/app.component.ts
 mi g app angular indexHTML > frontend/src/index.html
+mapperidea generate app mean validator entityName=Customers > backend/app/validators/customers.validator.js
 mapperidea generate app mean mongoModel entityName=Customers > backend/models/customers.model.js
 mapperidea generate app mean apiController entityName=Customers > backend/app/controllers/customers.controller.js
 mapperidea generate app angular model entityName=Customers > frontend/src/app/modules/customers/shared/customers.model.ts
@@ -55,7 +56,6 @@ mi g app angular listComponentTS listName=Customers >  frontend/src/app/modules/
 mi g app angular detailsComponentHTML editorName=Customers >  frontend/src/app/modules/customers/customers-form/customers-form.component.html
 mi g app angular detailsComponentTS editorName=Customers >  frontend/src/app/modules/customers/customers-form/customers-form.component.ts
 mi g app json jsonClass entityName=Customers > frontend/src/assets/dicionario/customers.json
-mi g app mean customQuery > backend/app/controllers/customQuery.util.js
 mi g app json jsonTransloco translate=en > frontend/src/assets/i18n/en.json
 mi g app json jsonTransloco translate=pt > frontend/src/assets/i18n/pt.json
 mi g app angular environment > frontend/src/enviroment/environment.ts

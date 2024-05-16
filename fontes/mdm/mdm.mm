@@ -337,6 +337,9 @@
 </node>
 </node>
 </node>
+<node CREATED="1715367088105" ID="ID_163850809" MODIFIED="1715367093413" TEXT="requerido">
+<icon BUILTIN="element"/>
+</node>
 </node>
 </node>
 <node CREATED="1697218113550" MODIFIED="1697218113550" TEXT="firstName: Texto(50)">
@@ -368,6 +371,9 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
+</node>
+<node CREATED="1715367088105" ID="ID_1260579325" MODIFIED="1715367093413" TEXT="requerido">
+<icon BUILTIN="element"/>
 </node>
 </node>
 </node>
