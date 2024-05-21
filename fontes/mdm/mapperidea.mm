@@ -406,7 +406,7 @@
 </node>
 <node CREATED="1657542298359" ID="ID_648190111" MODIFIED="1713469216587" POSITION="right" TEXT="generators">
 <icon BUILTIN="element"/>
-<node CREATED="1638532646585" ID="ID_1972588312" MODIFIED="1715285753651" TEXT="mean">
+<node CREATED="1638532646585" ID="ID_1972588312" MODIFIED="1716313307975" TEXT="mean">
 <icon BUILTIN="element"/>
 <node CREATED="1638532674425" FOLDED="true" ID="ID_279417295" MODIFIED="1715266781731" TEXT="mongoModel">
 <icon BUILTIN="element"/>
@@ -4090,7 +4090,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1706644403625" ID="ID_1010292005" MODIFIED="1715372909281" TEXT="customQuery">
+<node CREATED="1706644403625" FOLDED="true" ID="ID_1010292005" MODIFIED="1716312967296" TEXT="customQuery">
 <icon BUILTIN="element"/>
 <node CREATED="1659305492723" FOLDED="true" ID="ID_639107434" MODIFIED="1715372912061" TEXT="start">
 <icon BUILTIN="element"/>
@@ -4942,7 +4942,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1657626244020" FOLDED="true" ID="ID_942090299" MODIFIED="1715887550413" STYLE="fork" TEXT="bashGenerateAll">
+<node CREATED="1657626244020" ID="ID_942090299" MODIFIED="1716313311240" STYLE="fork" TEXT="bashGenerateAll">
 <icon BUILTIN="element"/>
 <node CREATED="1657626258273" ID="ID_893440910" MODIFIED="1715887274370" TEXT="start">
 <icon BUILTIN="element"/>
@@ -5187,9 +5187,9 @@
 </node>
 </node>
 </node>
-<node CREATED="1657626270312" ID="ID_1210412099" MODIFIED="1715887200955" TEXT="patterns">
+<node CREATED="1657626270312" ID="ID_1210412099" MODIFIED="1716313370854" TEXT="patterns">
 <icon BUILTIN="element"/>
-<node CREATED="1665524991570" FOLDED="true" ID="ID_464460846" MODIFIED="1715887273122" TEXT="geraPastas">
+<node CREATED="1665524991570" ID="ID_464460846" MODIFIED="1716313370863" TEXT="geraPastas">
 <icon BUILTIN="element"/>
 <node CREATED="1665525835355" ID="ID_226146924" MODIFIED="1708002602285" TEXT="#!/bin/bash">
 <icon BUILTIN="tag_green"/>
@@ -5251,7 +5251,7 @@
 <node CREATED="1667389850810" ID="ID_210433313" MODIFIED="1708002602289" TEXT="cd ../../..">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1707938211078" ID="ID_43627016" MODIFIED="1708002602289" TEXT="mkdir frontend/src/enviroment">
+<node CREATED="1707938211078" ID="ID_43627016" MODIFIED="1716313374598" TEXT="mkdir frontend/src/environments">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1707486488085" ID="ID_294093281" MODIFIED="1708002602289" TEXT="mkdir frontend/src/assets/dicionario">
@@ -5435,7 +5435,10 @@
 </node>
 <node CREATED="1665525444242" ID="ID_218929755" MODIFIED="1708002602295" TEXT="geraEnvironment">
 <icon BUILTIN="element"/>
-<node CREATED="1666309353525" ID="ID_1263630005" MODIFIED="1708002602295" TEXT="mi g app angular environment &gt; frontend/src/enviroment/environment.ts">
+<node CREATED="1666309353525" ID="ID_1263630005" MODIFIED="1716313353297" TEXT="mi g app angular environment &gt; frontend/src/environments/environment.ts">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1666309353525" ID="ID_174146305" MODIFIED="1716313356385" TEXT="mi g app angular environment &gt; frontend/src/environments/environment.development.ts">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -5971,7 +5974,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1658084023442" FOLDED="true" ID="ID_239109345" MODIFIED="1715887583271" TEXT="angular">
+<node CREATED="1658084023442" FOLDED="true" ID="ID_239109345" MODIFIED="1716313307111" TEXT="angular">
 <icon BUILTIN="element"/>
 <node CREATED="1638532674425" FOLDED="true" ID="ID_926807748" MODIFIED="1712609925998" TEXT="model">
 <icon BUILTIN="element"/>
@@ -6473,7 +6476,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1658500601077" FOLDED="true" ID="ID_286140192" MODIFIED="1707334884686" TEXT="add">
+<node CREATED="1658500601077" FOLDED="true" ID="ID_286140192" MODIFIED="1716313027201" TEXT="add">
 <icon BUILTIN="Descriptor.grouping"/>
 <node CREATED="1641817850147" FOLDED="true" ID="ID_545342822" MODIFIED="1707335081181" TEXT="addComponentHTML">
 <icon BUILTIN="element"/>
@@ -8748,11 +8751,6 @@
 </node>
 </node>
 </node>
-<node CREATED="1705427580827" FOLDED="true" ID="ID_531992364" MODIFIED="1707335081201" TEXT="InputDateFieldComponent">
-<icon BUILTIN="Descriptor.grouping"/>
-<node CREATED="1705427621094" ID="ID_353089186" MODIFIED="1705428763986" TEXT="inputDateField.component.ts"/>
-<node CREATED="1705427642139" ID="ID_1017070860" MODIFIED="1705428763915" TEXT=""/>
-</node>
 <node CREATED="1665516345016" FOLDED="true" ID="ID_1029355571" MODIFIED="1715193200420" TEXT="app.component">
 <icon BUILTIN="Descriptor.grouping"/>
 <node CREATED="1665516366010" FOLDED="true" ID="ID_1202107284" MODIFIED="1709060283925" TEXT="appComponentTS">
@@ -8911,7 +8909,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1665861120881" FOLDED="true" ID="ID_368291676" MODIFIED="1712608838102" TEXT="listaMenu">
+<node CREATED="1665861120881" FOLDED="true" ID="ID_368291676" MODIFIED="1716313304571" TEXT="listaMenu">
 <icon BUILTIN="element"/>
 <node CREATED="1639135985370" ID="ID_1449642127" MODIFIED="1712242656628" TEXT="start">
 <icon BUILTIN="element"/>
@@ -13586,7 +13584,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1665771103506" FOLDED="true" ID="ID_572701783" MODIFIED="1715885430297" TEXT="appRouting">
+<node CREATED="1665771103506" FOLDED="true" ID="ID_572701783" MODIFIED="1716313300220" TEXT="appRouting">
 <icon BUILTIN="element"/>
 <node CREATED="1638532918770" ID="ID_323857040" MODIFIED="1707423632042" TEXT="start">
 <font BOLD="true" NAME="Dialog" SIZE="16"/>
@@ -13617,12 +13615,6 @@
 <node CREATED="1665859515862" ID="ID_1781260585" MODIFIED="1714630330184" TEXT="write-pattern">
 <icon BUILTIN="element"/>
 <node CREATED="1665859523421" ID="ID_1527167144" MODIFIED="1714630341279" TEXT="callbackRotas">
-<icon BUILTIN="tag_green"/>
-</node>
-</node>
-<node CREATED="1665859515862" ID="ID_226757377" MODIFIED="1714630330184" TEXT="write-pattern">
-<icon BUILTIN="element"/>
-<node CREATED="1665859523421" ID="ID_1334311379" MODIFIED="1714630350423" TEXT="errorPages">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -13706,7 +13698,7 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1708541439483" ID="ID_1734769697" MODIFIED="1715622024229" TEXT="callbackRotas">
+<node CREATED="1708541439483" ID="ID_1734769697" MODIFIED="1716313057480" TEXT="callbackRotas">
 <icon BUILTIN="element"/>
 <node CREATED="1708541451575" ID="ID_1521385169" MODIFIED="1708541535389" TEXT="    // Auth routes for guests ">
 <icon BUILTIN="tag_green"/>
@@ -13726,9 +13718,6 @@
 <node CREATED="1708541489148" ID="ID_1054628721" MODIFIED="1708541535397" TEXT="        children: [ ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1708541499103" ID="ID_563771958" MODIFIED="1715622033104" TEXT="            {path: &apos;callback&apos;, loadChildren: () =&gt; import(&apos;app/core/pages/callback/callback.module&apos;).then(m =&gt; m.CallbackModule)},">
-<icon BUILTIN="tag_green"/>
-</node>
 <node CREATED="1715622027111" ID="ID_1457556654" MODIFIED="1715622039036" TEXT="            {path: &apos;signin&apos;, loadChildren: () =&gt; import(&apos;app/core/pages/signin/signin.module&apos;).then(m =&gt; m.SigninModule)}, ">
 <icon BUILTIN="tag_green"/>
 </node>
@@ -13738,67 +13727,16 @@
 <node CREATED="1708541517932" ID="ID_1153196206" MODIFIED="1708541535389" TEXT="    }, ">
 <icon BUILTIN="tag_green"/>
 </node>
-</node>
-<node CREATED="1708541769295" ID="ID_1708302301" MODIFIED="1715022594084" TEXT="errorPages">
-<icon BUILTIN="element"/>
-<node CREATED="1708541841786" ID="ID_1387781383" MODIFIED="1708541871899" TEXT="">
+<node CREATED="1716313048671" ID="ID_1085978055" MODIFIED="1716313055791" TEXT="">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1708541784166" ID="ID_720460639" MODIFIED="1708541827652" TEXT="    // Auth routes for authenticated users ">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1708541455982" ID="ID_1504947911" MODIFIED="1708711326365" TEXT="    { ">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1708541877362" ID="ID_173824980" MODIFIED="1714630112977" TEXT="        path: &apos;pages&apos;, children: [ ">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1714630148710" ID="ID_1989748713" MODIFIED="1714630202102" TEXT="            { ">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1714630152040" ID="ID_514592489" MODIFIED="1714630202102" TEXT="                path: &apos;error&apos;, children: [ ">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1714630156248" ID="ID_39467868" MODIFIED="1714630202102" TEXT="                    {path: &apos;404&apos;, loadChildren: () =&gt; import(&apos;app/core/pages/error/error-404/error-404.module&apos;).then(m =&gt; m.Error404Module)}, ">
+<node CREATED="1714630156248" ID="ID_39467868" MODIFIED="1716313091251" TEXT="        {path: &apos;404-not-found&apos;, loadChildren: () =&gt; import(&apos;app/core/pages/error/error-404/error-404.module&apos;).then(m =&gt; m.Error404Module)}, &#xa;">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1714630159975" ID="ID_1021846027" MODIFIED="1714630202102" TEXT="                    {path: &apos;500&apos;, loadChildren: () =&gt; import(&apos;app/core/pages/error/error-500/error-500.module&apos;).then(m =&gt; m.Error500Module)}, ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1714630163965" ID="ID_1987221875" MODIFIED="1714630202102" TEXT="">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1714630165238" ID="ID_1377132782" MODIFIED="1714630202102" TEXT="                    //Maintenced pages ">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1714630169067" ID="ID_1533673567" MODIFIED="1714630202102" TEXT="                    { ">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1714630172528" ID="ID_1852062769" MODIFIED="1714630202102" TEXT="                        path: &apos;maintenance&apos;, children: [ ">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1714630175763" ID="ID_332765893" MODIFIED="1714630202088" TEXT="                            {path: &apos;maintenance&apos;, loadChildren: () =&gt; import(&apos;app/core/pages/maintenance/maintenance.module&apos;).then(m =&gt; m.MaintenanceModule)} ">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1714630179892" ID="ID_1245748775" MODIFIED="1714630202088" TEXT="                        ] ">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1714630183225" ID="ID_200613593" MODIFIED="1714630202088" TEXT="                    }, ">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1714630186898" ID="ID_1478321401" MODIFIED="1714630202088" TEXT="                ] ">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1714630190421" ID="ID_1244749944" MODIFIED="1714630202088" TEXT="            } ">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1714630195673" ID="ID_1113259189" MODIFIED="1714630202088" TEXT="        ] ">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1708541921205" ID="ID_510105643" MODIFIED="1708541925707" TEXT="    }, ">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1714630247659" ID="ID_1862953932" MODIFIED="1714630270676" TEXT="">
+<node CREATED="1716313049349" ID="ID_330771556" MODIFIED="1716313055791" TEXT="            {path: &apos;callback&apos;, loadChildren: () =&gt; import(&apos;app/core/pages/callback/callback.module&apos;).then(m =&gt; m.CallbackModule)}, ">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -13835,6 +13773,9 @@
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1708542672846" ID="ID_244842679" MODIFIED="1708542725920" TEXT="        children: [ ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1716313113021" ID="ID_989702882" MODIFIED="1716313121871" TEXT="          {path: &apos;**&apos;, redirectTo: &apos;/404-not-found&apos;}, ">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -14431,9 +14372,9 @@
 </node>
 </node>
 </node>
-<node CREATED="1705684947385" ID="ID_1602823819" MODIFIED="1715887585138" TEXT="json">
+<node CREATED="1705684947385" FOLDED="true" ID="ID_1602823819" MODIFIED="1716312997303" TEXT="json">
 <icon BUILTIN="element"/>
-<node CREATED="1642422161038" FOLDED="true" ID="ID_277975724" MODIFIED="1715887617455" TEXT="jsonClass">
+<node CREATED="1642422161038" FOLDED="true" ID="ID_277975724" MODIFIED="1716312978752" TEXT="jsonClass">
 <font NAME="SansSerif" SIZE="12"/>
 <icon BUILTIN="element"/>
 <node CREATED="1641817891685" FOLDED="true" ID="ID_1703168411" MODIFIED="1707335081258" TEXT="parameters">
@@ -14578,7 +14519,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1642422420686" ID="ID_337222305" MODIFIED="1715112821825" TEXT="patterns">
+<node CREATED="1642422420686" FOLDED="true" ID="ID_337222305" MODIFIED="1716312977693" TEXT="patterns">
 <icon BUILTIN="element"/>
 <node CREATED="1714073958876" ID="ID_1723662207" MODIFIED="1714073965966" TEXT="debug">
 <icon BUILTIN="element"/>
