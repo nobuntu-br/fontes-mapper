@@ -2,7 +2,7 @@
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
 <node CREATED="1657542279705" ID="ID_1013142300" LINK="mdm.mm" MODIFIED="1665771090502" TEXT="mapperidea">
 <icon BUILTIN="element"/>
-<node CREATED="1657623820787" FOLDED="true" ID="ID_767139045" MODIFIED="1713210004314" POSITION="right" TEXT="maps">
+<node CREATED="1657623820787" FOLDED="true" ID="ID_767139045" MODIFIED="1716391397732" POSITION="right" TEXT="maps">
 <icon BUILTIN="element"/>
 <node CREATED="1657623825688" ID="ID_624595418" MODIFIED="1697220928226" TEXT="toMongooseTypes">
 <icon BUILTIN="element"/>
@@ -406,7 +406,7 @@
 </node>
 <node CREATED="1657542298359" ID="ID_648190111" MODIFIED="1713469216587" POSITION="right" TEXT="generators">
 <icon BUILTIN="element"/>
-<node CREATED="1638532646585" ID="ID_1972588312" MODIFIED="1716389797091" TEXT="mean">
+<node CREATED="1638532646585" ID="ID_1972588312" MODIFIED="1716391398617" TEXT="mean">
 <icon BUILTIN="element"/>
 <node CREATED="1638532674425" FOLDED="true" ID="ID_279417295" MODIFIED="1715266781731" TEXT="mongoModel">
 <icon BUILTIN="element"/>
@@ -912,7 +912,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1639135901068" ID="ID_1332630707" MODIFIED="1716389841040" TEXT="apiController">
+<node CREATED="1639135901068" FOLDED="true" ID="ID_1332630707" MODIFIED="1716390074571" TEXT="apiController">
 <icon BUILTIN="element"/>
 <node CREATED="1559604105984" ID="ID_1157198066" MODIFIED="1715367372757" TEXT="parameters">
 <font BOLD="true" NAME="Dialog" SIZE="14"/>
@@ -1871,7 +1871,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1639136120238" ID="ID_546073779" MODIFIED="1715887558226" TEXT="patterns">
+<node CREATED="1639136120238" FOLDED="true" ID="ID_546073779" MODIFIED="1716389985881" TEXT="patterns">
 <icon BUILTIN="element"/>
 <node CREATED="1639743713814" FOLDED="true" ID="ID_1156485013" MODIFIED="1707335081123" TEXT="debug">
 <icon BUILTIN="element"/>
@@ -3047,7 +3047,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1665022343343" FOLDED="true" ID="ID_1679303363" MODIFIED="1716389836932" TEXT="index">
+<node CREATED="1665022343343" FOLDED="true" ID="ID_1679303363" MODIFIED="1716391403505" TEXT="index">
 <icon BUILTIN="element"/>
 <node CREATED="1659305492723" ID="ID_1689843896" MODIFIED="1712610222543" TEXT="start">
 <icon BUILTIN="element"/>
@@ -4942,7 +4942,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1657626244020" FOLDED="true" ID="ID_942090299" MODIFIED="1716386057808" STYLE="fork" TEXT="bashGenerateAll">
+<node CREATED="1657626244020" ID="ID_942090299" MODIFIED="1716391406657" STYLE="fork" TEXT="bashGenerateAll">
 <icon BUILTIN="element"/>
 <node CREATED="1657626258273" ID="ID_893440910" MODIFIED="1715887274370" TEXT="start">
 <icon BUILTIN="element"/>
@@ -5187,7 +5187,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1657626270312" FOLDED="true" ID="ID_1210412099" MODIFIED="1716386054678" TEXT="patterns">
+<node CREATED="1657626270312" ID="ID_1210412099" MODIFIED="1716391408745" TEXT="patterns">
 <icon BUILTIN="element"/>
 <node CREATED="1665524991570" ID="ID_464460846" MODIFIED="1716313370863" TEXT="geraPastas">
 <icon BUILTIN="element"/>
@@ -5251,7 +5251,7 @@
 <node CREATED="1667389850810" ID="ID_210433313" MODIFIED="1708002602289" TEXT="cd ../../..">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1707938211078" ID="ID_43627016" MODIFIED="1716313374598" TEXT="mkdir frontend/src/environments">
+<node CREATED="1707938211078" ID="ID_43627016" MODIFIED="1716391477644" TEXT="mkdir frontend/src/enviroment">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1707486488085" ID="ID_294093281" MODIFIED="1708002602289" TEXT="mkdir frontend/src/assets/dicionario">
@@ -5435,10 +5435,10 @@
 </node>
 <node CREATED="1665525444242" ID="ID_218929755" MODIFIED="1708002602295" TEXT="geraEnvironment">
 <icon BUILTIN="element"/>
-<node CREATED="1666309353525" ID="ID_1263630005" MODIFIED="1716313353297" TEXT="mi g app angular environment &gt; frontend/src/environments/environment.ts">
+<node CREATED="1666309353525" ID="ID_1263630005" MODIFIED="1716391433983" TEXT="mi g app angular environment &gt; frontend/src/enviroment/environment.ts">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1666309353525" ID="ID_174146305" MODIFIED="1716313356385" TEXT="mi g app angular environment &gt; frontend/src/environments/environment.development.ts">
+<node CREATED="1666309353525" ID="ID_174146305" MODIFIED="1716391436557" TEXT="mi g app angular environment &gt; frontend/src/enviroment/environment.development.ts">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
