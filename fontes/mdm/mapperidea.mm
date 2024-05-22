@@ -4942,7 +4942,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1657626244020" FOLDED="true" ID="ID_942090299" MODIFIED="1716399187490" STYLE="fork" TEXT="bashGenerateAll">
+<node CREATED="1657626244020" FOLDED="true" ID="ID_942090299" MODIFIED="1716402215896" STYLE="fork" TEXT="bashGenerateAll">
 <icon BUILTIN="element"/>
 <node CREATED="1657626258273" ID="ID_893440910" MODIFIED="1715887274370" TEXT="start">
 <icon BUILTIN="element"/>
@@ -5187,7 +5187,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1657626270312" ID="ID_1210412099" MODIFIED="1716391408745" TEXT="patterns">
+<node CREATED="1657626270312" FOLDED="true" ID="ID_1210412099" MODIFIED="1716402215197" TEXT="patterns">
 <icon BUILTIN="element"/>
 <node CREATED="1665524991570" ID="ID_464460846" MODIFIED="1716313370863" TEXT="geraPastas">
 <icon BUILTIN="element"/>
@@ -5251,7 +5251,7 @@
 <node CREATED="1667389850810" ID="ID_210433313" MODIFIED="1708002602289" TEXT="cd ../../..">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1707938211078" ID="ID_43627016" MODIFIED="1716391477644" TEXT="mkdir frontend/src/enviroment">
+<node CREATED="1707938211078" ID="ID_43627016" MODIFIED="1716400640534" TEXT="mkdir frontend/src/environments">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1707486488085" ID="ID_294093281" MODIFIED="1708002602289" TEXT="mkdir frontend/src/assets/dicionario">
@@ -5435,10 +5435,10 @@
 </node>
 <node CREATED="1665525444242" ID="ID_218929755" MODIFIED="1708002602295" TEXT="geraEnvironment">
 <icon BUILTIN="element"/>
-<node CREATED="1666309353525" ID="ID_1263630005" MODIFIED="1716391433983" TEXT="mi g app angular environment &gt; frontend/src/enviroment/environment.ts">
+<node CREATED="1666309353525" ID="ID_1263630005" MODIFIED="1716400627987" TEXT="mi g app angular environment &gt; frontend/src/environments/environment.ts">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1666309353525" ID="ID_174146305" MODIFIED="1716391436557" TEXT="mi g app angular environment &gt; frontend/src/enviroment/environment.development.ts">
+<node CREATED="1666309353525" ID="ID_174146305" MODIFIED="1716400631707" TEXT="mi g app angular environment &gt; frontend/src/environments/environment.development.ts">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -5699,7 +5699,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1706644403625" FOLDED="true" ID="ID_1935406017" MODIFIED="1715366766940" TEXT="envBackend">
+<node CREATED="1706644403625" FOLDED="true" ID="ID_1935406017" MODIFIED="1716400611194" TEXT="envBackend">
 <icon BUILTIN="element"/>
 <node CREATED="1659305492723" ID="ID_1421286075" MODIFIED="1714424744968" TEXT="start">
 <icon BUILTIN="element"/>
@@ -5974,7 +5974,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1658084023442" FOLDED="true" ID="ID_239109345" MODIFIED="1716389795522" TEXT="angular">
+<node CREATED="1658084023442" ID="ID_239109345" MODIFIED="1716402217735" TEXT="angular">
 <icon BUILTIN="element"/>
 <node CREATED="1638532674425" FOLDED="true" ID="ID_926807748" MODIFIED="1712609925998" TEXT="model">
 <icon BUILTIN="element"/>
@@ -7777,7 +7777,7 @@
 </node>
 <node CREATED="1658500602776" ID="ID_1225386602" MODIFIED="1714630610053" TEXT="list">
 <icon BUILTIN="Descriptor.grouping"/>
-<node CREATED="1642765134032" FOLDED="true" ID="ID_1931830464" MODIFIED="1714630698457" TEXT="listComponentTS">
+<node CREATED="1642765134032" ID="ID_1931830464" MODIFIED="1716402236347" TEXT="listComponentTS">
 <icon BUILTIN="element"/>
 <node CREATED="1641817891685" ID="ID_905424789" MODIFIED="1707424363505" TEXT="parameters">
 <icon BUILTIN="element"/>
@@ -7855,7 +7855,7 @@
 <node CREATED="1707250466825" ID="ID_1496222774" MODIFIED="1707936548781" TEXT="import { FormGeneratorService } from &apos;app/shared/services/form-generator.service&apos;;">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1707250471022" ID="ID_1963239001" MODIFIED="1707250475662" TEXT="import { environment } from &apos;enviroment/environment&apos;;">
+<node CREATED="1707250471022" ID="ID_1963239001" MODIFIED="1716402242023" TEXT="import { environment } from &apos;environments/environment&apos;;">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1707936588044" ID="ID_1132711037" MODIFIED="1707936590140" TEXT="import { Subject, takeUntil } from &apos;rxjs&apos;; ">
@@ -8038,7 +8038,7 @@
 </node>
 <node CREATED="1658500604383" ID="ID_1500156651" MODIFIED="1714630699584" TEXT="details">
 <icon BUILTIN="Descriptor.grouping"/>
-<node CREATED="1642422161038" FOLDED="true" ID="ID_957406446" MODIFIED="1715196788196" TEXT="detailsComponentTS">
+<node CREATED="1642422161038" FOLDED="true" ID="ID_957406446" MODIFIED="1716402235054" TEXT="detailsComponentTS">
 <icon BUILTIN="element"/>
 <node CREATED="1641817891685" ID="ID_911661603" MODIFIED="1707490852984" TEXT="parameters">
 <icon BUILTIN="element"/>
@@ -8127,7 +8127,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1642422420686" ID="ID_290871460" MODIFIED="1715193208229" TEXT="patterns">
+<node CREATED="1642422420686" FOLDED="true" ID="ID_290871460" MODIFIED="1716402234129" TEXT="patterns">
 <icon BUILTIN="element"/>
 <node CREATED="1642422423951" ID="ID_1794596430" MODIFIED="1707490885234" TEXT="declaraImport">
 <icon BUILTIN="element"/>
@@ -8152,7 +8152,7 @@
 <node CREATED="1707253556170" ID="ID_1588565851" MODIFIED="1707935853615" TEXT="import { GeneratedFormFactoryService } from &quot;app/shared/services/generated-form-factory.service&quot;;  ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1707253560267" ID="ID_236621491" MODIFIED="1707253568321" TEXT="import { environment } from &quot;enviroment/environment&quot;; ">
+<node CREATED="1707253560267" ID="ID_236621491" MODIFIED="1716402230137" TEXT="import { environment } from &quot;environments/environment&quot;; ">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1707936186343" ID="ID_892189638" MODIFIED="1707936188743" TEXT="import { Subject, takeUntil } from &quot;rxjs&quot;; ">
@@ -14368,7 +14368,7 @@
 </node>
 <node CREATED="1705684947385" ID="ID_1602823819" MODIFIED="1716399550036" TEXT="json">
 <icon BUILTIN="element"/>
-<node CREATED="1642422161038" ID="ID_277975724" MODIFIED="1716399551040" TEXT="jsonClass">
+<node CREATED="1642422161038" FOLDED="true" ID="ID_277975724" MODIFIED="1716400595431" TEXT="jsonClass">
 <font NAME="SansSerif" SIZE="12"/>
 <icon BUILTIN="element"/>
 <node CREATED="1641817891685" FOLDED="true" ID="ID_1703168411" MODIFIED="1707335081258" TEXT="parameters">
