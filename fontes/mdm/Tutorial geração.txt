@@ -15,3 +15,6 @@ chmod +x geraFontes.sh
 
 5) Gerar os Fontes execute com o GitBash:
 geraFontes.sh
+
+6) Criar Containers na raiz do projeto
+docker-compose up -d
