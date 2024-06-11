@@ -406,7 +406,7 @@
 </node>
 <node CREATED="1657542298359" ID="ID_648190111" MODIFIED="1717526880176" POSITION="right" TEXT="generators">
 <icon BUILTIN="element"/>
-<node CREATED="1638532646585" FOLDED="true" ID="ID_1972588312" MODIFIED="1717526881098" TEXT="mean">
+<node CREATED="1638532646585" ID="ID_1972588312" MODIFIED="1718149472371" TEXT="mean">
 <icon BUILTIN="element"/>
 <node CREATED="1638532674425" FOLDED="true" ID="ID_279417295" MODIFIED="1716905390608" TEXT="mongoModel">
 <icon BUILTIN="element"/>
@@ -4984,7 +4984,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1657626244020" FOLDED="true" ID="ID_942090299" MODIFIED="1717186332030" STYLE="fork" TEXT="bashGenerateAll">
+<node CREATED="1657626244020" FOLDED="true" ID="ID_942090299" MODIFIED="1718149493527" STYLE="fork" TEXT="bashGenerateAll">
 <icon BUILTIN="element"/>
 <node CREATED="1657626258273" ID="ID_893440910" MODIFIED="1715887274370" TEXT="start">
 <icon BUILTIN="element"/>
@@ -4994,7 +4994,7 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1657626289238" FOLDED="true" ID="ID_1002188177" MODIFIED="1716927986462" TEXT="body">
+<node CREATED="1657626289238" ID="ID_1002188177" MODIFIED="1708002602284" TEXT="body">
 <icon BUILTIN="element"/>
 <node CREATED="1705429570515" ID="ID_953710905" MODIFIED="1708002602284" TEXT="vars">
 <icon BUILTIN="element"/>
@@ -5011,7 +5011,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1657631548030" FOLDED="true" ID="ID_1178836242" MODIFIED="1708002602284" TEXT="write-pattern">
+<node CREATED="1657631548030" ID="ID_1178836242" MODIFIED="1718147331950" TEXT="write-pattern">
 <icon BUILTIN="element"/>
 <node CREATED="1665525444242" ID="ID_385542032" MODIFIED="1665525455305" TEXT="geraPastas">
 <icon BUILTIN="tag_green"/>
@@ -5227,73 +5227,67 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-</node>
-</node>
-<node CREATED="1657626270312" ID="ID_1210412099" MODIFIED="1716927988243" TEXT="patterns">
+<node CREATED="1657631548030" ID="ID_1712049825" MODIFIED="1714425060771" TEXT="write-pattern">
 <icon BUILTIN="element"/>
-<node CREATED="1665524991570" ID="ID_464460846" MODIFIED="1716313370863" TEXT="geraPastas">
+<node CREATED="1665525444242" ID="ID_497740373" MODIFIED="1718147365125" TEXT="geraCommit">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1657626270312" ID="ID_1210412099" MODIFIED="1718147339966" TEXT="patterns">
+<icon BUILTIN="element"/>
+<node CREATED="1665524991570" ID="ID_464460846" MODIFIED="1718147441210" TEXT="geraPastas">
 <icon BUILTIN="element"/>
 <node CREATED="1665525835355" ID="ID_226146924" MODIFIED="1708002602285" TEXT="#!/bin/bash">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1716928030453" ID="ID_953729652" MODIFIED="1716928042086" TEXT="output=$(./verificaMapa.sh)">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1716928030454" ID="ID_1785560112" MODIFIED="1716928042089" TEXT="stop_script() {">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1716928030455" ID="ID_873691066" MODIFIED="1716928064259" TEXT="echo &quot;Comando espec&#xed;fico encontrado: $1&quot;">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1716928030455" ID="ID_201805072" MODIFIED="1716928064258" TEXT="exit 1">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1716928030455" ID="ID_1062206190" MODIFIED="1716928042089" TEXT="}">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1716928030456" ID="ID_113799461" MODIFIED="1716928042089" TEXT="line_count=$(echo &quot;$output&quot; | wc -l)">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1716928030459" ID="ID_360799877" MODIFIED="1716928042089" TEXT="echo &quot;====================================================================&quot;">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1716928030460" ID="ID_1013086312" MODIFIED="1716928077815" TEXT="echo &quot;Veriicando mapa...&quot;">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1716928030460" ID="ID_382774106" MODIFIED="1716928042089" TEXT="echo &quot;====================================================================&quot;">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1716928030461" ID="ID_1597162552" MODIFIED="1716928042089" TEXT="echo &quot;====================================================================&quot;">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1716928030462" ID="ID_818190438" MODIFIED="1716928042088" TEXT="echo &quot;Conte&#xfa;do do mapa:&quot;">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1716928030463" ID="ID_536485091" MODIFIED="1716928042088" TEXT="echo &quot;$output&quot;">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1716928030463" ID="ID_1684269903" MODIFIED="1716928042088" TEXT="echo &quot;====================================================================&quot;">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1716928030466" ID="ID_1893717270" MODIFIED="1716928042087" TEXT="# Verifique se o n&#xfa;mero de linhas &#xe9; maior que 3">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1716928030467" ID="ID_560344495" MODIFIED="1716928042087" TEXT="if [ &quot;$line_count&quot; -gt 1 ]; then">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1716928030467" ID="ID_25809424" MODIFIED="1716928097088" TEXT="stop_script &quot;Mapa esta incorreto, verificar.&quot;">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1716928030468" ID="ID_395642253" MODIFIED="1716928042087" TEXT="else">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1716928030468" ID="ID_1004532711" MODIFIED="1716928104178" TEXT="echo &quot;Mapa correto, continuando a gera&#xe7;&#xe3;o.&quot;">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1716928030470" ID="ID_166180439" MODIFIED="1716928042087" TEXT="fi">
-<icon BUILTIN="tag_green"/>
-</node>
 <node CREATED="1665527639846" ID="ID_143470295" MODIFIED="1708002602285" TEXT="cd ..">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147386885" ID="ID_230522070" MODIFIED="1718147507848" TEXT="find . -type d -name &quot;.git&quot; -exec rm -rf {} +">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147395926" ID="ID_492993706" MODIFIED="1718147495469" TEXT="echo -e &quot;\n\nDigite qual o link do seu reposit&#xf3;rio:\n&quot;">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147398906" ID="ID_1778207071" MODIFIED="1718147495468" TEXT="read REPOSITORIO">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147407275" ID="ID_1642117543" MODIFIED="1718147495468" TEXT="git clone $REPOSITORIO">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147410988" ID="ID_1732910602" MODIFIED="1718147495468" TEXT="echo -e &quot;\n\nDigite qual o nome da pasta que foi criada com esse reposit&#xf3;rio: \n&quot;">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147413398" ID="ID_1905648148" MODIFIED="1718147495468" TEXT="read PASTA">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147415796" ID="ID_1999219285" MODIFIED="1718147495468" TEXT="cd $PASTA/">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147417894" ID="ID_982003934" MODIFIED="1718147495467" TEXT="cp .git -r ../">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147420431" ID="ID_1276083639" MODIFIED="1718147495467" TEXT="cd ..">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147423137" ID="ID_564266705" MODIFIED="1718147495467" TEXT="rm -rf e-condi">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147427574" ID="ID_1059384391" MODIFIED="1718147495467" TEXT="rm -rf .gitignore">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147431534" ID="ID_518121184" MODIFIED="1718147495466" TEXT="git reset --hard">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147433945" ID="ID_363058578" MODIFIED="1718147495466" TEXT="git flow init">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147436331" ID="ID_1643430165" MODIFIED="1718147495466" TEXT="rm -rf frontend">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147438830" ID="ID_1121065602" MODIFIED="1718147495466" TEXT="rm -rf backend">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1666719278449" ID="ID_1867237095" MODIFIED="1708972795389" TEXT="git clone https://github.com/JoaoVictorNobuntu/frontend">
@@ -5302,7 +5296,19 @@
 <node CREATED="1712687594729" ID="ID_250359991" MODIFIED="1712687608099" TEXT="git clone https://github.com/JoaoVictorNobuntu/backend">
 <icon BUILTIN="tag_green"/>
 </node>
+<node CREATED="1718147595975" ID="ID_111807230" MODIFIED="1718147621257" TEXT="cd backend">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147606749" ID="ID_1883768517" MODIFIED="1718147621257" TEXT="find . -type d -name &quot;.git&quot; -exec rm -rf {} +">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147631026" ID="ID_1103466297" MODIFIED="1718147634740" TEXT="cd ..">
+<icon BUILTIN="tag_green"/>
+</node>
 <node CREATED="1667389835460" ID="ID_633742200" MODIFIED="1708972766831" TEXT="cd frontend">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147612482" ID="ID_1836823879" MODIFIED="1718147621257" TEXT="find . -type d -name &quot;.git&quot; -exec rm -rf {} + ">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1667389841459" ID="ID_1212165998" MODIFIED="1708002602289" TEXT="ng add @angular/material">
@@ -5544,6 +5550,36 @@
 <node CREATED="1665525444242" ID="ID_1627637115" MODIFIED="1714425053908" TEXT="geraEnvBack">
 <icon BUILTIN="element"/>
 <node CREATED="1666309353525" ID="ID_926440809" MODIFIED="1714425012301" TEXT="mi g app mean envBackend &gt; backend/.env">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1718147342847" ID="ID_989521952" MODIFIED="1718147349811" TEXT="geraCommit">
+<icon BUILTIN="element"/>
+<node CREATED="1718147665620" ID="ID_1291440367" MODIFIED="1718147698605" TEXT="echo -e &quot;\n\nQual o nome da sua Branch\n&quot;">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147669667" ID="ID_1905498094" MODIFIED="1718147698606" TEXT="read nomeFeature">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147673117" ID="ID_1190402907" MODIFIED="1718147698607" TEXT="git flow feature start $nomeFeature">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147675696" ID="ID_212080890" MODIFIED="1718147698608" TEXT="git add --all">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147678336" ID="ID_1821913082" MODIFIED="1718147698610" TEXT="echo -e &quot;\n\nQual o comentario do seu commit?\n&quot;">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147681068" ID="ID_836966337" MODIFIED="1718147698611" TEXT="read commit">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147684535" ID="ID_1106681886" MODIFIED="1718147698612" TEXT="git commit -m &quot;$commit&quot;">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147687254" ID="ID_41301654" MODIFIED="1718147698613" TEXT="git status">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147689985" ID="ID_1500188411" MODIFIED="1718147698614" TEXT="git push --set-upstream origin feature/$nomeFeature">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -16672,7 +16708,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1642422161038" FOLDED="true" ID="ID_448655928" MODIFIED="1713379191891" TEXT="jsonMenu">
+<node CREATED="1642422161038" FOLDED="true" ID="ID_448655928" MODIFIED="1718149517866" TEXT="jsonMenu">
 <font NAME="SansSerif" SIZE="12"/>
 <icon BUILTIN="element"/>
 <node CREATED="1642422213408" ID="ID_1717382611" MODIFIED="1709578845368" TEXT="start">
