@@ -3056,7 +3056,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1665022343343" FOLDED="true" ID="ID_1679303363" MODIFIED="1716905396960" TEXT="index">
+<node CREATED="1665022343343" ID="ID_1679303363" MODIFIED="1718215377826" TEXT="index">
 <icon BUILTIN="element"/>
 <node CREATED="1659305492723" ID="ID_1689843896" MODIFIED="1712610222543" TEXT="start">
 <icon BUILTIN="element"/>
@@ -3135,12 +3135,12 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1712610173476" ID="ID_1605973520" MODIFIED="1715371981211" TEXT="declaraAuth">
+<node CREATED="1712610173476" ID="ID_1605973520" MODIFIED="1718215387533" TEXT="declaraAuth">
 <icon BUILTIN="element"/>
 <node CREATED="1712610185731" ID="ID_519493233" MODIFIED="1712610218887" TEXT="//Declara Users ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1712610189520" ID="ID_691842521" MODIFIED="1715373193856" TEXT="db.user = require(&quot;./user.model.js&quot;)(mongoose);  ">
+<node CREATED="1712610189520" ID="ID_691842521" MODIFIED="1717445036393" TEXT="//db.user = require(&quot;./user.model.js&quot;)(mongoose);  ">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1712610192676" ID="ID_105845228" MODIFIED="1712610218887" TEXT="">
@@ -3149,7 +3149,7 @@
 <node CREATED="1712610193615" ID="ID_863600113" MODIFIED="1712610218886" TEXT="//Declara Roles ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1712610196880" ID="ID_1551163133" MODIFIED="1715373196639" TEXT="db.role = require(&quot;./role.model.js&quot;)(mongoose);  ">
+<node CREATED="1712610196880" ID="ID_1551163133" MODIFIED="1717445038529" TEXT="//db.role = require(&quot;./role.model.js&quot;)(mongoose);  ">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1712610202688" ID="ID_1757703308" MODIFIED="1712610218886" TEXT="">
@@ -3158,7 +3158,7 @@
 <node CREATED="1712610200696" ID="ID_19287232" MODIFIED="1712610218886" TEXT="//Declara FunctionsSystem ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1712610206304" ID="ID_596506156" MODIFIED="1712610218886" TEXT="db.functions_system = require(&quot;./functionsSystem.model.js&quot;)(mongoose);  ">
+<node CREATED="1712610206304" ID="ID_596506156" MODIFIED="1717445041037" TEXT="//db.functions_system = require(&quot;./functionsSystem.model.js&quot;)(mongoose);  ">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1712610207143" ID="ID_983996989" MODIFIED="1712610218885" TEXT="">
@@ -3167,13 +3167,13 @@
 <node CREATED="1712610211001" ID="ID_583182525" MODIFIED="1712610218885" TEXT="//Declara FunctionsSystemRoles ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1712610215372" ID="ID_375893856" MODIFIED="1712610218884" TEXT="db.functions_system_roles = require(&quot;./functionsSystemRoles.model.js&quot;)(mongoose);  ">
+<node CREATED="1712610215372" ID="ID_375893856" MODIFIED="1717445042485" TEXT="//db.functions_system_roles = require(&quot;./functionsSystemRoles.model.js&quot;)(mongoose);  ">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1715285778074" ID="ID_1579098595" MODIFIED="1715285791842" TEXT="">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1715285778607" ID="ID_818523210" MODIFIED="1715285791843" TEXT="db.session = require(&quot;./session.model.js&quot;)(mongoose); ">
+<node CREATED="1715285778607" ID="ID_818523210" MODIFIED="1717445044151" TEXT="//db.session = require(&quot;./session.model.js&quot;)(mongoose); ">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
