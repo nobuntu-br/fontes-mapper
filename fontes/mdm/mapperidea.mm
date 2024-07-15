@@ -3407,6 +3407,12 @@
 <node CREATED="1715286143840" ID="ID_190082173" MODIFIED="1715286153417" TEXT="require(&quot;./routes/functionsSystem.routes&quot;)(app);  ">
 <icon BUILTIN="tag_green"/>
 </node>
+<node CREATED="1721083341574" ID="ID_1447652796" MODIFIED="1721083346379" TEXT="">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1721083342727" ID="ID_1230973883" MODIFIED="1721083478652" TEXT="require(&quot;./routes/token.routes&quot;)(app);">
+<icon BUILTIN="tag_green"/>
+</node>
 </node>
 <node CREATED="1665099427407" FOLDED="true" ID="ID_1916639332" MODIFIED="1716905617655" TEXT="declaraRotaClasse">
 <icon BUILTIN="element"/>
