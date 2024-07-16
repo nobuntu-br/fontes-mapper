@@ -4990,7 +4990,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1657626244020" FOLDED="true" ID="ID_942090299" MODIFIED="1718149493527" STYLE="fork" TEXT="bashGenerateAll">
+<node CREATED="1657626244020" ID="ID_942090299" MODIFIED="1721092080122" STYLE="fork" TEXT="bashGenerateAll">
 <icon BUILTIN="element"/>
 <node CREATED="1657626258273" ID="ID_893440910" MODIFIED="1715887274370" TEXT="start">
 <icon BUILTIN="element"/>
@@ -5840,7 +5840,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1706644403625" FOLDED="true" ID="ID_1935406017" MODIFIED="1717186479118" TEXT="envBackend">
+<node CREATED="1706644403625" ID="ID_1935406017" MODIFIED="1721092088855" TEXT="envBackend">
 <icon BUILTIN="element"/>
 <node CREATED="1659305492723" ID="ID_1421286075" MODIFIED="1714424744968" TEXT="start">
 <icon BUILTIN="element"/>
@@ -5874,6 +5874,15 @@
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1715288968800" ID="ID_658783959" MODIFIED="1715289027013" TEXT="PORT = &quot;{{ package/properties/env/back/PORT/value }}&quot; ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1721092091636" ID="ID_1867646105" MODIFIED="1721092221881" TEXT="TENANT_ID = &quot;{{ package/properties/env/back/TENANT_ID/value }}&quot; ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1721092092882" ID="ID_119416645" MODIFIED="1721092221882" TEXT="CLIENT_ID =&quot;{{ package/properties/env/back/CLIENT_ID/value }}&quot; ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1721092093645" ID="ID_1006706475" MODIFIED="1721092221882" TEXT="CLIENT_SECRET =&quot;{{ package/properties/env/back/CLIENT_SECRET/value }}&quot; ">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
