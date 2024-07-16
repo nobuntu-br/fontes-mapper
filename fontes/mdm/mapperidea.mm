@@ -3503,7 +3503,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1657626244020" FOLDED="true" ID="ID_217477071" MODIFIED="1713813831923" TEXT="bashGenerateAllAntigo">
+<node CREATED="1657626244020" ID="ID_217477071" MODIFIED="1721103138881" TEXT="bashGenerateAllAntigo">
 <icon BUILTIN="element"/>
 <node CREATED="1657626258273" ID="ID_638351840" MODIFIED="1707485733076" TEXT="start">
 <icon BUILTIN="element"/>
@@ -3878,7 +3878,7 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1665525444242" FOLDED="true" ID="ID_1091987902" MODIFIED="1707335081150" TEXT="geraAppRouting">
+<node CREATED="1665525444242" ID="ID_1091987902" MODIFIED="1721103138883" TEXT="geraAppRouting">
 <icon BUILTIN="element"/>
 <node CREATED="1666309353525" ID="ID_325949417" MODIFIED="1666309555504" TEXT="mi g app angular appRouting &gt; frontend/src/app/app-routing.module.ts">
 <icon BUILTIN="tag_green"/>
@@ -6109,7 +6109,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1658084023442" FOLDED="true" ID="ID_239109345" MODIFIED="1716927716193" TEXT="angular">
+<node CREATED="1658084023442" ID="ID_239109345" MODIFIED="1721103157649" TEXT="angular">
 <icon BUILTIN="element"/>
 <node CREATED="1638532674425" FOLDED="true" ID="ID_926807748" MODIFIED="1712609925998" TEXT="model">
 <icon BUILTIN="element"/>
@@ -13719,7 +13719,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1665771103506" FOLDED="true" ID="ID_572701783" MODIFIED="1716389793891" TEXT="appRouting">
+<node CREATED="1665771103506" ID="ID_572701783" MODIFIED="1721103160809" TEXT="appRouting">
 <icon BUILTIN="element"/>
 <node CREATED="1638532918770" ID="ID_323857040" MODIFIED="1707423632042" TEXT="start">
 <font BOLD="true" NAME="Dialog" SIZE="16"/>
@@ -13866,6 +13866,9 @@
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1716313049349" ID="ID_330771556" MODIFIED="1716313055791" TEXT="            {path: &apos;callback&apos;, loadChildren: () =&gt; import(&apos;app/core/pages/callback/callback.module&apos;).then(m =&gt; m.CallbackModule)}, ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1721103167094" ID="ID_631876019" MODIFIED="1721103186409" TEXT="{path: &apos;callback/:user&apos;,loadChildren: () =&gt; import(&apos;app/core/pages/callback/callback.module&apos;).then(m =&gt; m.CallbackModule)}, ">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
