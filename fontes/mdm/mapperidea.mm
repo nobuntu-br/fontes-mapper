@@ -5278,7 +5278,13 @@
 <node CREATED="1718147420431" ID="ID_1276083639" MODIFIED="1718147495467" TEXT="cd ..">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1718147423137" ID="ID_564266705" MODIFIED="1721097420956" TEXT="rm -rf $PASTA/">
+<node CREATED="1718147410988" ID="ID_179211876" MODIFIED="1718147495468" TEXT="echo -e &quot;\n\nDigite qual o nome da pasta que foi criada com esse reposit&#xf3;rio: \n&quot;">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147413398" ID="ID_806517698" MODIFIED="1721099554832" TEXT="read NOME">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147423137" ID="ID_564266705" MODIFIED="1721099520794" TEXT="rm -rf $NOME">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1718147427574" ID="ID_1059384391" MODIFIED="1718147495467" TEXT="rm -rf .gitignore">
