@@ -1,6 +1,6 @@
 {
     "config":{ 
-        "modified": "2024-08-02T20:51:10.396192Z", 
+        "modified": "2024-08-02T21:30:53.508868Z", 
         "description": "Application that can be used by a company",  
         "name": "Customers", 
         "apiUrl": "api/customers",

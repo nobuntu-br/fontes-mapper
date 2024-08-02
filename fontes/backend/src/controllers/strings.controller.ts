@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import { BaseController } from "./base.controller";
-import { Strings } from "../models/ strings.model"; 
+import { Strings } from "../models/strings.model"; 
 import { StringsService } from "../services/strings.service";
 
 export class StringsController { 

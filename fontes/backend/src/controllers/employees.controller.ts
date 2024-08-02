@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import { BaseController } from "./base.controller";
-import { Employees } from "../models/ employees.model"; 
+import { Employees } from "../models/employees.model"; 
 import { EmployeesService } from "../services/employees.service";
 
 export class EmployeesController { 

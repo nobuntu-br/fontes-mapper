@@ -921,7 +921,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1639135901068" FOLDED="true" ID="ID_1332630707" MODIFIED="1722630091236" TEXT="apiController">
+<node CREATED="1639135901068" ID="ID_1332630707" MODIFIED="1722633273028" TEXT="apiController">
 <icon BUILTIN="element"/>
 <node CREATED="1559604105984" FOLDED="true" ID="ID_1157198066" MODIFIED="1720461463221" TEXT="parameters">
 <font BOLD="true" NAME="Dialog" SIZE="14"/>
@@ -1233,7 +1233,7 @@
 <node CREATED="1720731428920" ID="ID_194911885" MODIFIED="1720731434165" TEXT="import { BaseController } from &quot;./base.controller&quot;;">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1721924985122" ID="ID_720314883" MODIFIED="1722630040640" TEXT="import { {{ @name }} } from &quot;../models/ {{ mi:first-lower(@name) }}.model&quot;; ">
+<node CREATED="1721924985122" ID="ID_720314883" MODIFIED="1722633280380" TEXT="import { {{ @name }} } from &quot;../models/{{ mi:first-lower(@name) }}.model&quot;; ">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1720731428921" ID="ID_1359082167" MODIFIED="1720732179592" TEXT="import { {{ @name }}Service } from &quot;../services/{{ mi:first-lower(@name) }}.service&quot;;">
@@ -2887,7 +2887,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1657626244020" ID="ID_942090299" MODIFIED="1722630109788" STYLE="fork" TEXT="bashGenerateAll">
+<node CREATED="1657626244020" FOLDED="true" ID="ID_942090299" MODIFIED="1722633267805" STYLE="fork" TEXT="bashGenerateAll">
 <icon BUILTIN="element"/>
 <node CREATED="1657626258273" ID="ID_893440910" MODIFIED="1722365345867" TEXT="start">
 <icon BUILTIN="element"/>
@@ -3635,7 +3635,7 @@
 <node CREATED="1657631826960" ID="ID_1775193895" MODIFIED="1722369549407" TEXT="geraRepository">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1657631861840" FOLDED="true" ID="ID_423965502" MODIFIED="1707335081169" TEXT="template">
+<node CREATED="1657631861840" ID="ID_423965502" MODIFIED="1722633037721" TEXT="template">
 <icon BUILTIN="element"/>
 <node CREATED="1657631866871" FOLDED="true" ID="ID_47455707" MODIFIED="1707335081169" TEXT="match">
 <icon BUILTIN="element"/>
@@ -3643,11 +3643,11 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1657631870115" FOLDED="true" ID="ID_1256018800" MODIFIED="1707335081169" TEXT="body">
+<node CREATED="1657631870115" ID="ID_1256018800" MODIFIED="1722633038846" TEXT="body">
 <icon BUILTIN="element"/>
-<node CREATED="1657631874327" FOLDED="true" ID="ID_1824879422" MODIFIED="1707335081169" TEXT="write-pattern">
+<node CREATED="1657631874327" ID="ID_1824879422" MODIFIED="1722633040632" TEXT="write-pattern">
 <icon BUILTIN="element"/>
-<node CREATED="1657631882300" ID="ID_1391097167" MODIFIED="1706561401834" TEXT="geraJson">
+<node CREATED="1657631882300" ID="ID_1391097167" MODIFIED="1722633046144" TEXT="geraRepository">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -4275,7 +4275,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1639135901068" FOLDED="true" ID="ID_1601011245" MODIFIED="1722630108900" TEXT="apiService">
+<node CREATED="1639135901068" FOLDED="true" ID="ID_1601011245" MODIFIED="1722633030026" TEXT="apiService">
 <icon BUILTIN="element"/>
 <node CREATED="1559604105984" FOLDED="true" ID="ID_1633269018" MODIFIED="1720461463221" TEXT="parameters">
 <font BOLD="true" NAME="Dialog" SIZE="14"/>
@@ -4343,7 +4343,7 @@
 </node>
 <node CREATED="1639136087015" ID="ID_1855499642" MODIFIED="1720732076781" TEXT="write-pattern">
 <icon BUILTIN="element"/>
-<node CREATED="1639136093830" ID="ID_560721561" MODIFIED="1720732772202" TEXT="inicioSerivce">
+<node CREATED="1639136093830" ID="ID_560721561" MODIFIED="1722632924135" TEXT="inicioService">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -4424,7 +4424,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1639138486061" FOLDED="true" ID="ID_605353322" MODIFIED="1722630107434" TEXT="templates">
+<node CREATED="1639138486061" FOLDED="true" ID="ID_605353322" MODIFIED="1722632928832" TEXT="templates">
 <icon BUILTIN="element"/>
 <node CREATED="1639138489213" FOLDED="true" ID="ID_143454329" MODIFIED="1715885825900" TEXT="mode">
 <icon BUILTIN="element"/>

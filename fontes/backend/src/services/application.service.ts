@@ -3,6 +3,8 @@ import { TenantCredential } from "../models/tenantCredential.model";
 import ApplicationRepository from "../repository/application.repository";
 import BaseService from "./base.service";
 
+export class ApplicationService extends BaseService<Application>{
+
   constructor(dbType: DbType, model: any) { 
     //Cria o repositório com dados para obter o banco de dados 
     var repository : ApplicationRepository = new ApplicationRepository(dbType, model); 
