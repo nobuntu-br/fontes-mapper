@@ -1,5 +1,6 @@
 import { Request, Response } from "express";
 import { BaseController } from "./base.controller";
+import { OrderDetails } from "../models/ orderDetails.model"; 
 import { OrderDetailsService } from "../services/orderDetails.service";
 
 export class OrderDetailsController { 

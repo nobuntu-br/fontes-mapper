@@ -19,9 +19,7 @@ export default function defineRoute(app: Application){
   router.put('/:id', controller.update);
 
     // Delete a Company with id 
-  router.delete('/all', controller.deleteAll); 
-    // Custom get Company 
-    router.post("/custom", verifyAccess.verifyAccess, company.findCustom);
+  router.delete('/all', controller.delete); 
 
     app.use('/api/company', router); 
   }; 

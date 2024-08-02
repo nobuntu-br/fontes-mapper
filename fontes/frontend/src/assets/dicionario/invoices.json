@@ -1,6 +1,6 @@
 {
     "config":{ 
-        "modified": "2024-08-01T21:02:47.695447Z", 
+        "modified": "2024-08-02T20:50:46.489805Z", 
         "description": "Invoices",  
         "name": "Invoices", 
         "apiUrl": "api/invoices",

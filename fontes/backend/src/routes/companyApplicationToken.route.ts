@@ -19,9 +19,7 @@ export default function defineRoute(app: Application){
   router.put('/:id', controller.update);
 
     // Delete a CompanyApplicationToken with id 
-  router.delete('/all', controller.deleteAll); 
-    // Custom get CompanyApplicationToken 
-    router.post("/custom", verifyAccess.verifyAccess, companyApplicationToken.findCustom);
+  router.delete('/all', controller.delete); 
 
     app.use('/api/companyApplicationToken', router); 
   }; 

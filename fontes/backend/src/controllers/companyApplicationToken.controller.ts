@@ -1,5 +1,6 @@
 import { Request, Response } from "express";
 import { BaseController } from "./base.controller";
+import { CompanyApplicationToken } from "../models/ companyApplicationToken.model"; 
 import { CompanyApplicationTokenService } from "../services/companyApplicationToken.service";
 
 export class CompanyApplicationTokenController { 

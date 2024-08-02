@@ -19,9 +19,7 @@ export default function defineRoute(app: Application){
   router.put('/:id', controller.update);
 
     // Delete a OrderDetailsStatus with id 
-  router.delete('/all', controller.deleteAll); 
-    // Custom get OrderDetailsStatus 
-    router.post("/custom", verifyAccess.verifyAccess, orderDetailsStatus.findCustom);
+  router.delete('/all', controller.delete); 
 
     app.use('/api/orderDetailsStatus', router); 
   }; 

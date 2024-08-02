@@ -19,9 +19,7 @@ export default function defineRoute(app: Application){
   router.put('/:id', controller.update);
 
     // Delete a Invoices with id 
-  router.delete('/all', controller.deleteAll); 
-    // Custom get Invoices 
-    router.post("/custom", verifyAccess.verifyAccess, invoices.findCustom);
+  router.delete('/all', controller.delete); 
 
     app.use('/api/invoices', router); 
   }; 

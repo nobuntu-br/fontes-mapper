@@ -19,9 +19,7 @@ export default function defineRoute(app: Application){
   router.put('/:id', controller.update);
 
     // Delete a PurchaseOrderDetails with id 
-  router.delete('/all', controller.deleteAll); 
-    // Custom get PurchaseOrderDetails 
-    router.post("/custom", verifyAccess.verifyAccess, purchaseOrderDetails.findCustom);
+  router.delete('/all', controller.delete); 
 
     app.use('/api/purchaseOrderDetails', router); 
   }; 

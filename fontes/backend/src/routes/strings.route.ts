@@ -19,9 +19,7 @@ export default function defineRoute(app: Application){
   router.put('/:id', controller.update);
 
     // Delete a Strings with id 
-  router.delete('/all', controller.deleteAll); 
-    // Custom get Strings 
-    router.post("/custom", verifyAccess.verifyAccess, strings.findCustom);
+  router.delete('/all', controller.delete); 
 
     app.use('/api/strings', router); 
   }; 

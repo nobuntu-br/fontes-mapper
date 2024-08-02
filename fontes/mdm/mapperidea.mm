@@ -406,7 +406,7 @@
 </node>
 <node CREATED="1657542298359" ID="ID_648190111" MODIFIED="1720557790670" POSITION="right" TEXT="generators">
 <icon BUILTIN="element"/>
-<node CREATED="1638532646585" ID="ID_1972588312" MODIFIED="1720734048881" TEXT="mean">
+<node CREATED="1638532646585" ID="ID_1972588312" MODIFIED="1722630089404" TEXT="mean">
 <icon BUILTIN="element"/>
 <node CREATED="1638532674425" FOLDED="true" ID="ID_279417295" MODIFIED="1721931622549" TEXT="mongoModel">
 <icon BUILTIN="element"/>
@@ -921,7 +921,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1639135901068" FOLDED="true" ID="ID_1332630707" MODIFIED="1722365035635" TEXT="apiController">
+<node CREATED="1639135901068" FOLDED="true" ID="ID_1332630707" MODIFIED="1722630091236" TEXT="apiController">
 <icon BUILTIN="element"/>
 <node CREATED="1559604105984" FOLDED="true" ID="ID_1157198066" MODIFIED="1720461463221" TEXT="parameters">
 <font BOLD="true" NAME="Dialog" SIZE="14"/>
@@ -970,7 +970,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1639135985370" FOLDED="true" ID="ID_1096344335" MODIFIED="1722365032136" TEXT="start">
+<node CREATED="1639135985370" FOLDED="true" ID="ID_1096344335" MODIFIED="1722630033069" TEXT="start">
 <icon BUILTIN="element"/>
 <node CREATED="1638532989745" FOLDED="true" ID="ID_711951237" MODIFIED="1720731404764" TEXT="match">
 <font BOLD="true" NAME="Dialog" SIZE="16"/>
@@ -979,9 +979,9 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1639136049088" FOLDED="true" ID="ID_1378705152" MODIFIED="1722365030972" TEXT="body">
+<node CREATED="1639136049088" ID="ID_1378705152" MODIFIED="1722629432804" TEXT="body">
 <icon BUILTIN="element"/>
-<node CREATED="1639136087015" FOLDED="true" ID="ID_1806002327" MODIFIED="1721929874570" TEXT="write-pattern">
+<node CREATED="1639136087015" ID="ID_1806002327" MODIFIED="1722630030969" TEXT="write-pattern">
 <icon BUILTIN="element"/>
 <node CREATED="1639136093830" ID="ID_70491326" MODIFIED="1720732204121" TEXT="imports">
 <icon BUILTIN="tag_green"/>
@@ -1217,7 +1217,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1639136120238" FOLDED="true" ID="ID_546073779" MODIFIED="1722365033996" TEXT="patterns">
+<node CREATED="1639136120238" ID="ID_546073779" MODIFIED="1722630034057" TEXT="patterns">
 <icon BUILTIN="element"/>
 <node CREATED="1639743713814" FOLDED="true" ID="ID_1156485013" MODIFIED="1720731632709" TEXT="debug">
 <icon BUILTIN="element"/>
@@ -1233,7 +1233,9 @@
 <node CREATED="1720731428920" ID="ID_194911885" MODIFIED="1720731434165" TEXT="import { BaseController } from &quot;./base.controller&quot;;">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1721924985122" ID="ID_720314883" MODIFIED="1721925002759" TEXT="import { {{ @name }} } from &quot;../models/ {{ mi:first-lower(@name) }}.model&quot;; "/>
+<node CREATED="1721924985122" ID="ID_720314883" MODIFIED="1722630040640" TEXT="import { {{ @name }} } from &quot;../models/ {{ mi:first-lower(@name) }}.model&quot;; ">
+<icon BUILTIN="tag_green"/>
+</node>
 <node CREATED="1720731428921" ID="ID_1359082167" MODIFIED="1720732179592" TEXT="import { {{ @name }}Service } from &quot;../services/{{ mi:first-lower(@name) }}.service&quot;;">
 <icon BUILTIN="tag_green"/>
 </node>
@@ -1591,7 +1593,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1659305381937" FOLDED="true" ID="ID_517392480" MODIFIED="1721935577847" TEXT="routes">
+<node CREATED="1659305381937" FOLDED="true" ID="ID_517392480" MODIFIED="1722630023786" TEXT="routes">
 <icon BUILTIN="element"/>
 <node CREATED="1559604105984" ID="ID_432220773" MODIFIED="1720730929179" TEXT="parameters">
 <font BOLD="true" NAME="Dialog" SIZE="14"/>
@@ -1954,18 +1956,14 @@
 <node CREATED="1659306130354" ID="ID_177732762" MODIFIED="1659306347237" TEXT="    // Delete a {{ @name }} with id ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1659306141345" ID="ID_816995242" MODIFIED="1721934985302" TEXT="  router.delete(&apos;/all&apos;, controller.deleteAll); ">
+<node CREATED="1659306141345" ID="ID_816995242" MODIFIED="1722629596009" TEXT="  router.delete(&apos;/all&apos;, controller.delete); ">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
 <node CREATED="1659305845245" ID="ID_847224796" MODIFIED="1720731078577" TEXT="findCustom">
 <icon BUILTIN="element"/>
-<node CREATED="1659306162255" ID="ID_309092259" MODIFIED="1713192305515" TEXT="    // Custom get {{ @name }} ">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1659306170635" ID="ID_1481311394" MODIFIED="1715266879554" TEXT="    router.post(&quot;/custom&quot;, verifyAccess.verifyAccess, {{ $nomePlural }}.findCustom);">
-<icon BUILTIN="tag_green"/>
-</node>
+<node CREATED="1659306162255" ID="ID_309092259" MODIFIED="1722629755433" TEXT="    // Custom get {{ @name }} "/>
+<node CREATED="1659306170635" ID="ID_1481311394" MODIFIED="1722629755433" TEXT="    router.post(&quot;/custom&quot;, verifyAccess.verifyAccess, {{ $nomePlural }}.findCustom);"/>
 <node CREATED="1713192356569" ID="ID_321617395" MODIFIED="1713192358690" TEXT="">
 <icon BUILTIN="tag_green"/>
 </node>
@@ -2889,11 +2887,11 @@
 </node>
 </node>
 </node>
-<node CREATED="1657626244020" ID="ID_942090299" MODIFIED="1722365249152" STYLE="fork" TEXT="bashGenerateAll">
+<node CREATED="1657626244020" ID="ID_942090299" MODIFIED="1722630109788" STYLE="fork" TEXT="bashGenerateAll">
 <icon BUILTIN="element"/>
 <node CREATED="1657626258273" ID="ID_893440910" MODIFIED="1722365345867" TEXT="start">
 <icon BUILTIN="element"/>
-<node CREATED="1657626283011" FOLDED="true" ID="ID_1728513941" MODIFIED="1720461463250" TEXT="match">
+<node CREATED="1657626283011" FOLDED="true" ID="ID_1728513941" MODIFIED="1722630112392" TEXT="match">
 <icon BUILTIN="element"/>
 <node CREATED="1657626298931" ID="ID_1145066644" MODIFIED="1708002602284" TEXT="/classes">
 <icon BUILTIN="tag_green"/>
@@ -2961,7 +2959,7 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1657631548030" FOLDED="true" ID="ID_12859014" MODIFIED="1708002602284" TEXT="write-pattern">
+<node CREATED="1657631548030" FOLDED="true" ID="ID_12859014" MODIFIED="1722630119261" TEXT="write-pattern">
 <icon BUILTIN="element"/>
 <node CREATED="1665525444242" ID="ID_312775358" MODIFIED="1667402408087" TEXT="geraIndexHTML">
 <icon BUILTIN="tag_green"/>
@@ -3038,6 +3036,21 @@
 <node CREATED="1657631576228" ID="ID_1292835600" MODIFIED="1722368992086" TEXT="mode">
 <icon BUILTIN="element"/>
 <node CREATED="1657631597502" ID="ID_1542917854" MODIFIED="1722369445163" TEXT="geraRepository">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+<node CREATED="1657631548030" ID="ID_1357985871" MODIFIED="1722630161570" TEXT="apply-templates">
+<icon BUILTIN="element"/>
+<node CREATED="1657631568964" ID="ID_1732592807" MODIFIED="1722368990975" TEXT="select">
+<icon BUILTIN="element"/>
+<node CREATED="1657631586113" ID="ID_1511458234" MODIFIED="1708002602285" TEXT="class[@mode = &apos;bean&apos; ]">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1657631576228" ID="ID_261298498" MODIFIED="1722368992086" TEXT="mode">
+<icon BUILTIN="element"/>
+<node CREATED="1657631597502" ID="ID_1463949030" MODIFIED="1722630157735" TEXT="geraApiService">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -3194,7 +3207,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1657626270312" FOLDED="true" ID="ID_1210412099" MODIFIED="1722369463993" TEXT="patterns">
+<node CREATED="1657626270312" ID="ID_1210412099" MODIFIED="1722630178002" TEXT="patterns">
 <icon BUILTIN="element"/>
 <node CREATED="1665524991570" FOLDED="true" ID="ID_464460846" MODIFIED="1722365837016" TEXT="geraPastas">
 <icon BUILTIN="element"/>
@@ -3413,7 +3426,7 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1722366354961" ID="ID_1734571842" MODIFIED="1722366366338" TEXT="geraServiceBack">
+<node CREATED="1722366354961" ID="ID_1734571842" MODIFIED="1722630195540" TEXT="geraServiceApi">
 <icon BUILTIN="element"/>
 <node CREATED="1657631723740" ID="ID_1658928384" MODIFIED="1722366429027" TEXT="mapperidea generate app mean apiService entityName={{ @name }} &gt; backend/src/services/{{ mi:first-lower(@name) }}.service.ts">
 <icon BUILTIN="tag_green"/>
@@ -3543,7 +3556,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1657631625973" ID="ID_114005516" MODIFIED="1722369452690" TEXT="templates">
+<node CREATED="1657631625973" ID="ID_114005516" MODIFIED="1722630168529" TEXT="templates">
 <icon BUILTIN="element"/>
 <node CREATED="1657631632819" ID="ID_1060129898" MODIFIED="1722369487823" TEXT="mode">
 <icon BUILTIN="element"/>
@@ -3641,22 +3654,46 @@
 </node>
 </node>
 </node>
-<node CREATED="1657631632819" FOLDED="true" ID="ID_1042934792" MODIFIED="1720461463255" TEXT="mode">
+<node CREATED="1657631632819" ID="ID_543460732" MODIFIED="1722630209622" TEXT="mode">
+<icon BUILTIN="element"/>
+<node CREATED="1657631826960" ID="ID_1102567916" MODIFIED="1722630174633" TEXT="geraApiService">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1657631861840" ID="ID_532801005" MODIFIED="1722630200893" TEXT="template">
+<icon BUILTIN="element"/>
+<node CREATED="1657631866871" FOLDED="true" ID="ID_1048002917" MODIFIED="1707335081169" TEXT="match">
+<icon BUILTIN="element"/>
+<node CREATED="1657631889091" ID="ID_877333384" MODIFIED="1657632132477" TEXT="class[@name != &apos; &apos; ]">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1657631870115" ID="ID_1073303153" MODIFIED="1722630201475" TEXT="body">
+<icon BUILTIN="element"/>
+<node CREATED="1657631874327" ID="ID_1886488800" MODIFIED="1722630202429" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1657631882300" ID="ID_189544585" MODIFIED="1722630204283" TEXT="geraServiceApi">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1657631632819" FOLDED="true" ID="ID_1042934792" MODIFIED="1722630144222" TEXT="mode">
 <icon BUILTIN="element"/>
 <node CREATED="1657631826960" ID="ID_498253638" MODIFIED="1657631857050" TEXT="geraModels">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1657631861840" FOLDED="true" ID="ID_781018061" MODIFIED="1720461463255" TEXT="template">
+<node CREATED="1657631861840" ID="ID_781018061" MODIFIED="1722630139076" TEXT="template">
 <icon BUILTIN="element"/>
-<node CREATED="1657631866871" FOLDED="true" ID="ID_389768684" MODIFIED="1720461463255" TEXT="match">
+<node CREATED="1657631866871" ID="ID_389768684" MODIFIED="1722630140429" TEXT="match">
 <icon BUILTIN="element"/>
 <node CREATED="1657631889091" ID="ID_1317301308" MODIFIED="1657632132477" TEXT="class[@name != &apos; &apos; ]">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1657631870115" FOLDED="true" ID="ID_833751028" MODIFIED="1720461463255" TEXT="body">
+<node CREATED="1657631870115" ID="ID_833751028" MODIFIED="1722630141044" TEXT="body">
 <icon BUILTIN="element"/>
-<node CREATED="1657631874327" FOLDED="true" ID="ID_346247742" MODIFIED="1720461463255" TEXT="write-pattern">
+<node CREATED="1657631874327" ID="ID_346247742" MODIFIED="1722630142977" TEXT="write-pattern">
 <icon BUILTIN="element"/>
 <node CREATED="1657631882300" ID="ID_693887993" MODIFIED="1657631935757" TEXT="geraModel">
 <icon BUILTIN="tag_green"/>
@@ -3928,7 +3965,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1659305381937" FOLDED="true" ID="ID_548755044" MODIFIED="1721932930101" TEXT="validator">
+<node CREATED="1659305381937" FOLDED="true" ID="ID_548755044" MODIFIED="1722629567013" TEXT="validator">
 <icon BUILTIN="element"/>
 <node CREATED="1559604105984" ID="ID_533844657" MODIFIED="1721932651778" TEXT="parameters">
 <font BOLD="true" NAME="Dialog" SIZE="14"/>
@@ -4145,7 +4182,7 @@
 </node>
 <node CREATED="1659305851932" ID="ID_1762471800" MODIFIED="1721932583361" TEXT="iniciaFindAll">
 <icon BUILTIN="element"/>
-<node CREATED="1659306188434" ID="ID_923831119" MODIFIED="1721932547259" TEXT="export const createNew{{ @name }}Validator = [ ">
+<node CREATED="1659306188434" ID="ID_923831119" MODIFIED="1722629536182" TEXT="export const findAll{{ @name }}Validator = [ ">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -4238,7 +4275,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1639135901068" FOLDED="true" ID="ID_1601011245" MODIFIED="1721935596065" TEXT="apiService">
+<node CREATED="1639135901068" FOLDED="true" ID="ID_1601011245" MODIFIED="1722630108900" TEXT="apiService">
 <icon BUILTIN="element"/>
 <node CREATED="1559604105984" FOLDED="true" ID="ID_1633269018" MODIFIED="1720461463221" TEXT="parameters">
 <font BOLD="true" NAME="Dialog" SIZE="14"/>
@@ -4387,7 +4424,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1639138486061" FOLDED="true" ID="ID_605353322" MODIFIED="1720461463234" TEXT="templates">
+<node CREATED="1639138486061" FOLDED="true" ID="ID_605353322" MODIFIED="1722630107434" TEXT="templates">
 <icon BUILTIN="element"/>
 <node CREATED="1639138489213" FOLDED="true" ID="ID_143454329" MODIFIED="1715885825900" TEXT="mode">
 <icon BUILTIN="element"/>

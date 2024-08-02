@@ -1,5 +1,6 @@
 import { Request, Response } from "express";
 import { BaseController } from "./base.controller";
+import { InventoryTransactions } from "../models/ inventoryTransactions.model"; 
 import { InventoryTransactionsService } from "../services/inventoryTransactions.service";
 
 export class InventoryTransactionsController { 

@@ -19,9 +19,7 @@ export default function defineRoute(app: Application){
   router.put('/:id', controller.update);
 
     // Delete a InventoryTransactionTypes with id 
-  router.delete('/all', controller.deleteAll); 
-    // Custom get InventoryTransactionTypes 
-    router.post("/custom", verifyAccess.verifyAccess, inventoryTransactionTypes.findCustom);
+  router.delete('/all', controller.delete); 
 
     app.use('/api/inventoryTransactionTypes', router); 
   }; 
