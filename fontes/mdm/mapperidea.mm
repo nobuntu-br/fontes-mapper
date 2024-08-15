@@ -404,9 +404,9 @@
 </node>
 </node>
 </node>
-<node CREATED="1657542298359" ID="ID_648190111" MODIFIED="1716927753787" POSITION="right" TEXT="generators">
+<node CREATED="1657542298359" ID="ID_648190111" MODIFIED="1717526880176" POSITION="right" TEXT="generators">
 <icon BUILTIN="element"/>
-<node CREATED="1638532646585" ID="ID_1972588312" MODIFIED="1716927961944" TEXT="mean">
+<node CREATED="1638532646585" ID="ID_1972588312" MODIFIED="1718149472371" TEXT="mean">
 <icon BUILTIN="element"/>
 <node CREATED="1638532674425" FOLDED="true" ID="ID_279417295" MODIFIED="1716905390608" TEXT="mongoModel">
 <icon BUILTIN="element"/>
@@ -3056,7 +3056,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1665022343343" FOLDED="true" ID="ID_1679303363" MODIFIED="1716905396960" TEXT="index">
+<node CREATED="1665022343343" ID="ID_1679303363" MODIFIED="1718215377826" TEXT="index">
 <icon BUILTIN="element"/>
 <node CREATED="1659305492723" ID="ID_1689843896" MODIFIED="1712610222543" TEXT="start">
 <icon BUILTIN="element"/>
@@ -3135,12 +3135,12 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1712610173476" ID="ID_1605973520" MODIFIED="1715371981211" TEXT="declaraAuth">
+<node CREATED="1712610173476" ID="ID_1605973520" MODIFIED="1718215387533" TEXT="declaraAuth">
 <icon BUILTIN="element"/>
 <node CREATED="1712610185731" ID="ID_519493233" MODIFIED="1712610218887" TEXT="//Declara Users ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1712610189520" ID="ID_691842521" MODIFIED="1715373193856" TEXT="db.user = require(&quot;./user.model.js&quot;)(mongoose);  ">
+<node CREATED="1712610189520" ID="ID_691842521" MODIFIED="1717445036393" TEXT="//db.user = require(&quot;./user.model.js&quot;)(mongoose);  ">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1712610192676" ID="ID_105845228" MODIFIED="1712610218887" TEXT="">
@@ -3149,7 +3149,7 @@
 <node CREATED="1712610193615" ID="ID_863600113" MODIFIED="1712610218886" TEXT="//Declara Roles ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1712610196880" ID="ID_1551163133" MODIFIED="1715373196639" TEXT="db.role = require(&quot;./role.model.js&quot;)(mongoose);  ">
+<node CREATED="1712610196880" ID="ID_1551163133" MODIFIED="1717445038529" TEXT="//db.role = require(&quot;./role.model.js&quot;)(mongoose);  ">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1712610202688" ID="ID_1757703308" MODIFIED="1712610218886" TEXT="">
@@ -3158,7 +3158,7 @@
 <node CREATED="1712610200696" ID="ID_19287232" MODIFIED="1712610218886" TEXT="//Declara FunctionsSystem ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1712610206304" ID="ID_596506156" MODIFIED="1712610218886" TEXT="db.functions_system = require(&quot;./functionsSystem.model.js&quot;)(mongoose);  ">
+<node CREATED="1712610206304" ID="ID_596506156" MODIFIED="1717445041037" TEXT="//db.functions_system = require(&quot;./functionsSystem.model.js&quot;)(mongoose);  ">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1712610207143" ID="ID_983996989" MODIFIED="1712610218885" TEXT="">
@@ -3167,13 +3167,13 @@
 <node CREATED="1712610211001" ID="ID_583182525" MODIFIED="1712610218885" TEXT="//Declara FunctionsSystemRoles ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1712610215372" ID="ID_375893856" MODIFIED="1712610218884" TEXT="db.functions_system_roles = require(&quot;./functionsSystemRoles.model.js&quot;)(mongoose);  ">
+<node CREATED="1712610215372" ID="ID_375893856" MODIFIED="1717445042485" TEXT="//db.functions_system_roles = require(&quot;./functionsSystemRoles.model.js&quot;)(mongoose);  ">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1715285778074" ID="ID_1579098595" MODIFIED="1715285791842" TEXT="">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1715285778607" ID="ID_818523210" MODIFIED="1715285791843" TEXT="db.session = require(&quot;./session.model.js&quot;)(mongoose); ">
+<node CREATED="1715285778607" ID="ID_818523210" MODIFIED="1717445044151" TEXT="//db.session = require(&quot;./session.model.js&quot;)(mongoose); ">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -3242,7 +3242,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1665098578835" FOLDED="true" ID="ID_298308379" MODIFIED="1716927963343" TEXT="server">
+<node CREATED="1665098578835" ID="ID_298308379" MODIFIED="1717186480448" TEXT="server">
 <icon BUILTIN="element"/>
 <node CREATED="1659305492723" ID="ID_360526106" MODIFIED="1715267092864" TEXT="start">
 <icon BUILTIN="element"/>
@@ -3252,7 +3252,7 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1657701022209" ID="ID_1487810594" MODIFIED="1709580429508" TEXT="body">
+<node CREATED="1657701022209" FOLDED="true" ID="ID_1487810594" MODIFIED="1717186486875" TEXT="body">
 <icon BUILTIN="element"/>
 <node CREATED="1657701149621" ID="ID_928278343" MODIFIED="1714416259031" TEXT="write-pattern">
 <icon BUILTIN="element"/>
@@ -3313,7 +3313,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1665022537197" FOLDED="true" ID="ID_755477203" MODIFIED="1716906719224" TEXT="patterns">
+<node CREATED="1665022537197" ID="ID_755477203" MODIFIED="1717186482816" TEXT="patterns">
 <icon BUILTIN="element"/>
 <node CREATED="1665023445703" ID="ID_1193325341" MODIFIED="1712610036705" TEXT="inicioIndex">
 <icon BUILTIN="element"/>
@@ -3407,6 +3407,12 @@
 <node CREATED="1715286143840" ID="ID_190082173" MODIFIED="1715286153417" TEXT="require(&quot;./routes/functionsSystem.routes&quot;)(app);  ">
 <icon BUILTIN="tag_green"/>
 </node>
+<node CREATED="1721083341574" ID="ID_1447652796" MODIFIED="1721083346379" TEXT="">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1721083342727" ID="ID_1230973883" MODIFIED="1721083478652" TEXT="require(&quot;./routes/token.routes&quot;)(app);">
+<icon BUILTIN="tag_green"/>
+</node>
 </node>
 <node CREATED="1665099427407" FOLDED="true" ID="ID_1916639332" MODIFIED="1716905617655" TEXT="declaraRotaClasse">
 <icon BUILTIN="element"/>
@@ -3497,7 +3503,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1657626244020" FOLDED="true" ID="ID_217477071" MODIFIED="1713813831923" TEXT="bashGenerateAllAntigo">
+<node CREATED="1657626244020" ID="ID_217477071" MODIFIED="1721103138881" TEXT="bashGenerateAllAntigo">
 <icon BUILTIN="element"/>
 <node CREATED="1657626258273" ID="ID_638351840" MODIFIED="1707485733076" TEXT="start">
 <icon BUILTIN="element"/>
@@ -3872,7 +3878,7 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1665525444242" FOLDED="true" ID="ID_1091987902" MODIFIED="1707335081150" TEXT="geraAppRouting">
+<node CREATED="1665525444242" ID="ID_1091987902" MODIFIED="1721103138883" TEXT="geraAppRouting">
 <icon BUILTIN="element"/>
 <node CREATED="1666309353525" ID="ID_325949417" MODIFIED="1666309555504" TEXT="mi g app angular appRouting &gt; frontend/src/app/app-routing.module.ts">
 <icon BUILTIN="tag_green"/>
@@ -4984,7 +4990,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1657626244020" ID="ID_942090299" MODIFIED="1716927982046" STYLE="fork" TEXT="bashGenerateAll">
+<node CREATED="1657626244020" ID="ID_942090299" MODIFIED="1721092080122" STYLE="fork" TEXT="bashGenerateAll">
 <icon BUILTIN="element"/>
 <node CREATED="1657626258273" ID="ID_893440910" MODIFIED="1715887274370" TEXT="start">
 <icon BUILTIN="element"/>
@@ -4994,7 +5000,7 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1657626289238" FOLDED="true" ID="ID_1002188177" MODIFIED="1716927986462" TEXT="body">
+<node CREATED="1657626289238" ID="ID_1002188177" MODIFIED="1708002602284" TEXT="body">
 <icon BUILTIN="element"/>
 <node CREATED="1705429570515" ID="ID_953710905" MODIFIED="1708002602284" TEXT="vars">
 <icon BUILTIN="element"/>
@@ -5011,7 +5017,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1657631548030" FOLDED="true" ID="ID_1178836242" MODIFIED="1708002602284" TEXT="write-pattern">
+<node CREATED="1657631548030" ID="ID_1178836242" MODIFIED="1718147331950" TEXT="write-pattern">
 <icon BUILTIN="element"/>
 <node CREATED="1665525444242" ID="ID_385542032" MODIFIED="1665525455305" TEXT="geraPastas">
 <icon BUILTIN="tag_green"/>
@@ -5227,73 +5233,73 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-</node>
-</node>
-<node CREATED="1657626270312" ID="ID_1210412099" MODIFIED="1716927988243" TEXT="patterns">
+<node CREATED="1657631548030" ID="ID_1712049825" MODIFIED="1714425060771" TEXT="write-pattern">
 <icon BUILTIN="element"/>
-<node CREATED="1665524991570" ID="ID_464460846" MODIFIED="1716313370863" TEXT="geraPastas">
+<node CREATED="1665525444242" ID="ID_497740373" MODIFIED="1718147365125" TEXT="geraCommit">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1657626270312" ID="ID_1210412099" MODIFIED="1718147339966" TEXT="patterns">
+<icon BUILTIN="element"/>
+<node CREATED="1665524991570" ID="ID_464460846" MODIFIED="1718147441210" TEXT="geraPastas">
 <icon BUILTIN="element"/>
 <node CREATED="1665525835355" ID="ID_226146924" MODIFIED="1708002602285" TEXT="#!/bin/bash">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1716928030453" ID="ID_953729652" MODIFIED="1716928042086" TEXT="output=$(./verificaMapa.sh)">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1716928030454" ID="ID_1785560112" MODIFIED="1716928042089" TEXT="stop_script() {">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1716928030455" ID="ID_873691066" MODIFIED="1716928064259" TEXT="echo &quot;Comando espec&#xed;fico encontrado: $1&quot;">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1716928030455" ID="ID_201805072" MODIFIED="1716928064258" TEXT="exit 1">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1716928030455" ID="ID_1062206190" MODIFIED="1716928042089" TEXT="}">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1716928030456" ID="ID_113799461" MODIFIED="1716928042089" TEXT="line_count=$(echo &quot;$output&quot; | wc -l)">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1716928030459" ID="ID_360799877" MODIFIED="1716928042089" TEXT="echo &quot;====================================================================&quot;">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1716928030460" ID="ID_1013086312" MODIFIED="1716928077815" TEXT="echo &quot;Veriicando mapa...&quot;">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1716928030460" ID="ID_382774106" MODIFIED="1716928042089" TEXT="echo &quot;====================================================================&quot;">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1716928030461" ID="ID_1597162552" MODIFIED="1716928042089" TEXT="echo &quot;====================================================================&quot;">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1716928030462" ID="ID_818190438" MODIFIED="1716928042088" TEXT="echo &quot;Conte&#xfa;do do mapa:&quot;">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1716928030463" ID="ID_536485091" MODIFIED="1716928042088" TEXT="echo &quot;$output&quot;">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1716928030463" ID="ID_1684269903" MODIFIED="1716928042088" TEXT="echo &quot;====================================================================&quot;">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1716928030466" ID="ID_1893717270" MODIFIED="1716928042087" TEXT="# Verifique se o n&#xfa;mero de linhas &#xe9; maior que 3">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1716928030467" ID="ID_560344495" MODIFIED="1716928042087" TEXT="if [ &quot;$line_count&quot; -gt 1 ]; then">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1716928030467" ID="ID_25809424" MODIFIED="1716928097088" TEXT="stop_script &quot;Mapa esta incorreto, verificar.&quot;">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1716928030468" ID="ID_395642253" MODIFIED="1716928042087" TEXT="else">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1716928030468" ID="ID_1004532711" MODIFIED="1716928104178" TEXT="echo &quot;Mapa correto, continuando a gera&#xe7;&#xe3;o.&quot;">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1716928030470" ID="ID_166180439" MODIFIED="1716928042087" TEXT="fi">
-<icon BUILTIN="tag_green"/>
-</node>
 <node CREATED="1665527639846" ID="ID_143470295" MODIFIED="1708002602285" TEXT="cd ..">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147386885" ID="ID_230522070" MODIFIED="1718147507848" TEXT="find . -type d -name &quot;.git&quot; -exec rm -rf {} +">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147395926" ID="ID_492993706" MODIFIED="1718147495469" TEXT="echo -e &quot;\n\nDigite qual o link do seu reposit&#xf3;rio:\n&quot;">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147398906" ID="ID_1778207071" MODIFIED="1718147495468" TEXT="read REPOSITORIO">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147407275" ID="ID_1642117543" MODIFIED="1718147495468" TEXT="git clone $REPOSITORIO">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147410988" ID="ID_1732910602" MODIFIED="1718147495468" TEXT="echo -e &quot;\n\nDigite qual o nome da pasta que foi criada com esse reposit&#xf3;rio: \n&quot;">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147413398" ID="ID_1905648148" MODIFIED="1718147495468" TEXT="read PASTA">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147415796" ID="ID_1999219285" MODIFIED="1718147495468" TEXT="cd $PASTA/">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147417894" ID="ID_982003934" MODIFIED="1718147495467" TEXT="cp .git -r ../">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147420431" ID="ID_1276083639" MODIFIED="1718147495467" TEXT="cd ..">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147410988" ID="ID_179211876" MODIFIED="1718147495468" TEXT="echo -e &quot;\n\nDigite qual o nome da pasta que foi criada com esse reposit&#xf3;rio: \n&quot;">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147413398" ID="ID_806517698" MODIFIED="1721099554832" TEXT="read NOME">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147423137" ID="ID_564266705" MODIFIED="1721099520794" TEXT="rm -rf $NOME">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147427574" ID="ID_1059384391" MODIFIED="1718147495467" TEXT="rm -rf .gitignore">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147431534" ID="ID_518121184" MODIFIED="1718147495466" TEXT="git reset --hard">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147433945" ID="ID_363058578" MODIFIED="1718147495466" TEXT="git flow init">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147436331" ID="ID_1643430165" MODIFIED="1718147495466" TEXT="rm -rf frontend">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147438830" ID="ID_1121065602" MODIFIED="1718147495466" TEXT="rm -rf backend">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1666719278449" ID="ID_1867237095" MODIFIED="1708972795389" TEXT="git clone https://github.com/JoaoVictorNobuntu/frontend">
@@ -5302,7 +5308,19 @@
 <node CREATED="1712687594729" ID="ID_250359991" MODIFIED="1712687608099" TEXT="git clone https://github.com/JoaoVictorNobuntu/backend">
 <icon BUILTIN="tag_green"/>
 </node>
+<node CREATED="1718147595975" ID="ID_111807230" MODIFIED="1718147621257" TEXT="cd backend">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147606749" ID="ID_1883768517" MODIFIED="1718147621257" TEXT="find . -type d -name &quot;.git&quot; -exec rm -rf {} +">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147631026" ID="ID_1103466297" MODIFIED="1718147634740" TEXT="cd ..">
+<icon BUILTIN="tag_green"/>
+</node>
 <node CREATED="1667389835460" ID="ID_633742200" MODIFIED="1708972766831" TEXT="cd frontend">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147612482" ID="ID_1836823879" MODIFIED="1718147621257" TEXT="find . -type d -name &quot;.git&quot; -exec rm -rf {} + ">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1667389841459" ID="ID_1212165998" MODIFIED="1708002602289" TEXT="ng add @angular/material">
@@ -5544,6 +5562,36 @@
 <node CREATED="1665525444242" ID="ID_1627637115" MODIFIED="1714425053908" TEXT="geraEnvBack">
 <icon BUILTIN="element"/>
 <node CREATED="1666309353525" ID="ID_926440809" MODIFIED="1714425012301" TEXT="mi g app mean envBackend &gt; backend/.env">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1718147342847" ID="ID_989521952" MODIFIED="1718147349811" TEXT="geraCommit">
+<icon BUILTIN="element"/>
+<node CREATED="1718147665620" ID="ID_1291440367" MODIFIED="1718147698605" TEXT="echo -e &quot;\n\nQual o nome da sua Branch\n&quot;">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147669667" ID="ID_1905498094" MODIFIED="1718147698606" TEXT="read nomeFeature">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147673117" ID="ID_1190402907" MODIFIED="1718147698607" TEXT="git flow feature start $nomeFeature">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147675696" ID="ID_212080890" MODIFIED="1718147698608" TEXT="git add --all">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147678336" ID="ID_1821913082" MODIFIED="1718147698610" TEXT="echo -e &quot;\n\nQual o comentario do seu commit?\n&quot;">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147681068" ID="ID_836966337" MODIFIED="1718147698611" TEXT="read commit">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147684535" ID="ID_1106681886" MODIFIED="1718147698612" TEXT="git commit -m &quot;$commit&quot;">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147687254" ID="ID_41301654" MODIFIED="1718147698613" TEXT="git status">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1718147689985" ID="ID_1500188411" MODIFIED="1718147698614" TEXT="git push --set-upstream origin feature/$nomeFeature">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -5798,7 +5846,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1706644403625" FOLDED="true" ID="ID_1935406017" MODIFIED="1716905380128" TEXT="envBackend">
+<node CREATED="1706644403625" ID="ID_1935406017" MODIFIED="1721092088855" TEXT="envBackend">
 <icon BUILTIN="element"/>
 <node CREATED="1659305492723" ID="ID_1421286075" MODIFIED="1714424744968" TEXT="start">
 <icon BUILTIN="element"/>
@@ -5832,6 +5880,15 @@
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1715288968800" ID="ID_658783959" MODIFIED="1715289027013" TEXT="PORT = &quot;{{ package/properties/env/back/PORT/value }}&quot; ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1721092091636" ID="ID_1867646105" MODIFIED="1721092221881" TEXT="TENANT_ID = &quot;{{ package/properties/env/back/TENANT_ID/value }}&quot; ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1721092092882" ID="ID_119416645" MODIFIED="1721092221882" TEXT="CLIENT_ID =&quot;{{ package/properties/env/back/CLIENT_ID/value }}&quot; ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1721092093645" ID="ID_1006706475" MODIFIED="1721092221882" TEXT="CLIENT_SECRET =&quot;{{ package/properties/env/back/CLIENT_SECRET/value }}&quot; ">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -6052,7 +6109,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1658084023442" FOLDED="true" ID="ID_239109345" MODIFIED="1716927716193" TEXT="angular">
+<node CREATED="1658084023442" ID="ID_239109345" MODIFIED="1721103157649" TEXT="angular">
 <icon BUILTIN="element"/>
 <node CREATED="1638532674425" FOLDED="true" ID="ID_926807748" MODIFIED="1712609925998" TEXT="model">
 <icon BUILTIN="element"/>
@@ -13662,7 +13719,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1665771103506" FOLDED="true" ID="ID_572701783" MODIFIED="1716389793891" TEXT="appRouting">
+<node CREATED="1665771103506" ID="ID_572701783" MODIFIED="1721103160809" TEXT="appRouting">
 <icon BUILTIN="element"/>
 <node CREATED="1638532918770" ID="ID_323857040" MODIFIED="1707423632042" TEXT="start">
 <font BOLD="true" NAME="Dialog" SIZE="16"/>
@@ -13809,6 +13866,9 @@
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1716313049349" ID="ID_330771556" MODIFIED="1716313055791" TEXT="            {path: &apos;callback&apos;, loadChildren: () =&gt; import(&apos;app/core/pages/callback/callback.module&apos;).then(m =&gt; m.CallbackModule)}, ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1721103167094" ID="ID_631876019" MODIFIED="1721103186409" TEXT="{path: &apos;callback/:user&apos;,loadChildren: () =&gt; import(&apos;app/core/pages/callback/callback.module&apos;).then(m =&gt; m.CallbackModule)}, ">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -14441,9 +14501,9 @@
 </node>
 </node>
 </node>
-<node CREATED="1705684947385" FOLDED="true" ID="ID_1602823819" MODIFIED="1716927959545" TEXT="json">
+<node CREATED="1705684947385" ID="ID_1602823819" MODIFIED="1717526882759" TEXT="json">
 <icon BUILTIN="element"/>
-<node CREATED="1642422161038" FOLDED="true" ID="ID_277975724" MODIFIED="1716400595431" TEXT="jsonClass">
+<node CREATED="1642422161038" ID="ID_277975724" MODIFIED="1717526896775" TEXT="jsonClass">
 <font NAME="SansSerif" SIZE="12"/>
 <icon BUILTIN="element"/>
 <node CREATED="1641817891685" FOLDED="true" ID="ID_1703168411" MODIFIED="1707335081258" TEXT="parameters">
@@ -14512,7 +14572,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1643198711978" FOLDED="true" ID="ID_813120469" MODIFIED="1714073179867" TEXT="if">
+<node CREATED="1643198711978" FOLDED="true" ID="ID_813120469" MODIFIED="1717527160880" TEXT="if">
 <icon BUILTIN="element"/>
 <node CREATED="1643198717381" ID="ID_1975515109" MODIFIED="1706211766228" TEXT="exists(properties/formTabs)">
 <icon BUILTIN="tag_green"/>
@@ -14530,7 +14590,7 @@
 <icon BUILTIN="element"/>
 </node>
 </node>
-<node CREATED="1705947875938" FOLDED="true" ID="ID_329354988" MODIFIED="1714073120263" TEXT="apply-templates">
+<node CREATED="1705947875938" FOLDED="true" ID="ID_329354988" MODIFIED="1717527164597" TEXT="apply-templates">
 <icon BUILTIN="element"/>
 <node CREATED="1638534190031" ID="ID_211711631" MODIFIED="1709151648480" TEXT="select">
 <font BOLD="true" NAME="Dialog" SIZE="16"/>
@@ -14546,13 +14606,13 @@
 </node>
 </node>
 </node>
-<node CREATED="1642422864991" FOLDED="true" ID="ID_1918155214" MODIFIED="1714073122211" TEXT="write-pattern">
+<node CREATED="1642422864991" FOLDED="true" ID="ID_1918155214" MODIFIED="1717527165728" TEXT="write-pattern">
 <icon BUILTIN="element"/>
 <node CREATED="1642422869994" ID="ID_1500258212" MODIFIED="1705689016817" TEXT="finalizaConfig">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1642422864991" FOLDED="true" ID="ID_861106494" MODIFIED="1707335081259" TEXT="write-pattern">
+<node CREATED="1642422864991" FOLDED="true" ID="ID_861106494" MODIFIED="1717527166880" TEXT="write-pattern">
 <icon BUILTIN="element"/>
 <node CREATED="1642422869994" ID="ID_1867195887" MODIFIED="1705955778844" TEXT="iniciaAttributes">
 <icon BUILTIN="tag_green"/>
@@ -14908,9 +14968,21 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1706120749226" FOLDED="true" ID="ID_572514550" MODIFIED="1707335081263" TEXT="declaraForageinKey">
+<node CREATED="1706120749226" FOLDED="true" ID="ID_572514550" MODIFIED="1717527066872" TEXT="declaraForageinKey">
 <icon BUILTIN="element"/>
 <node CREATED="1706120401220" ID="ID_1584788881" MODIFIED="1706120745410" TEXT="            &quot;forageinKey&quot;: &quot;{{ properties/forageinKey/value }}&quot;, ">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1706120749226" ID="ID_849367411" MODIFIED="1717527091602" TEXT="declaraRequiredTrue">
+<icon BUILTIN="element"/>
+<node CREATED="1706120401220" ID="ID_499372916" MODIFIED="1717527430418" TEXT="            &quot;isRequired&quot;: true, ">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1706120749226" ID="ID_834910799" MODIFIED="1717527138337" TEXT="declaraRequiredFalse">
+<icon BUILTIN="element"/>
+<node CREATED="1706120401220" ID="ID_1959863652" MODIFIED="1717527434832" TEXT="            &quot;isRequired&quot;: false, ">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -15217,12 +15289,12 @@
 </node>
 </node>
 </node>
-<node CREATED="1639138489213" FOLDED="true" ID="ID_1328756558" MODIFIED="1714076640385" TEXT="mode">
+<node CREATED="1639138489213" ID="ID_1328756558" MODIFIED="1717527176693" TEXT="mode">
 <icon BUILTIN="element"/>
 <node CREATED="1639138491813" ID="ID_235315729" MODIFIED="1705956007573" TEXT="declaraAttribute">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1639138510172" FOLDED="true" ID="ID_1682946602" MODIFIED="1714076639528" TEXT="template">
+<node CREATED="1639138510172" ID="ID_1682946602" MODIFIED="1717527177905" TEXT="template">
 <icon BUILTIN="element"/>
 <node CREATED="1638534572460" ID="ID_1903105392" MODIFIED="1709151662778" TEXT="match">
 <icon BUILTIN="element"/>
@@ -15259,14 +15331,14 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1643198711978" FOLDED="true" ID="ID_1010471166" MODIFIED="1707335081266" TEXT="if">
+<node CREATED="1643198711978" FOLDED="true" ID="ID_1010471166" MODIFIED="1717527195806" TEXT="if">
 <icon BUILTIN="element"/>
 <node CREATED="1643198717381" ID="ID_225018182" MODIFIED="1706038981970" TEXT="exists($NobuntuType)">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1643198745094" FOLDED="true" ID="ID_512406934" MODIFIED="1707334863856" TEXT="then">
+<node CREATED="1643198745094" ID="ID_512406934" MODIFIED="1717527193174" TEXT="then">
 <icon BUILTIN="element"/>
-<node CREATED="1642594384527" FOLDED="true" ID="ID_404671974" MODIFIED="1707334859033" TEXT="write-pattern">
+<node CREATED="1642594384527" ID="ID_404671974" MODIFIED="1717527194205" TEXT="write-pattern">
 <icon BUILTIN="element"/>
 <node CREATED="1642594390119" ID="ID_1864569308" MODIFIED="1706039006406" TEXT="declaraMask">
 <icon BUILTIN="tag_green"/>
@@ -15277,7 +15349,31 @@
 <icon BUILTIN="element"/>
 </node>
 </node>
-<node CREATED="1643198711978" FOLDED="true" ID="ID_1844137138" MODIFIED="1707335081266" TEXT="if">
+<node CREATED="1643198711978" ID="ID_824434236" MODIFIED="1717527197329" TEXT="if">
+<icon BUILTIN="element"/>
+<node CREATED="1643198717381" ID="ID_1773105334" MODIFIED="1717527216402" TEXT="exists(properties/required)">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1643198745094" ID="ID_1723119100" MODIFIED="1717527217890" TEXT="then">
+<icon BUILTIN="element"/>
+<node CREATED="1642594384527" ID="ID_40374004" MODIFIED="1717527219450" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1642594390119" ID="ID_623851411" MODIFIED="1717527225786" TEXT="declaraRequiredTrue">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+<node CREATED="1643198747708" ID="ID_463951637" MODIFIED="1705947844819" TEXT="else">
+<icon BUILTIN="element"/>
+<node CREATED="1642594384527" ID="ID_544626592" MODIFIED="1717527219450" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1642594390119" ID="ID_1564088278" MODIFIED="1717527231747" TEXT="declaraRequiredFalse">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1643198711978" ID="ID_1844137138" MODIFIED="1717527204368" TEXT="if">
 <icon BUILTIN="element"/>
 <node CREATED="1643198717381" ID="ID_1858912345" MODIFIED="1706040725389" TEXT="exists(properties/formTab)">
 <icon BUILTIN="tag_green"/>
@@ -16050,7 +16146,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1639138489213" FOLDED="true" ID="ID_320519024" MODIFIED="1714076643015" TEXT="mode">
+<node CREATED="1639138489213" FOLDED="true" ID="ID_320519024" MODIFIED="1717527174158" TEXT="mode">
 <icon BUILTIN="element"/>
 <node CREATED="1639138491813" ID="ID_1713617943" MODIFIED="1706123477241" TEXT="declaraProperties">
 <icon BUILTIN="tag_green"/>
@@ -16200,7 +16296,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1639138489213" ID="ID_1281658181" MODIFIED="1714073130708" TEXT="mode">
+<node CREATED="1639138489213" FOLDED="true" ID="ID_1281658181" MODIFIED="1717527175880" TEXT="mode">
 <icon BUILTIN="element"/>
 <node CREATED="1639138491813" ID="ID_530760115" MODIFIED="1714073603935" TEXT="declaraSearchables">
 <icon BUILTIN="tag_green"/>
@@ -16284,7 +16380,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1665098578835" ID="ID_1703071828" MODIFIED="1716906707565" TEXT="jsonTransloco">
+<node CREATED="1665098578835" FOLDED="true" ID="ID_1703071828" MODIFIED="1717526895923" TEXT="jsonTransloco">
 <icon BUILTIN="element"/>
 <node CREATED="1641817891685" ID="ID_768817321" MODIFIED="1707335188853" TEXT="parameters">
 <icon BUILTIN="element"/>
@@ -16636,7 +16732,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1642422161038" FOLDED="true" ID="ID_448655928" MODIFIED="1713379191891" TEXT="jsonMenu">
+<node CREATED="1642422161038" FOLDED="true" ID="ID_448655928" MODIFIED="1718149517866" TEXT="jsonMenu">
 <font NAME="SansSerif" SIZE="12"/>
 <icon BUILTIN="element"/>
 <node CREATED="1642422213408" ID="ID_1717382611" MODIFIED="1709578845368" TEXT="start">
