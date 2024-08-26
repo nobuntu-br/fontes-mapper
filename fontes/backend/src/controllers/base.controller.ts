@@ -25,7 +25,8 @@ export class BaseController<T> implements IBaseController {
 
       return res.status(200).send(data);
     } catch (err) {
-      return res.status(500).send({ message: err || "Ocorreu um erro de servidor ao tentar salvar "+this.entityName+"." });
+      console.log(err);
+      return res.status(500).send({ message: "Ocorreu um erro de servidor ao tentar salvar "+this.entityName+"." });
     }
   }
 
@@ -171,102 +172,5 @@ export class BaseController<T> implements IBaseController {
   async findCustom(req: Request, res: Response): Promise<Object> {
     throw new Error("Method not implemented.");
   }
-  /*
-    private service: any;
-  
-    constructor(service: IDatabaseAdapter) {
-  
-    }
-    // const tenantService: TenantService = new TenantService();
-  
-    // async create(req: Request, res: Response) {
-    //   try {
-    //     //TODO validar campos requiridos (isso depende das regras no mapa e banco de dados)
-  
-    //     const data = await this.service.create(req);
-  
-    //     res.send(data);
-    //   } catch (err) {
-    //     res.status(500).send({ message: err || "Ocorreu um erro de servidor ao tentar salvar CartaoConsumo." });
-    //   }
-    // };
-  
-    async findAll(req: Request, res: Response) {
-      try {
-        //TODO validar campos requiridos (isso depende das regras no mapa e banco de dados)
-  
-        const data = await this.service.findAll();
-        res.send(data);
-      } catch (err) {
-        res.status(500).send({ message: err || "Algum erro desconhecido ocorreu ao buscar CartaoConsumo." });
-      }
-    };
-  
-    async findOne(req: Request, res: Response) {
-      try {
-        //TODO validar campos requiridos (isso depende das regras no mapa e banco de dados)
-  
-        const data = await this.service.findOne(req.body);
-        res.send(data);
-      } catch (err) {
-        res.status(500).send({ message: err || "Algum erro desconhecido ocorreu ao buscar CartaoConsumo." });
-      }
-    };
-  
-    async update(req: Request, res: Response) {
-      try {
-        //TODO validar campos requiridos (isso depende das regras no mapa e banco de dados)
-  
-        const id = req.params.id;
-        const newValues = req.body;
-  
-        const data = await this.service.update(id, newValues);
-        if (!data) {
-          return res.status(404).send({ message: `A entidade CartaoConsumo com id ${id} não encontrada, por isso não pode ser atualizada!` });
-        }
-  
-        res.send({ message: `A entidade CartaoConsumo com id ${id} foi alterada com sucesso.` });
-      } catch (err) {
-        res.status(500).send({ message: err || `Erro desconhecido ocorreu ao alterar a entidade CartaoConsumo com o id ${req.params.id}.` });
-      }
-    };
-  
-    async remove(req: Request, res: Response) {
-      try {
-        //TODO validar campos requiridos (isso depende das regras no mapa e banco de dados)
-  
-        const id = req.params.id;
-        const data = await this.service.delete(id);
-  
-        if (!data) {
-          return res.status(404).send({ message: `A entidade CartaoConsumo com id ${id} não encontrada, por isso não pode ser excluída!` });
-        }
-        res.send({ message: `A entidade CartaoConsumo com id ${id} foi excluída com sucesso.` });
-      } catch (err) {
-        res.status(500).send({ message: err || `Erro desconhecido ocorreu ao excluir a entidade CartaoConsumo com o id ${req.params.id}.` });
-      }
-    };
-  
-    async removeAll(req: Request, res: Response) {
-      try {
-        const data = await this.service.deleteAll();
-        res.send({ message: `${data.deletedCount} ${data.deletedCount > 1 ? '' : 'CartaoConsumo'} foram excluídas!` });
-      } catch (err) {
-        res.status(500).send({ message: err || "Algum erro desconhecido ocorreu ao excluir todas as entidades CartaoConsumo." });
-      }
-    };
-  
-    async findCustom(req: Request, res: Response) {
-      try {
-        //TODO validar campos requiridos (isso depende das regras no mapa e banco de dados)
-  
-        const filterValues = req.body.filterValues;
-        const filterConditions = req.body.filterValues;
-        const data = await this.service.
-        res.status(200).send(data);
-      } catch (err) {
-        res.status(500).send({ message: err || "Algum erro desconhecido ocorreu ao buscar dados pela busca customizável" });
-      }
-    };
-  */
+
 }

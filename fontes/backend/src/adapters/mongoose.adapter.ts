@@ -8,9 +8,11 @@ export class MongooseAdapter<T> implements IDatabaseAdapter<T> {
   constructor(model: Model<any>, protected jsonDataToResourceFn: (jsonData: any) => T) {
     this.model = model;
   }
+  
 
   async create(data: Object): Promise<T> {
     try {
+      
       const item = new this.model(data);
       const newItem = await item.save();
       return this.jsonDataToResource(newItem);
@@ -33,17 +35,25 @@ export class MongooseAdapter<T> implements IDatabaseAdapter<T> {
     
   }
 
-  async findOne(query: string): Promise<T | null> {
+  async findOne(query: any): Promise<T | null> {
 
     try {
       //TODO testar e adicionar o populate
-      const returnedValue = await this.model.findOne({ query });
-      return this.jsonDataToResource(returnedValue);
+      const returnedValue = await this.model.findOne( query );
 
+      if (returnedValue == null) {
+        return null;
+      }
+
+      return this.jsonDataToResource(returnedValue);
     } catch (error) {
       console.warn("Error to find one entity to database using mongoose. Details: "+error);
       throw new Error("Error to find one entity to database using mongoose.")
     }
+  }
+
+  findMany(query: Object): Promise<T[] | null> {
+    throw new Error("Method not implemented.");
   }
 
   async findById(id: string): Promise<T | null> {

@@ -1,3 +1,3 @@
-export class TenantDTO {
+export interface TenantDTO {
   name?: string;
 }

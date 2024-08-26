@@ -1,20 +1,9 @@
 #!/bin/bash
 cd ..
-# find . -type d -name ".git" -exec rm -rf {} +
-# echo -e "\n\nDigite qual o link do seu repositório:\n"
-# read REPOSITORIO
-# git clone $REPOSITORIO
-# echo -e "\n\nDigite qual o nome da pasta que foi criada com esse repositório: \n"
-# read PASTA
-# cd $PASTA/
-# cp .git -r ../
-# cd ..
-# rm -rf e-condi
-# rm -rf .gitignore
-# git reset --hard
-# git flow init
+rm -rf frontend
+rm -rf backend
 git clone https://github.com/JoaoVictorNobuntu/frontend
-# git clone https://github.com/JoaoVictorNobuntu/backend
+git clone https://github.com/JoaoVictorNobuntu/backend
 cd backend
 find . -type d -name ".git" -exec rm -rf {} +
 cd ..

@@ -1,7 +1,11 @@
 import { Request, Response, NextFunction } from "express";
 import jwt from "jsonwebtoken";
 import axios from "axios";
-import databaseFunctions, { getDefaultTenantConnection } from "../adapters/database.config";
+import { getSecurityTenantConnection } from "../adapters/databaseSecurity.config";
+import { FunctionSystemService } from "../services/functionSystem.service";
+import TenantConnection from "../models/tenantConnection.model";
+import { UserService } from "../services/user.service";
+import { FunctionSystemRoleService } from "../services/functionSystemRole.service";
 const jwkToPem = require("jwk-to-pem");
 
 async function getJWKS(jwksUri: string): Promise<any[]> {
@@ -22,7 +26,7 @@ async function getJWKS(jwksUri: string): Promise<any[]> {
  * @returns 
  */
 export async function verifyAccess(req: Request, res: Response, next: NextFunction): Promise<void> {
-  const databaseConnection = await getDefaultTenantConnection();
+  const databaseConnection = await getSecurityTenantConnection();
 
   if (!databaseConnection) {
     res.status(500).send({ message: "Erro no servidor" });
@@ -46,13 +50,13 @@ export async function verifyAccess(req: Request, res: Response, next: NextFuncti
 
     // Se não retornou o OID (não tem access_token)
     if (userOID == null) {
-      res.status(401).send({ message: "Acesso não autorizado" });
+      res.status(401).send({ message: "Acesso não autorizado. Usuário não identificado" });
     } else {
       // Se tem o OID verifica se tem permissão pra rota
       if (await isAuthorizedUrl(userOID, req.method, req.originalUrl, databaseConnection)) {
         next();
       } else {
-        res.status(401).send({ message: "Acesso não autorizado", details: "Rota não autorizada" });
+        res.status(401).send({ message: "Acesso não autorizado. Rota não autorizada" });
       }
     }
   } else {
@@ -118,20 +122,30 @@ async function verifyAccessTokenIsValid(accessToken: string, res: Response): Pro
  * @param {*} databaseConnection Conexão com o banco de dados do usuário
  * @returns 
  */
-async function isAuthorizedUrl(userUID: String, method: String, url: String, databaseConnection: any): Promise<boolean | null> {
+async function isAuthorizedUrl(userUID: string, method: string, url: string, databaseConnection: any): Promise<boolean | null> {
 
   if (await userIsAdmin(userUID, databaseConnection) == true || await isPublicRoute(method, url, databaseConnection) == true) {
     return true;
   }
 
-  //TODO criar um serviço que verifica se o usuário ter permissão para acessar a rota
-  throw new Error("Método não implementado");
+  const userHaveAccessToRoute = await isUserHaveAccessToRoute(userUID, method, url, databaseConnection);
+  return userHaveAccessToRoute;
 }
 
-async function userIsAdmin(userUID: String, databaseConnection: any): Promise<boolean | null> {
-  //TODO criar o serviço que verifica se o usuário é administrador
-  // return await userService.isUserAdmin(userUID, databaseConnection);
-  throw new Error("Método não implementado");
+async function isUserHaveAccessToRoute(userUID: string, method: string, url: string, databaseConnection: TenantConnection): Promise<boolean | null>{
+  const functionSystemRoleService: FunctionSystemRoleService = new FunctionSystemRoleService(databaseConnection.databaseType, databaseConnection.models["functionSystemRole"]);
+  return await functionSystemRoleService.isUserHaveAccessToRoute(userUID, method, url);
+}
+
+/**
+ * Verifica se o usuário é administrador
+ * @param userUID UID do usuário
+ * @param databaseConnection Instância da conexão com o banco de dados do usuário
+ * @returns Retorna se o usuário é administrador, sendo verdadeiro pra sim, falso pra não. Null caso der erros.
+ */
+async function userIsAdmin(userUID: string, databaseConnection: TenantConnection): Promise<boolean | null> {
+  const userService: UserService = new UserService(databaseConnection.databaseType, databaseConnection.models["user"]);
+  return await userService.isUserAdmin(userUID);
 }
 
 /**
@@ -141,8 +155,8 @@ async function userIsAdmin(userUID: String, databaseConnection: any): Promise<bo
  * @param {*} databaseConnection Instância de conexão com o banco de dados
  * @returns Retornará um valor booleano, sendo "True" se o a rota for pública, caso contrário retornará "False"
  */
-async function isPublicRoute(_method: String, _url: String, databaseConnection: any): Promise<boolean | null> {
-  //TODO criar o serviço que irá verificar se a rota é pública
-  // return await functionSystemService.isPublicRoute(databaseConnection);
-  throw new Error("Método não implementado");
+async function isPublicRoute(_method: string, _url: string, databaseConnection: TenantConnection): Promise<boolean | null> {
+  const functionSystemService: FunctionSystemService = new FunctionSystemService(databaseConnection.databaseType, databaseConnection.models["functionSystemService"]);
+  
+  return await functionSystemService.isPublicRoute(_method, _url);
 }

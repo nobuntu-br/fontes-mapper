@@ -1,4 +1,4 @@
-import { check, query } from 'express-validator';
+import { check, param, query } from 'express-validator';
 /**
  * Validador de campos
  */
@@ -8,6 +8,10 @@ export const createNewTenantValidator = [
 ]
 
 export const findAllTenantValidator = [
-  query('page').notEmpty().isNumeric().withMessage('Only digits allowed in title page'),
+  query('page').optional().isNumeric().withMessage('Only digits allowed in title page'),
   query('limit').optional().isNumeric().withMessage('Only digits allowed in title limit')
+]
+
+export const findUserByUIDValidator =[
+  param('UID').notEmpty().withMessage('UID is required')
 ]

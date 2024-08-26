@@ -3,7 +3,6 @@ import { BaseResourceModel } from "./base-resource.model";
 interface IUser {
   name?: string;
   UID?: string;
-  TenantUID?: string;
   username?: string;
   firstname?: string;
   lastname?: string;
@@ -14,7 +13,6 @@ interface IUser {
 export class User extends BaseResourceModel implements IUser {
   name?: string;
   UID?: string;
-  TenantUID?: string;
   username?: string;
   firstname?: string;
   lastname?: string;

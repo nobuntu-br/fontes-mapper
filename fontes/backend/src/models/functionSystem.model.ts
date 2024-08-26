@@ -1,14 +1,16 @@
 import { BaseResourceModel } from "./base-resource.model";
 
 interface IFunctionSystem {
-  name?: string;
+  description?: string;
   route?: string;
+  method?: string;
   classname?: string;
 }
 
 export class FunctionSystem extends BaseResourceModel implements IFunctionSystem {
-  name?: string;
+  description?: string;
   route?: string;
+  method?: string;
   classname?: string;
 
   static fromJson(jsonData: any) : FunctionSystem {

@@ -2,7 +2,7 @@ import { DataTypes, Sequelize } from "sequelize";
 
 export default function defineModel(sequelize: Sequelize){
   const schema = sequelize.define('UserTenant', {
-    userId: {
+    UserUID: {
       type: DataTypes.STRING,
       references: {
         model: 'Users',
@@ -10,15 +10,7 @@ export default function defineModel(sequelize: Sequelize){
       },
       primaryKey: true,
     },
-    tenantId: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'Tenants',
-        key: 'id',
-      },
-      primaryKey: true,
-    },
-    tenantCredentialId: {
+    TenantCredentialId: {
       type: DataTypes.INTEGER,
       references: {
         model: 'TenantCredentials',
@@ -34,7 +26,7 @@ export default function defineModel(sequelize: Sequelize){
     indexes: [
       {
         unique: true,
-        fields: ['userId', 'tenantId'],
+        fields: ['UserId', 'TenantId'],
       },
     ],
   });

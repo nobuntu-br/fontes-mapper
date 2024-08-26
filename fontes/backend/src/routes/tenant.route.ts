@@ -2,17 +2,24 @@ import { Application, Router } from 'express';
 import { TenantController } from '../controllers/tenant.controller';
 import { createNewTenantValidator, findAllTenantValidator } from './validators/tenant.validator';
 import validateHeaders from './validators/index.validator';
+import { getSecurityTenant } from '../middlewares/tenant.middleware';
 
-export default function defineRoute(app: Application){
-  const controller : TenantController = new TenantController();
+/**
+ * Irá definir as rotas da entidade
+ * @param app Instância da aplicação express
+ */
+export default function defineRoute(app: Application) {
+  const controller: TenantController = new TenantController();
   const router: Router = Router();
-  
+
   //Create a new
-  router.post('/', [...createNewTenantValidator, validateHeaders] ,controller.create);
+  router.post('/', [getSecurityTenant, ...createNewTenantValidator, validateHeaders], controller.create);
   //Find all
-  router.get('/', [...findAllTenantValidator, validateHeaders], controller.findAll);
+  router.get('/', [getSecurityTenant, ...findAllTenantValidator, validateHeaders], controller.findAll);
   //Find count
-  router.get('/count', controller.getCount);
+  router.get('/count', [getSecurityTenant, validateHeaders], controller.getCount);
+  //Find by UserUID
+  router.get('/uid/:UID', [getSecurityTenant, validateHeaders], controller.findByUserUID);
   //Find by id
   router.get('/:id', controller.findById);
   //Update
@@ -21,8 +28,6 @@ export default function defineRoute(app: Application){
   router.delete('/all', controller.deleteAll);
   //Delete
   router.delete('/:id', controller.delete);
-    
-  //TODO adicionar rota de pegar item de forma paginada
-  
+
   app.use('/api/tenant', router);
 } 

@@ -20,6 +20,10 @@ export default abstract class BaseRepository<T> implements IBaseRepository<T>{
     return this.adapter.findOne(query);
   }
 
+  findMany(query: Object): Promise<T[] | null> {
+    return this.adapter.findMany(query);
+  }
+
   findById(id: string): Promise<T | null> {
     return this.adapter.findById(id);
   }

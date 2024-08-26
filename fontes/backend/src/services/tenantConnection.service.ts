@@ -29,8 +29,8 @@ export class TenantConnectionService {
     return this.tenantConnections;
   }
 
-  findOneConnection(tenantId: string): TenantConnection {
-    return this.tenantConnections[tenantId];
+  findOneConnection(tenantCredentialId: string): TenantConnection {
+    return this.tenantConnections[tenantCredentialId];
   }
 
   removeConnection(tenantConnections: TenantConnection): TenantConnection | null {

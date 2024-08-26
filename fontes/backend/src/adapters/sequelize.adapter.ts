@@ -9,12 +9,22 @@ export class SequelizeAdapter<T> implements IDatabaseAdapter<T> {
     this.model = model;
   }
 
-  async create(data: Object): Promise<T> {
+  async create(data: any): Promise<T> {
     try {
-      const newItem = await this.model.create(data as any);
+      const newItem = await this.model.create(data);
       return this.jsonDataToResource(newItem);
-    } catch (error) {
-      console.warn("Error to save entity to database using sequelize. Details: " + error);
+    } catch (error: any) {
+      console.warn(error);
+      // Manipula erros específicos
+      if (error.name === 'SequelizeUniqueConstraintError') {
+        throw new Error("Error to save data usign sequelize. One data is unique.");
+      }
+
+      if (error.name === 'SequelizeValidationError') {
+        // Para erros de validação, você pode retornar detalhes específicos
+        throw new Error("Erro to save data using sequelize. Validation Error.");
+      }
+
       throw new Error("Error to save entity to database using sequelize.");
     }
   }
@@ -36,18 +46,47 @@ export class SequelizeAdapter<T> implements IDatabaseAdapter<T> {
     }
   }
 
-  async findOne(query: string): Promise<T | null> {
+  async findOne(query: any): Promise<T | null> {
     try {
-      const item = await this.model.findOne({ where: { title: 'My Title' } });
+      const item = await this.model.findOne({ where: query });
+
+      if (item == null) {
+        return null;
+      }
+
       return this.jsonDataToResource(item);
     } catch (error) {
       console.warn("Error to find one entity to database using sequelize. Details: " + error);
+      // console.warn(error);
       throw new Error("Error to find one entity to database using sequelize.");
     }
   }
 
+  async findMany(query: any): Promise<T[] | null> {
+    try {
+      const item = await this.model.findAll({ where: query });
+
+      if (item == null) {
+        return null;
+      }
+
+      return this.jsonDataToResources(item);
+    } catch (error) {
+      console.warn("Error to find many entities to database using sequelize. Details: " + error);
+      // console.warn(error);
+      throw new Error("Error to find many entities to database using sequelize.");
+    }
+
+  }
+
   async findById(id: string): Promise<T | null> {
-    throw new Error("Method not implemented.");
+    try {
+      const item = await this.model.findOne({ where: { id: id } });
+      return this.jsonDataToResource(item);
+    } catch (error) {
+      console.warn("Error to find by id entity to database using sequelize. Details: " + error);
+      throw new Error("Error to find by id entity to database using sequelize.");
+    }
   }
 
   async getCount(): Promise<number | null> {
@@ -80,7 +119,7 @@ export class SequelizeAdapter<T> implements IDatabaseAdapter<T> {
       console.warn("Error to get delete entity to database using sequelize. Details: " + error);
       throw new Error("Error to get delete entity to database using sequelize.");
     }
-    
+
   }
 
   async deleteAll(): Promise<void> {

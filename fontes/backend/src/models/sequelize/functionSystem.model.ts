@@ -2,11 +2,15 @@ import { Sequelize, DataTypes } from "sequelize";
 
 export default function defineModel(sequelize: Sequelize){
   const schema = sequelize.define('FunctionSystem', {
-    name: {
+    description: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    route: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    route: {
+    method:  {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -19,7 +23,7 @@ export default function defineModel(sequelize: Sequelize){
     indexes: [
       {
         unique: true,
-        fields: ['name', 'route', 'classname'],
+        fields: ['route', 'method'],
       },
     ],
   });

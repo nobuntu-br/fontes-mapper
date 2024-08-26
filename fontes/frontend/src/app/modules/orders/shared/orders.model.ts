@@ -28,7 +28,7 @@ export class Orders extends BaseResourceModel {
     taxRate?: number;
     taxStatus?: OrdersTaxStatus;
     status?: OrdersStatus;
-    orderDetails?: OrderDetails;
+    orderDetails?: OrderDetails[];
 
     static fromJson(jsonData: any): Orders{ 
         return Object.assign(new Orders(), jsonData); 

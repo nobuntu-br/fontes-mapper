@@ -4,13 +4,14 @@ import UserRepository from "../repository/user.repository";
 import BaseService from "./base.service";
 
 export class UserService extends BaseService<User> {
-  repository: UserRepository;
+  private userRepository: UserRepository;
 
   constructor(dbType: DbType, model: any) {
     //Cria o repositório com dados para obter o banco de dados
-    var _repository: UserRepository = new UserRepository(dbType, model);
-    super(_repository, dbType, model);
-    this.repository = _repository;
+    var repository: UserRepository = new UserRepository(dbType, model);
+    super(repository, dbType, model);
+    
+    this.userRepository = repository;
   }
 
   /**
@@ -19,10 +20,8 @@ export class UserService extends BaseService<User> {
    * @param {*} databaseConnection instância da conexão com o banco de dados
    * @returns "True" caso usuário for adminitrador, caso contrário, retorna "False"
    */
-  async isUserAdmin(userUID: string) {
+  async isUserAdmin(userUID: string): Promise<boolean> {
     try {
-      // const userRepository = createDbAdapter(databaseConnection.databaseType, databaseConnection.models.user);
-      // const _user = await userRepository.findOne({ UID: userUID });
       const _user = await this.repository.findOne({UID: userUID});
 
       if (_user != null && _user.isAdministrator != null) {
@@ -30,9 +29,9 @@ export class UserService extends BaseService<User> {
         if (_user.isAdministrator == true) {
           return true;
         }
-      } else {
-        return false;
-      }
+      } 
+      return false;
+
     } catch (error) {
       console.error({ message: "Erro ao obter o usuário", details: error });
       return false;

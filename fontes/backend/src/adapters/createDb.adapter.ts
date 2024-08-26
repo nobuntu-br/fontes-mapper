@@ -2,7 +2,7 @@ import { IDatabaseAdapter } from "./IDatabase.adapter";
 import { MongooseAdapter } from "./mongoose.adapter";
 import { SequelizeAdapter } from "./sequelize.adapter";
 
-export type DbType = 'mongodb' | 'postgres';
+export type DbType = 'mongodb' | 'postgres' | 'mysql' | 'firebird';
 
 /**
  * Função que irá obter as funcionalidades de operação com banco de dados da biblioteca de acordo com o que é emitido
@@ -16,6 +16,8 @@ function createDbAdapter<T>(dbType: DbType, model: any, jsonDataToResourceFn: (j
     case 'mongodb':
       return new MongooseAdapter<T>(model, jsonDataToResourceFn);
     case 'postgres':
+      return new SequelizeAdapter<T>(model, jsonDataToResourceFn);
+    case 'mysql':
       return new SequelizeAdapter<T>(model, jsonDataToResourceFn);
     // TODO: Adicionar outros tipos de banco de dados conforme necessário
     default:

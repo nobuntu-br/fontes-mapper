@@ -13,7 +13,7 @@ export default class BaseService<T> implements IBaseService<T> {
     this.model = model;
   }
 
-  create(data: Object): Promise<T> {
+  create(data: any): Promise<T> {
     return this.repository.create(data);
   }
 
@@ -23,6 +23,10 @@ export default class BaseService<T> implements IBaseService<T> {
 
   findOne(query: object): Promise<T | null> {
     return this.repository.findOne(query);
+  }
+
+  findMany(query: Object): Promise<T[] | null> {
+    return this.repository.findMany(query);
   }
 
   findById(id: string): Promise<T | null> {

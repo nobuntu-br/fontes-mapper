@@ -3,31 +3,31 @@ import { DataTypes, Sequelize } from "sequelize";
 export default function defineModel(sequelize: Sequelize){
   const schema = sequelize.define('TenantCredential', {
     dbName: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(100),
       allowNull: false,
     },
     dbType: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(100),
       allowNull: false,
     },
     dbUsername: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(100),
       allowNull: false,
     },
     dbPassword: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(100),
       allowNull: false,
     },
     dbHost: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(100),
       allowNull: false,
     },
     dbPort: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(100),
       allowNull: false,
     },
     dbConfig: {
-      type: DataTypes.JSON,
+      type: DataTypes.STRING(100),
       allowNull: true,
     },
   }, {

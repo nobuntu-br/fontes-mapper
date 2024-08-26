@@ -1,6 +1,6 @@
 {
     "config":{ 
-        "modified": "2024-08-02T21:30:55.220435Z", 
+        "modified": "2024-08-26T20:53:59.647136Z", 
         "description": "Application that can be used by a company",  
         "name": "CompanyApplicationToken", 
         "apiUrl": "api/companyApplicationToken",

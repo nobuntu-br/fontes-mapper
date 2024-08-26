@@ -1,6 +1,6 @@
 {
     "config":{ 
-        "modified": "2024-08-02T21:30:48.724794Z", 
+        "modified": "2024-08-26T20:53:56.876814Z", 
         "description": "Suppliers",  
         "name": "Suppliers", 
         "apiUrl": "api/suppliers",

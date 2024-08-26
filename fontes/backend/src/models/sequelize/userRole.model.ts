@@ -1,29 +1,12 @@
 import { DataTypes, Sequelize } from "sequelize";
 
 export default function defineModel(sequelize: Sequelize){
-  const schema = sequelize.define('UserRole', {
-    userId: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'Users',
-        key: 'id',
-      },
-      primaryKey: true,
-    },
-    roleId: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'Roles',
-        key: 'id',
-      },
-      primaryKey: true,
-    },
-  }, {
+  const schema = sequelize.define('UserRole', {}, {
     timestamps: true,
     indexes: [
       {
         unique: true,
-        fields: ['userId', 'roleId'],
+        fields: ['UserId', 'RoleId'],
       },
     ],
   });

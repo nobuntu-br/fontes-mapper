@@ -1,52 +1,58 @@
 import { DbType } from "../adapters/createDb.adapter";
+import { myCache } from "../adapters/database.config";
 import { UserTenant } from "../models/userTenant.model";
 import UserTenantRepository from "../repository/userTenant.repository";
 import BaseService from "./base.service";
-var apicache = require("apicache");
 
 export default class UserTenantService extends BaseService<UserTenant> {
-  repository: UserTenantRepository;
+  private userTenantRepository: UserTenantRepository;
 
   constructor(dbType: DbType, model: any) {
     //Cria o repositório com dados para obter o banco de dados
-    var _repository = new UserTenantRepository(dbType, model);
-    super(_repository, dbType, model);
-    this.repository = _repository;
+    var repository = new UserTenantRepository(dbType, model);
+    super(repository, dbType, model);
+
+    this.userTenantRepository = repository;
   }
 
-  async userHasAccessToTenant(userUID: string, tenantId: string ): Promise<boolean> {
+  async userHasAccessToTenant(userUID: string, tenantId: string): Promise<boolean> {
     try {
-      
-      if (this.getUserAcessToTenantOnCache != null) {
+
+      if (this.getUserAcessToTenantOnCache(userUID, tenantId) != null) {
         return true;
       }
 
       // Continue with the verification logic
-      const userTenant = await this.repository.findOne({"userId": userUID, "tenantId": tenantId});
+      const userTenant = await this.repository.findOne({ "UserUID": userUID, "TenantId": tenantId });
 
-      if(userTenant == null){
+      if (userTenant == null) {
         return false;
       }
 
       console.log("Tenant do usuário: ", userTenant);
 
       this.saveUserAcessToTenantOnCache(userUID, tenantId, userTenant);
+      console.log("deu")
       return true;
 
     } catch (error) {
       throw new Error("Erro ao buscar o usuário e os tenants " + error);
     }
-  
+
   }
 
-  saveUserAcessToTenantOnCache(userUID: string, tenantId: string, userTenant: Object){
-    // Cache the tenant for 1 day
-    apicache.set(userUID + tenantId, userTenant, '1 day');
+  saveUserAcessToTenantOnCache(userUID: string, tenantId: string, userTenant: Object) {
+    try {
+      myCache.set(userUID + tenantId, userTenant);
+    } catch (error) {
+      console.warn(error);
+      throw new Error("Erro ao salvar userTenant no cache")
+    }
   }
 
-  getUserAcessToTenantOnCache(userUID: string, tenantId: string): string | null{
+  getUserAcessToTenantOnCache(userUID: string, tenantId: string): string | null {
     //TODO se não encontrar nada do cache, retornar null
-    return apicache.get(userUID + tenantId);
+    return myCache.get(userUID + tenantId);
   }
 
   //TODO  um usuário X que deve ser administrador do tenant pode alterar quais usuários tem permissão no tenant. Ao ter feito alguma alteração, tem que ser alterado no cache.

@@ -1,16 +1,16 @@
 import { BaseResourceModel } from "./base-resource.model";
 
-interface IUserTenant {
-  userId?: string;
-  tenantId?: string;
-  tenantCredentialId?: string;
+export interface IUserTenant {
+  UserId?: string;
+  TenantId?: string;
+  TenantCredentialId?: string;
   isAdmin?: boolean;
 }
 
 export class UserTenant extends BaseResourceModel implements IUserTenant {
-  userId?: string;
-  tenantId?: string;
-  tenantCredentialId?: string;
+  UserId?: string;
+  TenantId?: string;
+  TenantCredentialId?: string;
   isAdmin?: boolean;
 
   static fromJson(jsonData: any) : UserTenant {

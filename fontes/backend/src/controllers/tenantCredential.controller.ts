@@ -1,80 +1,142 @@
 import { Request, Response } from "express";
 import { BaseController } from "./base.controller";
-import { Tenant } from "../models/tenant.model";
-import { getDefaultTenantConnection } from "../adapters/database.config";
-import TenantConnection from "../models/tenantConnection.model";
 import { TenantCredentialService } from "../services/tenantCredential.service";
+import { TenantCredential } from "../models/tenantCredential.model";
+import { RegisterTenantCredentialUseCase } from "../useCases/registerTenantCredential/registerTenantCredential.useCase";
 
 export class TenantCredentialController {
 
-  async create(req: Request, res: Response){
+  async create(req: Request, res: Response) {
 
-    //Obtem a conexão padrão do banco de dados (banco Security)
-    const defaultTenantConnection : TenantConnection = await getDefaultTenantConnection();
-    //Obtem o modelo tenant
-    const tenantCredentialModel = defaultTenantConnection.models["tenant"];
+    try {
+      if (req.databaseConnection == undefined) {
+        console.warn("Erro ao obter dados da conexão com tenant");
+        return res.status(500).send({ message: "Ocorreu um erro desconhecido no servidor" });
+      }
 
-    //O Service será criado com base no tipo de banco de dados e o model usado
-    const tenantService : TenantCredentialService = new TenantCredentialService(defaultTenantConnection.databaseType, tenantCredentialModel);
-    //Base Controller é uma classe que já tem implementado todas as funções de CRUD
-    const baseController : BaseController<Tenant> = new BaseController( tenantService, "Tenant");
+      //O Service será criado com base no tipo de banco de dados e o model usado
+      const tenantCredentialService: TenantCredentialService = new TenantCredentialService(req.databaseConnection.databaseType, req.databaseConnection.models["tenantCredential"]);
+      //Use case para realizar operações mais complexas
+      const registerTenantCredentialUseCase: RegisterTenantCredentialUseCase = new RegisterTenantCredentialUseCase(tenantCredentialService);
 
-    baseController.create(req, res);
+      const data = await registerTenantCredentialUseCase.execute(req.body);
+      return res.status(200).send(data);
+
+    } catch (error) {
+      console.log(error);
+      return res.status(500).send({ message: "Ocorreu um erro de servidor ao tentar salvar o tenant." });
+    }
+
   }
 
-  async findAll(req: Request, res: Response){
+  async findAll(req: Request, res: Response) {
 
-    //Obtem a conexão padrão do banco de dados (banco Security)
-    const defaultTenantConnection : TenantConnection = await getDefaultTenantConnection();
-    //Obtem o modelo tenant
-    const tenantCredentialModel = defaultTenantConnection.models["tenant"];
+    try {
+      if (req.databaseConnection == undefined) {
+        return res.status(500).send({ message: "Ocorreu um erro desconhecido no servidor" });
+      }
 
-    //O Service será criado com base no tipo de banco de dados e o model usado
-    const tenantService : TenantCredentialService = new TenantCredentialService(defaultTenantConnection.databaseType, tenantCredentialModel);
-    //Base Controller é uma classe que já tem implementado todas as funções de CRUD
-    const baseController : BaseController<Tenant> = new BaseController( tenantService, "Tenant");
+      //O Service será criado com base no tipo de banco de dados e o model usado
+      const tenantCredentialService: TenantCredentialService = new TenantCredentialService(req.databaseConnection.databaseType, req.databaseConnection.models["tenantCredential"]);
 
-    baseController.findAll(req, res);
+      //Base Controller é uma classe que já tem implementado todas as funções de CRUD
+      const baseController: BaseController<TenantCredential> = new BaseController(tenantCredentialService, "TenantCredential");
+
+      baseController.findAll(req, res);
+    } catch (error) {
+      return res.status(500).send({ message: "Ocorreu um erro desconhecido no servidor" });
+    }
+
   }
 
-  async findById(req: Request, res: Response){
-    //O Service será criado com base no tipo de banco de dados e o model usado
-    const tenantService : TenantCredentialService = new TenantCredentialService(req.body.databaseConnection.dbType, req.body.databaseConnection.user);
-    const baseController : BaseController<Tenant> = new BaseController( tenantService, "Tenant");
+  async findById(req: Request, res: Response) {
+    try {
+      if (req.databaseConnection == undefined) {
+        return res.status(500).send({ message: "Ocorreu um erro desconhecido no servidor" });
+      }
 
-    baseController.findById(req, res);
+      //O Service será criado com base no tipo de banco de dados e o model usado
+      const tenantCredentialService: TenantCredentialService = new TenantCredentialService(req.databaseConnection.databaseType, req.databaseConnection.models["tenantCredential"]);
+
+      //Base Controller é uma classe que já tem implementado todas as funções de CRUD
+      const baseController: BaseController<TenantCredential> = new BaseController(tenantCredentialService, "TenantCredential");
+
+      baseController.findById(req, res);
+    } catch (error) {
+      return res.status(500).send({ message: "Ocorreu um erro desconhecido no servidor" });
+    }   
   }
 
-  async getCount(req: Request, res: Response){
-    //O Service será criado com base no tipo de banco de dados e o model usado
-    const tenantService : TenantCredentialService = new TenantCredentialService(req.body.databaseConnection.dbType, req.body.databaseConnection.user);
-    const baseController : BaseController<Tenant> = new BaseController( tenantService, "Tenant");
+  async getCount(req: Request, res: Response) {
+    try {
+      if (req.databaseConnection == undefined) {
+        return res.status(500).send({ message: "Ocorreu um erro desconhecido no servidor" });
+      }
 
-    baseController.getCount(req, res);
+      //O Service será criado com base no tipo de banco de dados e o model usado
+      const tenantCredentialService: TenantCredentialService = new TenantCredentialService(req.databaseConnection.databaseType, req.databaseConnection.models["tenantCredential"]);
+
+      //Base Controller é uma classe que já tem implementado todas as funções de CRUD
+      const baseController: BaseController<TenantCredential> = new BaseController(tenantCredentialService, "TenantCredential");
+
+      baseController.getCount(req, res);
+    } catch (error) {
+      return res.status(500).send({ message: "Ocorreu um erro desconhecido no servidor" });
+    }
   }
 
-  async update(req: Request, res: Response){
-    //O Service será criado com base no tipo de banco de dados e o model usado
-    const tenantService : TenantCredentialService = new TenantCredentialService(req.body.databaseConnection.dbType, req.body.databaseConnection.user);
-    const baseController : BaseController<Tenant> = new BaseController( tenantService, "Tenant");
+  async update(req: Request, res: Response) {
+    try {
+      if (req.databaseConnection == undefined) {
+        return res.status(500).send({ message: "Ocorreu um erro desconhecido no servidor" });
+      }
 
-    baseController.update(req, res);
+      //O Service será criado com base no tipo de banco de dados e o model usado
+      const tenantCredentialService: TenantCredentialService = new TenantCredentialService(req.databaseConnection.databaseType, req.databaseConnection.models["tenantCredential"]);
+
+      //Base Controller é uma classe que já tem implementado todas as funções de CRUD
+      const baseController: BaseController<TenantCredential> = new BaseController(tenantCredentialService, "TenantCredential");
+
+      baseController.update(req, res);
+    } catch (error) {
+      return res.status(500).send({ message: "Ocorreu um erro desconhecido no servidor" });
+    }
   }
 
-  async delete(req: Request, res: Response){
-    //O Service será criado com base no tipo de banco de dados e o model usado
-    const tenantService : TenantCredentialService = new TenantCredentialService(req.body.databaseConnection.dbType, req.body.databaseConnection.user);
-    const baseController : BaseController<Tenant> = new BaseController( tenantService, "Tenant");
+  async delete(req: Request, res: Response) {
+    try {
+      if (req.databaseConnection == undefined) {
+        return res.status(500).send({ message: "Ocorreu um erro desconhecido no servidor" });
+      }
 
-    baseController.delete(req, res);
+      //O Service será criado com base no tipo de banco de dados e o model usado
+      const tenantCredentialService: TenantCredentialService = new TenantCredentialService(req.databaseConnection.databaseType, req.databaseConnection.models["tenantCredential"]);
+
+      //Base Controller é uma classe que já tem implementado todas as funções de CRUD
+      const baseController: BaseController<TenantCredential> = new BaseController(tenantCredentialService, "TenantCredential");
+
+      baseController.delete(req, res);
+    } catch (error) {
+      return res.status(500).send({ message: "Ocorreu um erro desconhecido no servidor" });
+    }
   }
 
-  async deleteAll(req: Request, res: Response){
-    //O Service será criado com base no tipo de banco de dados e o model usado
-    const tenantService : TenantCredentialService = new TenantCredentialService(req.body.databaseConnection.dbType, req.body.databaseConnection.user);
-    const baseController : BaseController<Tenant> = new BaseController( tenantService, "Tenant");
+  async deleteAll(req: Request, res: Response) {
+    try {
+      if (req.databaseConnection == undefined) {
+        return res.status(500).send({ message: "Ocorreu um erro desconhecido no servidor" });
+      }
 
-    baseController.deleteAll(req, res);
+      //O Service será criado com base no tipo de banco de dados e o model usado
+      const tenantCredentialService: TenantCredentialService = new TenantCredentialService(req.databaseConnection.databaseType, req.databaseConnection.models["tenantCredential"]);
+
+      //Base Controller é uma classe que já tem implementado todas as funções de CRUD
+      const baseController: BaseController<TenantCredential> = new BaseController(tenantCredentialService, "TenantCredential");
+
+      baseController.deleteAll(req, res);
+    } catch (error) {
+      return res.status(500).send({ message: "Ocorreu um erro desconhecido no servidor" });
+    }
   }
 
 }
