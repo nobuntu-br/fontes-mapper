@@ -5243,63 +5243,12 @@
 </node>
 <node CREATED="1657626270312" ID="ID_1210412099" MODIFIED="1718147339966" TEXT="patterns">
 <icon BUILTIN="element"/>
-<node CREATED="1665524991570" ID="ID_464460846" MODIFIED="1718147441210" TEXT="geraPastas">
+<node CREATED="1665524991570" FOLDED="true" ID="ID_464460846" MODIFIED="1725308249451" TEXT="geraPastas">
 <icon BUILTIN="element"/>
 <node CREATED="1665525835355" ID="ID_226146924" MODIFIED="1708002602285" TEXT="#!/bin/bash">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1665527639846" ID="ID_143470295" MODIFIED="1708002602285" TEXT="cd ..">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1718147386885" ID="ID_230522070" MODIFIED="1718147507848" TEXT="find . -type d -name &quot;.git&quot; -exec rm -rf {} +">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1718147395926" ID="ID_492993706" MODIFIED="1718147495469" TEXT="echo -e &quot;\n\nDigite qual o link do seu reposit&#xf3;rio:\n&quot;">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1718147398906" ID="ID_1778207071" MODIFIED="1718147495468" TEXT="read REPOSITORIO">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1718147407275" ID="ID_1642117543" MODIFIED="1718147495468" TEXT="git clone $REPOSITORIO">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1718147410988" ID="ID_1732910602" MODIFIED="1718147495468" TEXT="echo -e &quot;\n\nDigite qual o nome da pasta que foi criada com esse reposit&#xf3;rio: \n&quot;">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1718147413398" ID="ID_1905648148" MODIFIED="1718147495468" TEXT="read PASTA">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1718147415796" ID="ID_1999219285" MODIFIED="1718147495468" TEXT="cd $PASTA/">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1718147417894" ID="ID_982003934" MODIFIED="1718147495467" TEXT="cp .git -r ../">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1718147420431" ID="ID_1276083639" MODIFIED="1718147495467" TEXT="cd ..">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1718147410988" ID="ID_179211876" MODIFIED="1718147495468" TEXT="echo -e &quot;\n\nDigite qual o nome da pasta que foi criada com esse reposit&#xf3;rio: \n&quot;">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1718147413398" ID="ID_806517698" MODIFIED="1721099554832" TEXT="read NOME">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1718147423137" ID="ID_564266705" MODIFIED="1721099520794" TEXT="rm -rf $NOME">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1718147427574" ID="ID_1059384391" MODIFIED="1718147495467" TEXT="rm -rf .gitignore">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1718147431534" ID="ID_518121184" MODIFIED="1718147495466" TEXT="git reset --hard">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1718147433945" ID="ID_363058578" MODIFIED="1718147495466" TEXT="git flow init">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1718147436331" ID="ID_1643430165" MODIFIED="1718147495466" TEXT="rm -rf frontend">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1718147438830" ID="ID_1121065602" MODIFIED="1718147495466" TEXT="rm -rf backend">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1666719278449" ID="ID_1867237095" MODIFIED="1708972795389" TEXT="git clone https://github.com/JoaoVictorNobuntu/frontend">
@@ -5567,31 +5516,7 @@
 </node>
 <node CREATED="1718147342847" ID="ID_989521952" MODIFIED="1718147349811" TEXT="geraCommit">
 <icon BUILTIN="element"/>
-<node CREATED="1718147665620" ID="ID_1291440367" MODIFIED="1718147698605" TEXT="echo -e &quot;\n\nQual o nome da sua Branch\n&quot;">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1718147669667" ID="ID_1905498094" MODIFIED="1718147698606" TEXT="read nomeFeature">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1718147673117" ID="ID_1190402907" MODIFIED="1718147698607" TEXT="git flow feature start $nomeFeature">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1718147675696" ID="ID_212080890" MODIFIED="1718147698608" TEXT="git add --all">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1718147678336" ID="ID_1821913082" MODIFIED="1718147698610" TEXT="echo -e &quot;\n\nQual o comentario do seu commit?\n&quot;">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1718147681068" ID="ID_836966337" MODIFIED="1718147698611" TEXT="read commit">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1718147684535" ID="ID_1106681886" MODIFIED="1718147698612" TEXT="git commit -m &quot;$commit&quot;">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1718147687254" ID="ID_41301654" MODIFIED="1718147698613" TEXT="git status">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1718147689985" ID="ID_1500188411" MODIFIED="1718147698614" TEXT="git push --set-upstream origin feature/$nomeFeature">
+<node CREATED="1718147665620" ID="ID_1291440367" MODIFIED="1725308256916" TEXT="">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
