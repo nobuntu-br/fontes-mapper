@@ -14945,6 +14945,9 @@
 <node CREATED="1666208674044" ID="ID_1834458868" MODIFIED="1666208684135" TEXT="  imports: [ ">
 <icon BUILTIN="tag_green"/>
 </node>
+<node CREATED="1721103167094" ID="ID_631876019" MODIFIED="1721103186409" TEXT="{path: &apos;callback/:user&apos;,loadChildren: () =&gt; import(&apos;app/core/pages/callback/callback.module&apos;).then(m =&gt; m.CallbackModule)}, ">
+<icon BUILTIN="tag_green"/>
+</node>
 </node>
 <node CREATED="1666208717636" FOLDED="true" ID="ID_424087029" MODIFIED="1720461463273" TEXT="importaModule">
 <icon BUILTIN="element"/>
