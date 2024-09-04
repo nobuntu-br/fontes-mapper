@@ -1,0 +1,15 @@
+import { DbType } from "../adapters/createDb.adapter";
+import { TenantCredential } from "../models/tenantCredential.model";
+import ProductsRepository from "../repository/products.repository";
+import { Products } from "../models/products.model"; 
+import BaseService from "./base.service";
+
+export class ProductsService extends BaseService<Products>{
+
+  constructor(dbType: DbType, model: any) { 
+    //Cria o repositório com dados para obter o banco de dados 
+    var repository : ProductsRepository = new ProductsRepository(dbType, model); 
+    super(repository, dbType, model); 
+  } 
+
+}

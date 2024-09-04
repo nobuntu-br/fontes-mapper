@@ -1,0 +1,114 @@
+{
+    "config":{ 
+        "modified": "2024-09-04T17:01:45.937203Z", 
+        "name": "Menu Principal", 
+        "type": "sandwich"
+    }, 
+    "itens": [ 
+        { 
+            "name": "Employees", 
+            "routeUrl": "employees ", 
+            "icon": "feather:box"
+        },
+        { 
+            "name": "InventoryTransactionTypes", 
+            "routeUrl": "inventoryTransactionTypes  ", 
+            "icon": "feather:box"
+        },
+        { 
+            "name": "InventoryTransactions", 
+            "routeUrl": "inventoryTransaction", 
+            "icon": "feather:box"
+        },
+        { 
+            "name": "Invoices", 
+            "routeUrl": "invoices", 
+            "icon": "feather:box"
+        },
+        { 
+            "name": "OrderDetails", 
+            "routeUrl": "orderDetails", 
+            "icon": "feather:box"
+        },
+        { 
+            "name": "OrderDetailsStatus", 
+            "routeUrl": "orderDetailsStatus", 
+            "icon": "feather:box"
+        },
+        { 
+            "name": "Orders", 
+            "routeUrl": "orders", 
+            "icon": "feather:box"
+        },
+        { 
+            "name": "OrdersStatus", 
+            "routeUrl": "ordersStatus", 
+            "icon": "feather:box"
+        },
+        { 
+            "name": "OrdersTaxStatus", 
+            "routeUrl": "ordersTaxStatus", 
+            "icon": "feather:box"
+        },
+        { 
+            "name": "SalesReports", 
+            "routeUrl": "salesReports", 
+            "icon": "feather:box"
+        },
+        { 
+            "name": "Shippers", 
+            "routeUrl": "shippers", 
+            "icon": "feather:box"
+        },
+        { 
+            "name": "Products", 
+            "routeUrl": "products", 
+            "icon": "feather:box"
+        },
+        { 
+            "name": "PurchaseOrderDetails", 
+            "routeUrl": "purchaseOrderDetails", 
+            "icon": "feather:box"
+        },
+        { 
+            "name": "PurchaseOrderStatus", 
+            "routeUrl": "purchaseOrderStatus", 
+            "icon": "feather:box"
+        },
+        { 
+            "name": "PurchaseOrders", 
+            "routeUrl": "purchaseOrders", 
+            "icon": "feather:box"
+        },
+        { 
+            "name": "Suppliers", 
+            "routeUrl": "suppliers", 
+            "icon": "feather:box"
+        },
+        { 
+            "name": "Company", 
+            "routeUrl": "company", 
+            "icon": "feather:box"
+        },
+        { 
+            "name": "Application", 
+            "routeUrl": "application", 
+            "icon": "feather:box"
+        },
+        { 
+            "name": "Customers", 
+            "routeUrl": "customers", 
+            "icon": "feather:box"
+        },
+        { 
+            "name": "CompanyApplicationToken", 
+            "routeUrl": "companyApplicationToken", 
+            "icon": "feather:box"
+        },
+        { 
+            "name": "Strings", 
+            "routeUrl": "strings", 
+            "icon": "feather:box"
+        }
+    ] 
+}

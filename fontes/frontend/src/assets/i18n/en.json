@@ -1,0 +1,230 @@
+{
+
+"Employees": {
+        "Employees": "Employees",
+        "company": "Company",
+        "lastName": "Sobrenome",
+        "firstName": "Primeiro Nome",
+        "emailAddress": "Email Address",
+        "jobTitle": "Job Title",
+        "businessPhone": "Business Phone",
+        "homePhone": "Home Phone",
+        "mobilePhone": "Mobile Phone",
+        "faxNumber": "Fax Number",
+        "address": "Address",
+        "city": "City",
+        "stateProvince": "State Province Company",
+        "zipPostalCode": "Zip Postal Code",
+        "countryRegion": "Country Region",
+        "webPage": "Web Page",
+        "notes": "Notes",
+        "attachments": "Attachments"
+    },
+"InventoryTransactionTypes": {
+        "InventoryTransactionTypes": "InventoryTransactionTypes",
+        "typeName": "type Name"
+    },
+"InventoryTransactions": {
+        "InventoryTransactions": "InventoryTransaction",
+        "transactionType": "TransactionType",
+        "transactionCreatedDate": "Transaction Created Date",
+        "transactionModifiedDate": "Transaction Modified Date",
+        "product": "Product",
+        "quantity": "Quantity",
+        "purchaseOrder": "Purchase Order ",
+        "customerOrder": "Customer Order",
+        "comments": "Comments "
+    },
+"Invoices": {
+        "Invoices": "Invoices",
+        "order": "Order",
+        "invoiceDate": "Invoice Date",
+        "dueDate": "Due Date",
+        "tax": "Tax",
+        "shipping": "Shipping",
+        "amountDue": "Amount Due"
+    },
+"OrderDetails": {
+        "OrderDetails": "Order Details",
+        "order": "Order",
+        "product": "Product",
+        "quantity": "Quantity",
+        "unitPrice": "Unit Price",
+        "discount": "Discount",
+        "status": "Status",
+        "dateAllocated": "Product",
+        "purchaseOrderId": "Purchase Order Id",
+        "inventoryId": "Inventory Id"
+    },
+"OrderDetailsStatus": {
+        "OrderDetailsStatus": "Order Details Status",
+        "statusName": "status Name"
+    },
+"Orders": {
+        "Orders": "Order",
+        "employee": "Employees",
+        "customer": "Customer",
+        "orderDate": "Order Date",
+        "shippedDate": "Shipped Date",
+        "shipper": "Shipper",
+        "shipName": "Ship Name",
+        "shipAddress": "Ship Address",
+        "shipCity": "Ship City",
+        "shipStateProvince": "Ship State Province",
+        "shipZipPostalCode": "Ship Zip Postal Code",
+        "shipCountryRegion": "Ship Country Region",
+        "shippingFee": "Shipping Fee",
+        "taxes": "Taxes",
+        "paymentType": "Payment Type",
+        "paidDate": "Paid Date",
+        "notes": "Notes",
+        "taxRate": "Employees",
+        "taxStatus": "Tax Rate",
+        "status": "Status",
+        "orderDetails": "OrderDetails"
+    },
+"OrdersStatus": {
+        "OrdersStatus": "Orders Status",
+        "statusName": "StatusName"
+    },
+"OrdersTaxStatus": {
+        "OrdersTaxStatus": "Orders Tax Status",
+        "taxStatusName": "TaxStatusName"
+    },
+"SalesReports": {
+        "SalesReports": "Sales Reports",
+        "display": "Display",
+        "title": "Title",
+        "filterRowSource": "TaxStFilter Row SourceatusName",
+        "padrao": "Padrao"
+    },
+"Shippers": {
+        "Shippers": "Shippers ",
+        "company": "Company",
+        "lastName": "Sobrenome",
+        "firstName": "Primeiro Nome",
+        "emailAddress": "Email Address",
+        "jobTitle": "Job Title",
+        "businessPhone": "Business Phone",
+        "homePhone": "Home Phone",
+        "mobilePhone": "Mobile Phone",
+        "faxNumber": "Fax Number",
+        "address": "Address",
+        "city": "City",
+        "stateProvince": "State Province Company",
+        "zipPostalCode": "Zip Postal Code",
+        "countryRegion": "Country Region",
+        "webPage": "Web Page",
+        "notes": "Notes",
+        "attachments": "Attachments"
+    },
+"Products": {
+        "Products": "Products",
+        "supplierIds": "Supplier Ids",
+        "productCode": "Product Code",
+        "productName": "Product Name",
+        "description": "Description",
+        "standardCost": "Standard Cost",
+        "listPrice": "List Price",
+        "reorderLevel": "Reorder Level",
+        "targetLevel": "Target Level",
+        "quantityPerUnit": "Quantity Per Unit",
+        "discontinued": "Discontinued",
+        "minimumReorderQuantity": "Minimum Reorder Quantity",
+        "category": "Category",
+        "attachments": "Attachments",
+        "defaultDiscount": "Default discount"
+    },
+"PurchaseOrderDetails": {
+        "PurchaseOrderDetails": "Purchase Order Details",
+        "purchaseOrder": "Purchase Order",
+        "product": "Product",
+        "quantity": "Quantity",
+        "unitCost": "Unit Cost",
+        "dateReceived": "Date Received",
+        "postedToInventory": "Posted To Inventory",
+        "inventory": "Inventory"
+    },
+"PurchaseOrderStatus": {
+        "PurchaseOrderStatus": "Purchase Order Status",
+        "status": "status"
+    },
+"PurchaseOrders": {
+        "PurchaseOrders": "Purchase Order",
+        "supplier": "Supplier",
+        "createdBy": "Employees",
+        "submittedDate": "Submitted Date ",
+        "creationDate": "Creation Date",
+        "status": "Purchase Order ",
+        "expectedDate": "Expected Date",
+        "shippingFee": "Shipping Fee",
+        "taxes": "Taxes",
+        "paymentDate": "Payment Date",
+        "paymentAmount": "Payment Amount",
+        "paymentMethod": "Payment Method",
+        "notes": "Notes",
+        "approvedBy": "Approved By",
+        "approvedDate": "Approved Date",
+        "submittedBy": "Submitted By",
+        "purchaseOrderDetails": "Purchase Order Detais"
+    },
+"Suppliers": {
+        "Suppliers": "Suppliers",
+        "company": "Company",
+        "lastName": "Sobrenome",
+        "firstName": "Primeiro Nome",
+        "emailAddress": "Email Address",
+        "jobTitle": "Job Title",
+        "businessPhone": "Business Phone",
+        "homePhone": "Home Phone",
+        "mobilePhone": "Mobile Phone",
+        "faxNumber": "Fax Number",
+        "address": "Address",
+        "city": "City",
+        "stateProvince": "State Province Company",
+        "zipPostalCode": "Zip Postal Code",
+        "countryRegion": "Country Region",
+        "webPage": "Web Page",
+        "notes": "Notes",
+        "attachments": "Attachments"
+    },
+"Company": {
+        "Company": "company",
+        "name": "Name",
+        "databaseSchema": "DataBaseSchema"
+    },
+"Application": {
+        "Application": "Application",
+        "name": "Name"
+    },
+"Customers": {
+        "Customers": "Customers",
+        "company": "Company",
+        "lastName": "Sobrenome",
+        "firstName": "Primeiro Nome",
+        "emailAddress": "Email Address",
+        "jobTitle": "Job Title",
+        "businessPhone": "Business Phone",
+        "homePhone": "Home Phone",
+        "mobilePhone": "Mobile Phone",
+        "faxNumber": "Fax Number",
+        "address": "Address",
+        "city": "City",
+        "stateProvince": "State Province Company",
+        "zipPostalCode": "Zip Postal Code",
+        "countryRegion": "Country Region",
+        "webPage": "Web Page",
+        "notes": "Notes",
+        "attachments": "Attachments"
+    },
+"CompanyApplicationToken": {
+        "CompanyApplicationToken": "CompanyApplicationToken",
+        "company": "Company",
+        "application": "Application",
+        "token": "Token"
+    },
+"Strings": {
+        "Strings": "Strings",
+        "stringData": "StringData"
+    }
+}

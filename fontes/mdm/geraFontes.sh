@@ -1,8 +1,14 @@
 #!/bin/bash
 cd ..
-git clone https://github.com/JoaoVictorNobuntu/frontend
-git clone https://github.com/JoaoVictorNobuntu/backend
+rm -rf frontend
+rm -rf backend
+git clone https://github.com/nobuntu-br/frontend
+git clone https://github.com/nobuntu-br/backend
+cd backend
+find . -type d -name ".git" -exec rm -rf {} +
+cd ..
 cd frontend
+find . -type d -name ".git" -exec rm -rf {} + 
 ng add @angular/material
 npm install bootstrap@4.1.3 jquery@3.3.1 popper.js@1.14.3 --save 
 cd src/app
@@ -25,12 +31,6 @@ cd frontend
 npm install
 cd ..
 cd frontend/src/app/modules/
-ng g m customers --routing
-cd customers
-ng g c CustomersForm
-ng g c ListCustomers
-mkdir shared
-cd ..
 ng g m employees --routing
 cd employees
 ng g c EmployeesForm
@@ -127,12 +127,6 @@ ng g c SuppliersForm
 ng g c ListSuppliers
 mkdir shared
 cd ..
-ng g m strings --routing
-cd strings
-ng g c StringsForm
-ng g c ListStrings
-mkdir shared
-cd ..
 ng g m company --routing
 cd company
 ng g c CompanyForm
@@ -145,89 +139,201 @@ ng g c ApplicationForm
 ng g c ListApplication
 mkdir shared
 cd ..
+ng g m customers --routing
+cd customers
+ng g c CustomersForm
+ng g c ListCustomers
+mkdir shared
+cd ..
 ng g m companyApplicationToken --routing
 cd company-application-token
 ng g c CompanyApplicationTokenForm
 ng g c ListCompanyApplicationToken
 mkdir shared
 cd ..
+ng g m strings --routing
+cd strings
+ng g c StringsForm
+ng g c ListStrings
+mkdir shared
+cd ..
 cd ../../../..
-cd backend/models
-mi g app mean index > index.js
-cd ..
-mi g app mean server > server.js
-npm init -y
-npm install express mongoose cors --save
-cd ..
+mi g app mean indexSequelize > backend/src/models/sequelize/index.ts
+mi g app mean indexMongoose > backend/src/models/mongoose/index.ts
+mi g app mean index > backend/src/routes/index.ts
 mi g app angular appModule > frontend/src/app/app.module.ts
 mi g app angular appRouting > frontend/src/app/app-routing.module.ts
 mi g app angular appComponentHTML > frontend/src/app/app.component.html
 mi g app angular appComponentTS > frontend/src/app/app.component.ts
 mi g app angular indexHTML > frontend/src/index.html
-mapperidea generate app mean validator entityName=Customers > backend/app/validators/customers.validator.js
-mapperidea generate app mean validator entityName=Employees > backend/app/validators/employees.validator.js
-mapperidea generate app mean validator entityName=InventoryTransactionTypes > backend/app/validators/inventoryTransactionTypes.validator.js
-mapperidea generate app mean validator entityName=InventoryTransactions > backend/app/validators/inventoryTransactions.validator.js
-mapperidea generate app mean validator entityName=Invoices > backend/app/validators/invoices.validator.js
-mapperidea generate app mean validator entityName=OrderDetails > backend/app/validators/orderDetails.validator.js
-mapperidea generate app mean validator entityName=OrderDetailsStatus > backend/app/validators/orderDetailsStatus.validator.js
-mapperidea generate app mean validator entityName=Orders > backend/app/validators/orders.validator.js
-mapperidea generate app mean validator entityName=OrdersStatus > backend/app/validators/ordersStatus.validator.js
-mapperidea generate app mean validator entityName=OrdersTaxStatus > backend/app/validators/ordersTaxStatus.validator.js
-mapperidea generate app mean validator entityName=SalesReports > backend/app/validators/salesReports.validator.js
-mapperidea generate app mean validator entityName=Shippers > backend/app/validators/shippers.validator.js
-mapperidea generate app mean validator entityName=Products > backend/app/validators/products.validator.js
-mapperidea generate app mean validator entityName=PurchaseOrderDetails > backend/app/validators/purchaseOrderDetails.validator.js
-mapperidea generate app mean validator entityName=PurchaseOrderStatus > backend/app/validators/purchaseOrderStatus.validator.js
-mapperidea generate app mean validator entityName=PurchaseOrders > backend/app/validators/purchaseOrders.validator.js
-mapperidea generate app mean validator entityName=Suppliers > backend/app/validators/suppliers.validator.js
-mapperidea generate app mean validator entityName=Strings > backend/app/validators/strings.validator.js
-mapperidea generate app mean validator entityName=Company > backend/app/validators/company.validator.js
-mapperidea generate app mean validator entityName=Application > backend/app/validators/application.validator.js
-mapperidea generate app mean validator entityName=CompanyApplicationToken > backend/app/validators/companyApplicationToken.validator.js
-mapperidea generate app mean mongoModel entityName=Customers > backend/models/customers.model.js
-mapperidea generate app mean mongoModel entityName=Employees > backend/models/employees.model.js
-mapperidea generate app mean mongoModel entityName=InventoryTransactionTypes > backend/models/inventoryTransactionTypes.model.js
-mapperidea generate app mean mongoModel entityName=InventoryTransactions > backend/models/inventoryTransactions.model.js
-mapperidea generate app mean mongoModel entityName=Invoices > backend/models/invoices.model.js
-mapperidea generate app mean mongoModel entityName=OrderDetails > backend/models/orderDetails.model.js
-mapperidea generate app mean mongoModel entityName=OrderDetailsStatus > backend/models/orderDetailsStatus.model.js
-mapperidea generate app mean mongoModel entityName=Orders > backend/models/orders.model.js
-mapperidea generate app mean mongoModel entityName=OrdersStatus > backend/models/ordersStatus.model.js
-mapperidea generate app mean mongoModel entityName=OrdersTaxStatus > backend/models/ordersTaxStatus.model.js
-mapperidea generate app mean mongoModel entityName=SalesReports > backend/models/salesReports.model.js
-mapperidea generate app mean mongoModel entityName=Shippers > backend/models/shippers.model.js
-mapperidea generate app mean mongoModel entityName=Products > backend/models/products.model.js
-mapperidea generate app mean mongoModel entityName=PurchaseOrderDetails > backend/models/purchaseOrderDetails.model.js
-mapperidea generate app mean mongoModel entityName=PurchaseOrderStatus > backend/models/purchaseOrderStatus.model.js
-mapperidea generate app mean mongoModel entityName=PurchaseOrders > backend/models/purchaseOrders.model.js
-mapperidea generate app mean mongoModel entityName=Suppliers > backend/models/suppliers.model.js
-mapperidea generate app mean mongoModel entityName=Strings > backend/models/strings.model.js
-mapperidea generate app mean mongoModel entityName=Company > backend/models/company.model.js
-mapperidea generate app mean mongoModel entityName=Application > backend/models/application.model.js
-mapperidea generate app mean mongoModel entityName=CompanyApplicationToken > backend/models/companyApplicationToken.model.js
-mapperidea generate app mean apiController entityName=Customers > backend/app/controllers/customers.controller.js
-mapperidea generate app mean apiController entityName=Employees > backend/app/controllers/employees.controller.js
-mapperidea generate app mean apiController entityName=InventoryTransactionTypes > backend/app/controllers/inventoryTransactionTypes.controller.js
-mapperidea generate app mean apiController entityName=InventoryTransactions > backend/app/controllers/inventoryTransactions.controller.js
-mapperidea generate app mean apiController entityName=Invoices > backend/app/controllers/invoices.controller.js
-mapperidea generate app mean apiController entityName=OrderDetails > backend/app/controllers/orderDetails.controller.js
-mapperidea generate app mean apiController entityName=OrderDetailsStatus > backend/app/controllers/orderDetailsStatus.controller.js
-mapperidea generate app mean apiController entityName=Orders > backend/app/controllers/orders.controller.js
-mapperidea generate app mean apiController entityName=OrdersStatus > backend/app/controllers/ordersStatus.controller.js
-mapperidea generate app mean apiController entityName=OrdersTaxStatus > backend/app/controllers/ordersTaxStatus.controller.js
-mapperidea generate app mean apiController entityName=SalesReports > backend/app/controllers/salesReports.controller.js
-mapperidea generate app mean apiController entityName=Shippers > backend/app/controllers/shippers.controller.js
-mapperidea generate app mean apiController entityName=Products > backend/app/controllers/products.controller.js
-mapperidea generate app mean apiController entityName=PurchaseOrderDetails > backend/app/controllers/purchaseOrderDetails.controller.js
-mapperidea generate app mean apiController entityName=PurchaseOrderStatus > backend/app/controllers/purchaseOrderStatus.controller.js
-mapperidea generate app mean apiController entityName=PurchaseOrders > backend/app/controllers/purchaseOrders.controller.js
-mapperidea generate app mean apiController entityName=Suppliers > backend/app/controllers/suppliers.controller.js
-mapperidea generate app mean apiController entityName=Strings > backend/app/controllers/strings.controller.js
-mapperidea generate app mean apiController entityName=Company > backend/app/controllers/company.controller.js
-mapperidea generate app mean apiController entityName=Application > backend/app/controllers/application.controller.js
-mapperidea generate app mean apiController entityName=CompanyApplicationToken > backend/app/controllers/companyApplicationToken.controller.js
-mapperidea generate app angular model entityName=Customers > frontend/src/app/modules/customers/shared/customers.model.ts
+mapperidea generate app mean validator entityName=Employees > backend/src/routes/validators/employees.validator.ts
+mapperidea generate app mean validator entityName=InventoryTransactionTypes > backend/src/routes/validators/inventoryTransactionTypes.validator.ts
+mapperidea generate app mean validator entityName=InventoryTransactions > backend/src/routes/validators/inventoryTransactions.validator.ts
+mapperidea generate app mean validator entityName=Invoices > backend/src/routes/validators/invoices.validator.ts
+mapperidea generate app mean validator entityName=OrderDetails > backend/src/routes/validators/orderDetails.validator.ts
+mapperidea generate app mean validator entityName=OrderDetailsStatus > backend/src/routes/validators/orderDetailsStatus.validator.ts
+mapperidea generate app mean validator entityName=Orders > backend/src/routes/validators/orders.validator.ts
+mapperidea generate app mean validator entityName=OrdersStatus > backend/src/routes/validators/ordersStatus.validator.ts
+mapperidea generate app mean validator entityName=OrdersTaxStatus > backend/src/routes/validators/ordersTaxStatus.validator.ts
+mapperidea generate app mean validator entityName=SalesReports > backend/src/routes/validators/salesReports.validator.ts
+mapperidea generate app mean validator entityName=Shippers > backend/src/routes/validators/shippers.validator.ts
+mapperidea generate app mean validator entityName=Products > backend/src/routes/validators/products.validator.ts
+mapperidea generate app mean validator entityName=PurchaseOrderDetails > backend/src/routes/validators/purchaseOrderDetails.validator.ts
+mapperidea generate app mean validator entityName=PurchaseOrderStatus > backend/src/routes/validators/purchaseOrderStatus.validator.ts
+mapperidea generate app mean validator entityName=PurchaseOrders > backend/src/routes/validators/purchaseOrders.validator.ts
+mapperidea generate app mean validator entityName=Suppliers > backend/src/routes/validators/suppliers.validator.ts
+mapperidea generate app mean validator entityName=Company > backend/src/routes/validators/company.validator.ts
+mapperidea generate app mean validator entityName=Application > backend/src/routes/validators/application.validator.ts
+mapperidea generate app mean validator entityName=Customers > backend/src/routes/validators/customers.validator.ts
+mapperidea generate app mean validator entityName=CompanyApplicationToken > backend/src/routes/validators/companyApplicationToken.validator.ts
+mapperidea generate app mean validator entityName=Strings > backend/src/routes/validators/strings.validator.ts
+mapperidea generate app mean sequelizeModel entityName=Employees > backend/src/models/sequelize/employees.model.ts
+mapperidea generate app mean mongoModel entityName=Employees > backend/src/models/mongoose/employees.model.ts
+mapperidea generate app mean model entityName=Employees > backend/src/models/employees.model.ts
+mapperidea generate app mean sequelizeModel entityName=InventoryTransactionTypes > backend/src/models/sequelize/inventoryTransactionTypes.model.ts
+mapperidea generate app mean mongoModel entityName=InventoryTransactionTypes > backend/src/models/mongoose/inventoryTransactionTypes.model.ts
+mapperidea generate app mean model entityName=InventoryTransactionTypes > backend/src/models/inventoryTransactionTypes.model.ts
+mapperidea generate app mean sequelizeModel entityName=InventoryTransactions > backend/src/models/sequelize/inventoryTransactions.model.ts
+mapperidea generate app mean mongoModel entityName=InventoryTransactions > backend/src/models/mongoose/inventoryTransactions.model.ts
+mapperidea generate app mean model entityName=InventoryTransactions > backend/src/models/inventoryTransactions.model.ts
+mapperidea generate app mean sequelizeModel entityName=Invoices > backend/src/models/sequelize/invoices.model.ts
+mapperidea generate app mean mongoModel entityName=Invoices > backend/src/models/mongoose/invoices.model.ts
+mapperidea generate app mean model entityName=Invoices > backend/src/models/invoices.model.ts
+mapperidea generate app mean sequelizeModel entityName=OrderDetails > backend/src/models/sequelize/orderDetails.model.ts
+mapperidea generate app mean mongoModel entityName=OrderDetails > backend/src/models/mongoose/orderDetails.model.ts
+mapperidea generate app mean model entityName=OrderDetails > backend/src/models/orderDetails.model.ts
+mapperidea generate app mean sequelizeModel entityName=OrderDetailsStatus > backend/src/models/sequelize/orderDetailsStatus.model.ts
+mapperidea generate app mean mongoModel entityName=OrderDetailsStatus > backend/src/models/mongoose/orderDetailsStatus.model.ts
+mapperidea generate app mean model entityName=OrderDetailsStatus > backend/src/models/orderDetailsStatus.model.ts
+mapperidea generate app mean sequelizeModel entityName=Orders > backend/src/models/sequelize/orders.model.ts
+mapperidea generate app mean mongoModel entityName=Orders > backend/src/models/mongoose/orders.model.ts
+mapperidea generate app mean model entityName=Orders > backend/src/models/orders.model.ts
+mapperidea generate app mean sequelizeModel entityName=OrdersStatus > backend/src/models/sequelize/ordersStatus.model.ts
+mapperidea generate app mean mongoModel entityName=OrdersStatus > backend/src/models/mongoose/ordersStatus.model.ts
+mapperidea generate app mean model entityName=OrdersStatus > backend/src/models/ordersStatus.model.ts
+mapperidea generate app mean sequelizeModel entityName=OrdersTaxStatus > backend/src/models/sequelize/ordersTaxStatus.model.ts
+mapperidea generate app mean mongoModel entityName=OrdersTaxStatus > backend/src/models/mongoose/ordersTaxStatus.model.ts
+mapperidea generate app mean model entityName=OrdersTaxStatus > backend/src/models/ordersTaxStatus.model.ts
+mapperidea generate app mean sequelizeModel entityName=SalesReports > backend/src/models/sequelize/salesReports.model.ts
+mapperidea generate app mean mongoModel entityName=SalesReports > backend/src/models/mongoose/salesReports.model.ts
+mapperidea generate app mean model entityName=SalesReports > backend/src/models/salesReports.model.ts
+mapperidea generate app mean sequelizeModel entityName=Shippers > backend/src/models/sequelize/shippers.model.ts
+mapperidea generate app mean mongoModel entityName=Shippers > backend/src/models/mongoose/shippers.model.ts
+mapperidea generate app mean model entityName=Shippers > backend/src/models/shippers.model.ts
+mapperidea generate app mean sequelizeModel entityName=Products > backend/src/models/sequelize/products.model.ts
+mapperidea generate app mean mongoModel entityName=Products > backend/src/models/mongoose/products.model.ts
+mapperidea generate app mean model entityName=Products > backend/src/models/products.model.ts
+mapperidea generate app mean sequelizeModel entityName=PurchaseOrderDetails > backend/src/models/sequelize/purchaseOrderDetails.model.ts
+mapperidea generate app mean mongoModel entityName=PurchaseOrderDetails > backend/src/models/mongoose/purchaseOrderDetails.model.ts
+mapperidea generate app mean model entityName=PurchaseOrderDetails > backend/src/models/purchaseOrderDetails.model.ts
+mapperidea generate app mean sequelizeModel entityName=PurchaseOrderStatus > backend/src/models/sequelize/purchaseOrderStatus.model.ts
+mapperidea generate app mean mongoModel entityName=PurchaseOrderStatus > backend/src/models/mongoose/purchaseOrderStatus.model.ts
+mapperidea generate app mean model entityName=PurchaseOrderStatus > backend/src/models/purchaseOrderStatus.model.ts
+mapperidea generate app mean sequelizeModel entityName=PurchaseOrders > backend/src/models/sequelize/purchaseOrders.model.ts
+mapperidea generate app mean mongoModel entityName=PurchaseOrders > backend/src/models/mongoose/purchaseOrders.model.ts
+mapperidea generate app mean model entityName=PurchaseOrders > backend/src/models/purchaseOrders.model.ts
+mapperidea generate app mean sequelizeModel entityName=Suppliers > backend/src/models/sequelize/suppliers.model.ts
+mapperidea generate app mean mongoModel entityName=Suppliers > backend/src/models/mongoose/suppliers.model.ts
+mapperidea generate app mean model entityName=Suppliers > backend/src/models/suppliers.model.ts
+mapperidea generate app mean sequelizeModel entityName=Company > backend/src/models/sequelize/company.model.ts
+mapperidea generate app mean mongoModel entityName=Company > backend/src/models/mongoose/company.model.ts
+mapperidea generate app mean model entityName=Company > backend/src/models/company.model.ts
+mapperidea generate app mean sequelizeModel entityName=Application > backend/src/models/sequelize/application.model.ts
+mapperidea generate app mean mongoModel entityName=Application > backend/src/models/mongoose/application.model.ts
+mapperidea generate app mean model entityName=Application > backend/src/models/application.model.ts
+mapperidea generate app mean sequelizeModel entityName=Customers > backend/src/models/sequelize/customers.model.ts
+mapperidea generate app mean mongoModel entityName=Customers > backend/src/models/mongoose/customers.model.ts
+mapperidea generate app mean model entityName=Customers > backend/src/models/customers.model.ts
+mapperidea generate app mean sequelizeModel entityName=CompanyApplicationToken > backend/src/models/sequelize/companyApplicationToken.model.ts
+mapperidea generate app mean mongoModel entityName=CompanyApplicationToken > backend/src/models/mongoose/companyApplicationToken.model.ts
+mapperidea generate app mean model entityName=CompanyApplicationToken > backend/src/models/companyApplicationToken.model.ts
+mapperidea generate app mean sequelizeModel entityName=Strings > backend/src/models/sequelize/strings.model.ts
+mapperidea generate app mean mongoModel entityName=Strings > backend/src/models/mongoose/strings.model.ts
+mapperidea generate app mean model entityName=Strings > backend/src/models/strings.model.ts
+mi g app json jsonClass entityName=Employees > frontend/src/assets/dicionario/employees.json
+mi g app json jsonClass entityName=InventoryTransactionTypes > frontend/src/assets/dicionario/inventoryTransactionTypes.json
+mi g app json jsonClass entityName=InventoryTransactions > frontend/src/assets/dicionario/inventoryTransactions.json
+mi g app json jsonClass entityName=Invoices > frontend/src/assets/dicionario/invoices.json
+mi g app json jsonClass entityName=OrderDetails > frontend/src/assets/dicionario/orderDetails.json
+mi g app json jsonClass entityName=OrderDetailsStatus > frontend/src/assets/dicionario/orderDetailsStatus.json
+mi g app json jsonClass entityName=Orders > frontend/src/assets/dicionario/orders.json
+mi g app json jsonClass entityName=OrdersStatus > frontend/src/assets/dicionario/ordersStatus.json
+mi g app json jsonClass entityName=OrdersTaxStatus > frontend/src/assets/dicionario/ordersTaxStatus.json
+mi g app json jsonClass entityName=SalesReports > frontend/src/assets/dicionario/salesReports.json
+mi g app json jsonClass entityName=Shippers > frontend/src/assets/dicionario/shippers.json
+mi g app json jsonClass entityName=Products > frontend/src/assets/dicionario/products.json
+mi g app json jsonClass entityName=PurchaseOrderDetails > frontend/src/assets/dicionario/purchaseOrderDetails.json
+mi g app json jsonClass entityName=PurchaseOrderStatus > frontend/src/assets/dicionario/purchaseOrderStatus.json
+mi g app json jsonClass entityName=PurchaseOrders > frontend/src/assets/dicionario/purchaseOrders.json
+mi g app json jsonClass entityName=Suppliers > frontend/src/assets/dicionario/suppliers.json
+mi g app json jsonClass entityName=Company > frontend/src/assets/dicionario/company.json
+mi g app json jsonClass entityName=Application > frontend/src/assets/dicionario/application.json
+mi g app json jsonClass entityName=Customers > frontend/src/assets/dicionario/customers.json
+mi g app json jsonClass entityName=CompanyApplicationToken > frontend/src/assets/dicionario/companyApplicationToken.json
+mi g app json jsonClass entityName=Strings > frontend/src/assets/dicionario/strings.json
+mapperidea generate app mean repository entityName=Employees > backend/src/repository/employees.repository.ts
+mapperidea generate app mean repository entityName=InventoryTransactionTypes > backend/src/repository/inventoryTransactionTypes.repository.ts
+mapperidea generate app mean repository entityName=InventoryTransactions > backend/src/repository/inventoryTransactions.repository.ts
+mapperidea generate app mean repository entityName=Invoices > backend/src/repository/invoices.repository.ts
+mapperidea generate app mean repository entityName=OrderDetails > backend/src/repository/orderDetails.repository.ts
+mapperidea generate app mean repository entityName=OrderDetailsStatus > backend/src/repository/orderDetailsStatus.repository.ts
+mapperidea generate app mean repository entityName=Orders > backend/src/repository/orders.repository.ts
+mapperidea generate app mean repository entityName=OrdersStatus > backend/src/repository/ordersStatus.repository.ts
+mapperidea generate app mean repository entityName=OrdersTaxStatus > backend/src/repository/ordersTaxStatus.repository.ts
+mapperidea generate app mean repository entityName=SalesReports > backend/src/repository/salesReports.repository.ts
+mapperidea generate app mean repository entityName=Shippers > backend/src/repository/shippers.repository.ts
+mapperidea generate app mean repository entityName=Products > backend/src/repository/products.repository.ts
+mapperidea generate app mean repository entityName=PurchaseOrderDetails > backend/src/repository/purchaseOrderDetails.repository.ts
+mapperidea generate app mean repository entityName=PurchaseOrderStatus > backend/src/repository/purchaseOrderStatus.repository.ts
+mapperidea generate app mean repository entityName=PurchaseOrders > backend/src/repository/purchaseOrders.repository.ts
+mapperidea generate app mean repository entityName=Suppliers > backend/src/repository/suppliers.repository.ts
+mapperidea generate app mean repository entityName=Company > backend/src/repository/company.repository.ts
+mapperidea generate app mean repository entityName=Application > backend/src/repository/application.repository.ts
+mapperidea generate app mean repository entityName=Customers > backend/src/repository/customers.repository.ts
+mapperidea generate app mean repository entityName=CompanyApplicationToken > backend/src/repository/companyApplicationToken.repository.ts
+mapperidea generate app mean repository entityName=Strings > backend/src/repository/strings.repository.ts
+mapperidea generate app mean apiService entityName=Employees > backend/src/services/employees.service.ts
+mapperidea generate app mean apiService entityName=InventoryTransactionTypes > backend/src/services/inventoryTransactionTypes.service.ts
+mapperidea generate app mean apiService entityName=InventoryTransactions > backend/src/services/inventoryTransactions.service.ts
+mapperidea generate app mean apiService entityName=Invoices > backend/src/services/invoices.service.ts
+mapperidea generate app mean apiService entityName=OrderDetails > backend/src/services/orderDetails.service.ts
+mapperidea generate app mean apiService entityName=OrderDetailsStatus > backend/src/services/orderDetailsStatus.service.ts
+mapperidea generate app mean apiService entityName=Orders > backend/src/services/orders.service.ts
+mapperidea generate app mean apiService entityName=OrdersStatus > backend/src/services/ordersStatus.service.ts
+mapperidea generate app mean apiService entityName=OrdersTaxStatus > backend/src/services/ordersTaxStatus.service.ts
+mapperidea generate app mean apiService entityName=SalesReports > backend/src/services/salesReports.service.ts
+mapperidea generate app mean apiService entityName=Shippers > backend/src/services/shippers.service.ts
+mapperidea generate app mean apiService entityName=Products > backend/src/services/products.service.ts
+mapperidea generate app mean apiService entityName=PurchaseOrderDetails > backend/src/services/purchaseOrderDetails.service.ts
+mapperidea generate app mean apiService entityName=PurchaseOrderStatus > backend/src/services/purchaseOrderStatus.service.ts
+mapperidea generate app mean apiService entityName=PurchaseOrders > backend/src/services/purchaseOrders.service.ts
+mapperidea generate app mean apiService entityName=Suppliers > backend/src/services/suppliers.service.ts
+mapperidea generate app mean apiService entityName=Company > backend/src/services/company.service.ts
+mapperidea generate app mean apiService entityName=Application > backend/src/services/application.service.ts
+mapperidea generate app mean apiService entityName=Customers > backend/src/services/customers.service.ts
+mapperidea generate app mean apiService entityName=CompanyApplicationToken > backend/src/services/companyApplicationToken.service.ts
+mapperidea generate app mean apiService entityName=Strings > backend/src/services/strings.service.ts
+mapperidea generate app mean apiController entityName=Employees > backend/src/controllers/employees.controller.ts
+mapperidea generate app mean apiController entityName=InventoryTransactionTypes > backend/src/controllers/inventoryTransactionTypes.controller.ts
+mapperidea generate app mean apiController entityName=InventoryTransactions > backend/src/controllers/inventoryTransactions.controller.ts
+mapperidea generate app mean apiController entityName=Invoices > backend/src/controllers/invoices.controller.ts
+mapperidea generate app mean apiController entityName=OrderDetails > backend/src/controllers/orderDetails.controller.ts
+mapperidea generate app mean apiController entityName=OrderDetailsStatus > backend/src/controllers/orderDetailsStatus.controller.ts
+mapperidea generate app mean apiController entityName=Orders > backend/src/controllers/orders.controller.ts
+mapperidea generate app mean apiController entityName=OrdersStatus > backend/src/controllers/ordersStatus.controller.ts
+mapperidea generate app mean apiController entityName=OrdersTaxStatus > backend/src/controllers/ordersTaxStatus.controller.ts
+mapperidea generate app mean apiController entityName=SalesReports > backend/src/controllers/salesReports.controller.ts
+mapperidea generate app mean apiController entityName=Shippers > backend/src/controllers/shippers.controller.ts
+mapperidea generate app mean apiController entityName=Products > backend/src/controllers/products.controller.ts
+mapperidea generate app mean apiController entityName=PurchaseOrderDetails > backend/src/controllers/purchaseOrderDetails.controller.ts
+mapperidea generate app mean apiController entityName=PurchaseOrderStatus > backend/src/controllers/purchaseOrderStatus.controller.ts
+mapperidea generate app mean apiController entityName=PurchaseOrders > backend/src/controllers/purchaseOrders.controller.ts
+mapperidea generate app mean apiController entityName=Suppliers > backend/src/controllers/suppliers.controller.ts
+mapperidea generate app mean apiController entityName=Company > backend/src/controllers/company.controller.ts
+mapperidea generate app mean apiController entityName=Application > backend/src/controllers/application.controller.ts
+mapperidea generate app mean apiController entityName=Customers > backend/src/controllers/customers.controller.ts
+mapperidea generate app mean apiController entityName=CompanyApplicationToken > backend/src/controllers/companyApplicationToken.controller.ts
+mapperidea generate app mean apiController entityName=Strings > backend/src/controllers/strings.controller.ts
 mapperidea generate app angular model entityName=Employees > frontend/src/app/modules/employees/shared/employees.model.ts
 mapperidea generate app angular model entityName=InventoryTransactionTypes > frontend/src/app/modules/inventory-transaction-types/shared/inventory-transaction-types.model.ts
 mapperidea generate app angular model entityName=InventoryTransactions > frontend/src/app/modules/inventory-transactions/shared/inventory-transactions.model.ts
@@ -244,11 +350,11 @@ mapperidea generate app angular model entityName=PurchaseOrderDetails > frontend
 mapperidea generate app angular model entityName=PurchaseOrderStatus > frontend/src/app/modules/purchase-order-status/shared/purchase-order-status.model.ts
 mapperidea generate app angular model entityName=PurchaseOrders > frontend/src/app/modules/purchase-orders/shared/purchase-orders.model.ts
 mapperidea generate app angular model entityName=Suppliers > frontend/src/app/modules/suppliers/shared/suppliers.model.ts
-mapperidea generate app angular model entityName=Strings > frontend/src/app/modules/strings/shared/strings.model.ts
 mapperidea generate app angular model entityName=Company > frontend/src/app/modules/company/shared/company.model.ts
 mapperidea generate app angular model entityName=Application > frontend/src/app/modules/application/shared/application.model.ts
+mapperidea generate app angular model entityName=Customers > frontend/src/app/modules/customers/shared/customers.model.ts
 mapperidea generate app angular model entityName=CompanyApplicationToken > frontend/src/app/modules/company-application-token/shared/company-application-token.model.ts
-mi g app angular dataService entityName=Customers > frontend/src/app/modules/customers/shared/customers.service.ts
+mapperidea generate app angular model entityName=Strings > frontend/src/app/modules/strings/shared/strings.model.ts
 mi g app angular dataService entityName=Employees > frontend/src/app/modules/employees/shared/employees.service.ts
 mi g app angular dataService entityName=InventoryTransactionTypes > frontend/src/app/modules/inventory-transaction-types/shared/inventory-transaction-types.service.ts
 mi g app angular dataService entityName=InventoryTransactions > frontend/src/app/modules/inventory-transactions/shared/inventory-transactions.service.ts
@@ -265,11 +371,11 @@ mi g app angular dataService entityName=PurchaseOrderDetails > frontend/src/app/
 mi g app angular dataService entityName=PurchaseOrderStatus > frontend/src/app/modules/purchase-order-status/shared/purchase-order-status.service.ts
 mi g app angular dataService entityName=PurchaseOrders > frontend/src/app/modules/purchase-orders/shared/purchase-orders.service.ts
 mi g app angular dataService entityName=Suppliers > frontend/src/app/modules/suppliers/shared/suppliers.service.ts
-mi g app angular dataService entityName=Strings > frontend/src/app/modules/strings/shared/strings.service.ts
 mi g app angular dataService entityName=Company > frontend/src/app/modules/company/shared/company.service.ts
 mi g app angular dataService entityName=Application > frontend/src/app/modules/application/shared/application.service.ts
+mi g app angular dataService entityName=Customers > frontend/src/app/modules/customers/shared/customers.service.ts
 mi g app angular dataService entityName=CompanyApplicationToken > frontend/src/app/modules/company-application-token/shared/company-application-token.service.ts
-mi g app angular appRoutingChild entityName=Customers > frontend/src/app/modules/customers/customers-routing.module.ts
+mi g app angular dataService entityName=Strings > frontend/src/app/modules/strings/shared/strings.service.ts
 mi g app angular appRoutingChild entityName=Employees > frontend/src/app/modules/employees/employees-routing.module.ts
 mi g app angular appRoutingChild entityName=InventoryTransactionTypes > frontend/src/app/modules/inventory-transaction-types/inventory-transaction-types-routing.module.ts
 mi g app angular appRoutingChild entityName=InventoryTransactions > frontend/src/app/modules/inventory-transactions/inventory-transactions-routing.module.ts
@@ -286,35 +392,32 @@ mi g app angular appRoutingChild entityName=PurchaseOrderDetails > frontend/src/
 mi g app angular appRoutingChild entityName=PurchaseOrderStatus > frontend/src/app/modules/purchase-order-status/purchase-order-status-routing.module.ts
 mi g app angular appRoutingChild entityName=PurchaseOrders > frontend/src/app/modules/purchase-orders/purchase-orders-routing.module.ts
 mi g app angular appRoutingChild entityName=Suppliers > frontend/src/app/modules/suppliers/suppliers-routing.module.ts
-mi g app angular appRoutingChild entityName=Strings > frontend/src/app/modules/strings/strings-routing.module.ts
 mi g app angular appRoutingChild entityName=Company > frontend/src/app/modules/company/company-routing.module.ts
 mi g app angular appRoutingChild entityName=Application > frontend/src/app/modules/application/application-routing.module.ts
+mi g app angular appRoutingChild entityName=Customers > frontend/src/app/modules/customers/customers-routing.module.ts
 mi g app angular appRoutingChild entityName=CompanyApplicationToken > frontend/src/app/modules/company-application-token/company-application-token-routing.module.ts
-mi g app mean routes entityName=Customers > backend/routes/customers.routes.js
-mi g app mean routes entityName=Employees > backend/routes/employees.routes.js
-mi g app mean routes entityName=InventoryTransactionTypes > backend/routes/inventoryTransactionTypes.routes.js
-mi g app mean routes entityName=InventoryTransactions > backend/routes/inventoryTransactions.routes.js
-mi g app mean routes entityName=Invoices > backend/routes/invoices.routes.js
-mi g app mean routes entityName=OrderDetails > backend/routes/orderDetails.routes.js
-mi g app mean routes entityName=OrderDetailsStatus > backend/routes/orderDetailsStatus.routes.js
-mi g app mean routes entityName=Orders > backend/routes/orders.routes.js
-mi g app mean routes entityName=OrdersStatus > backend/routes/ordersStatus.routes.js
-mi g app mean routes entityName=OrdersTaxStatus > backend/routes/ordersTaxStatus.routes.js
-mi g app mean routes entityName=SalesReports > backend/routes/salesReports.routes.js
-mi g app mean routes entityName=Shippers > backend/routes/shippers.routes.js
-mi g app mean routes entityName=Products > backend/routes/products.routes.js
-mi g app mean routes entityName=PurchaseOrderDetails > backend/routes/purchaseOrderDetails.routes.js
-mi g app mean routes entityName=PurchaseOrderStatus > backend/routes/purchaseOrderStatus.routes.js
-mi g app mean routes entityName=PurchaseOrders > backend/routes/purchaseOrders.routes.js
-mi g app mean routes entityName=Suppliers > backend/routes/suppliers.routes.js
-mi g app mean routes entityName=Strings > backend/routes/strings.routes.js
-mi g app mean routes entityName=Company > backend/routes/company.routes.js
-mi g app mean routes entityName=Application > backend/routes/application.routes.js
-mi g app mean routes entityName=CompanyApplicationToken > backend/routes/companyApplicationToken.routes.js
-mi g app angular listComponentHTML listName=Customers >  frontend/src/app/modules/customers/list-customers/list-customers.component.html
-mi g app angular listComponentTS listName=Customers >  frontend/src/app/modules/customers/list-customers/list-customers.component.ts
-mi g app angular detailsComponentHTML editorName=Customers >  frontend/src/app/modules/customers/customers-form/customers-form.component.html
-mi g app angular detailsComponentTS editorName=Customers >  frontend/src/app/modules/customers/customers-form/customers-form.component.ts
+mi g app angular appRoutingChild entityName=Strings > frontend/src/app/modules/strings/strings-routing.module.ts
+mi g app mean routes entityName=Employees > backend/src/routes/employees.route.ts
+mi g app mean routes entityName=InventoryTransactionTypes > backend/src/routes/inventoryTransactionTypes.route.ts
+mi g app mean routes entityName=InventoryTransactions > backend/src/routes/inventoryTransactions.route.ts
+mi g app mean routes entityName=Invoices > backend/src/routes/invoices.route.ts
+mi g app mean routes entityName=OrderDetails > backend/src/routes/orderDetails.route.ts
+mi g app mean routes entityName=OrderDetailsStatus > backend/src/routes/orderDetailsStatus.route.ts
+mi g app mean routes entityName=Orders > backend/src/routes/orders.route.ts
+mi g app mean routes entityName=OrdersStatus > backend/src/routes/ordersStatus.route.ts
+mi g app mean routes entityName=OrdersTaxStatus > backend/src/routes/ordersTaxStatus.route.ts
+mi g app mean routes entityName=SalesReports > backend/src/routes/salesReports.route.ts
+mi g app mean routes entityName=Shippers > backend/src/routes/shippers.route.ts
+mi g app mean routes entityName=Products > backend/src/routes/products.route.ts
+mi g app mean routes entityName=PurchaseOrderDetails > backend/src/routes/purchaseOrderDetails.route.ts
+mi g app mean routes entityName=PurchaseOrderStatus > backend/src/routes/purchaseOrderStatus.route.ts
+mi g app mean routes entityName=PurchaseOrders > backend/src/routes/purchaseOrders.route.ts
+mi g app mean routes entityName=Suppliers > backend/src/routes/suppliers.route.ts
+mi g app mean routes entityName=Company > backend/src/routes/company.route.ts
+mi g app mean routes entityName=Application > backend/src/routes/application.route.ts
+mi g app mean routes entityName=Customers > backend/src/routes/customers.route.ts
+mi g app mean routes entityName=CompanyApplicationToken > backend/src/routes/companyApplicationToken.route.ts
+mi g app mean routes entityName=Strings > backend/src/routes/strings.route.ts
 mi g app angular listComponentHTML listName=Employees >  frontend/src/app/modules/employees/list-employees/list-employees.component.html
 mi g app angular listComponentTS listName=Employees >  frontend/src/app/modules/employees/list-employees/list-employees.component.ts
 mi g app angular detailsComponentHTML editorName=Employees >  frontend/src/app/modules/employees/employees-form/employees-form.component.html
@@ -379,10 +482,6 @@ mi g app angular listComponentHTML listName=Suppliers >  frontend/src/app/module
 mi g app angular listComponentTS listName=Suppliers >  frontend/src/app/modules/suppliers/list-suppliers/list-suppliers.component.ts
 mi g app angular detailsComponentHTML editorName=Suppliers >  frontend/src/app/modules/suppliers/suppliers-form/suppliers-form.component.html
 mi g app angular detailsComponentTS editorName=Suppliers >  frontend/src/app/modules/suppliers/suppliers-form/suppliers-form.component.ts
-mi g app angular listComponentHTML listName=Strings >  frontend/src/app/modules/strings/list-strings/list-strings.component.html
-mi g app angular listComponentTS listName=Strings >  frontend/src/app/modules/strings/list-strings/list-strings.component.ts
-mi g app angular detailsComponentHTML editorName=Strings >  frontend/src/app/modules/strings/strings-form/strings-form.component.html
-mi g app angular detailsComponentTS editorName=Strings >  frontend/src/app/modules/strings/strings-form/strings-form.component.ts
 mi g app angular listComponentHTML listName=Company >  frontend/src/app/modules/company/list-company/list-company.component.html
 mi g app angular listComponentTS listName=Company >  frontend/src/app/modules/company/list-company/list-company.component.ts
 mi g app angular detailsComponentHTML editorName=Company >  frontend/src/app/modules/company/company-form/company-form.component.html
@@ -391,11 +490,18 @@ mi g app angular listComponentHTML listName=Application >  frontend/src/app/modu
 mi g app angular listComponentTS listName=Application >  frontend/src/app/modules/application/list-application/list-application.component.ts
 mi g app angular detailsComponentHTML editorName=Application >  frontend/src/app/modules/application/application-form/application-form.component.html
 mi g app angular detailsComponentTS editorName=Application >  frontend/src/app/modules/application/application-form/application-form.component.ts
+mi g app angular listComponentHTML listName=Customers >  frontend/src/app/modules/customers/list-customers/list-customers.component.html
+mi g app angular listComponentTS listName=Customers >  frontend/src/app/modules/customers/list-customers/list-customers.component.ts
+mi g app angular detailsComponentHTML editorName=Customers >  frontend/src/app/modules/customers/customers-form/customers-form.component.html
+mi g app angular detailsComponentTS editorName=Customers >  frontend/src/app/modules/customers/customers-form/customers-form.component.ts
 mi g app angular listComponentHTML listName=CompanyApplicationToken >  frontend/src/app/modules/company-application-token/list-company-application-token/list-company-application-token.component.html
 mi g app angular listComponentTS listName=CompanyApplicationToken >  frontend/src/app/modules/company-application-token/list-company-application-token/list-company-application-token.component.ts
 mi g app angular detailsComponentHTML editorName=CompanyApplicationToken >  frontend/src/app/modules/company-application-token/company-application-token-form/company-application-token-form.component.html
 mi g app angular detailsComponentTS editorName=CompanyApplicationToken >  frontend/src/app/modules/company-application-token/company-application-token-form/company-application-token-form.component.ts
-mi g app json jsonClass entityName=Customers > frontend/src/assets/dicionario/customers.json
+mi g app angular listComponentHTML listName=Strings >  frontend/src/app/modules/strings/list-strings/list-strings.component.html
+mi g app angular listComponentTS listName=Strings >  frontend/src/app/modules/strings/list-strings/list-strings.component.ts
+mi g app angular detailsComponentHTML editorName=Strings >  frontend/src/app/modules/strings/strings-form/strings-form.component.html
+mi g app angular detailsComponentTS editorName=Strings >  frontend/src/app/modules/strings/strings-form/strings-form.component.ts
 mi g app json jsonClass entityName=Employees > frontend/src/assets/dicionario/employees.json
 mi g app json jsonClass entityName=InventoryTransactionTypes > frontend/src/assets/dicionario/inventoryTransactionTypes.json
 mi g app json jsonClass entityName=InventoryTransactions > frontend/src/assets/dicionario/inventoryTransactions.json
@@ -412,10 +518,11 @@ mi g app json jsonClass entityName=PurchaseOrderDetails > frontend/src/assets/di
 mi g app json jsonClass entityName=PurchaseOrderStatus > frontend/src/assets/dicionario/purchaseOrderStatus.json
 mi g app json jsonClass entityName=PurchaseOrders > frontend/src/assets/dicionario/purchaseOrders.json
 mi g app json jsonClass entityName=Suppliers > frontend/src/assets/dicionario/suppliers.json
-mi g app json jsonClass entityName=Strings > frontend/src/assets/dicionario/strings.json
 mi g app json jsonClass entityName=Company > frontend/src/assets/dicionario/company.json
 mi g app json jsonClass entityName=Application > frontend/src/assets/dicionario/application.json
+mi g app json jsonClass entityName=Customers > frontend/src/assets/dicionario/customers.json
 mi g app json jsonClass entityName=CompanyApplicationToken > frontend/src/assets/dicionario/companyApplicationToken.json
+mi g app json jsonClass entityName=Strings > frontend/src/assets/dicionario/strings.json
 mi g app json jsonTransloco translate=en > frontend/src/assets/i18n/en.json
 mi g app json jsonTransloco translate=pt > frontend/src/assets/i18n/pt.json
 mi g app angular environment > frontend/src/environments/environment.ts
