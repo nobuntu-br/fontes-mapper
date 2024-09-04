@@ -1,25 +1,26 @@
 import { Application, Router } from 'express';
+import { verifyAccess } from '../middlewares/auth.middleware'; 
+import changeTenant from '../middlewares/tenant.middleware'; 
 import validateHeaders from './validators/index.validator';
 import { ApplicationController } from '../controllers/application.controller';
-import { createNewApplicationValidator, findAllApplicationValidator } from './validators/application.validator';
+import { createNewApplicationValidator } from './validators/application.validator';
 
 export default function defineRoute(app: Application){ 
   const controller : ApplicationController= new ApplicationController(); 
   const router: Router = Router(); 
     // Create a new Application 
-  router.post('/', [...createNewApplicationValidator, validateHeaders] ,controller.create);
+  router.post('/', [verifyAccess, changeTenant, ...createNewApplicationValidator, validateHeaders] ,controller.create);
 
     // Retrieve all application 
-  router.get('/', [...findAllApplicationValidator, validateHeaders], controller.findAll); 
+  router.get('/', [verifyAccess, changeTenant, validateHeaders], controller.findAll); 
     // Retrieve cout application
-  router.get('/count', controller.getCount); 
+  router.get('/count', [verifyAccess, changeTenant], controller.getCount); 
     // Retrieve a single Application with id 
-  router.get('/:id', controller.findById); 
+  router.get('/:id', [verifyAccess, changeTenant], controller.findById); 
     // Update a Application with id 
-  router.put('/:id', controller.update);
-
+  router.put('/:id', [verifyAccess, changeTenant], controller.update); 
     // Delete a Application with id 
-  router.delete('/all', controller.delete); 
+  router.delete('/:id', [verifyAccess, changeTenant], controller.delete); 
 
     app.use('/api/application', router); 
   }; 

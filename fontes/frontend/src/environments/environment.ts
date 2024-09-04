@@ -1,22 +1,23 @@
 export const environment = { 
-    applicationTitle: "", 
-    backendUrl: "", 
-    frontendUrl: "", 
+    applicationTitle: "Geração", 
+    backendUrl: "http://localhost:8080", 
+    frontendUrl: "https://localhost:4200", 
     menuPath: "../../../../assets/dicionario/menu/menu.json", 
+    jsonPath: "../../../../assets/dicionario/", 
 
     // Dados Relacionados ao Azure AD B2C 
-    authority: '', 
-    client_id:'', 
-    redirect_uri: '',
-    post_logout_redirect_uri: '',
-    scope: '',
+    authority: 'https://allystore.b2clogin.com/b46b5b87-a08e-487b-ae9b-fec172a9a90b/b2c_1_entradaEcadastro/v2.0/', 
+    client_id:'46513151-51f8-4912-8051-8de83c3ef9ed', 
+    redirect_uri: 'callback',
+    post_logout_redirect_uri: 'logout',
+    scope: 'https://allystore.onmicrosoft.com/46513151-51f8-4912-8051-8de83c3ef9ed/test.read openid',
 
-    tenant_id: '', 
-    provider: '', 
+    tenant_id: 'b46b5b87-a08e-487b-ae9b-fec172a9a90b', 
+    provider: 'allystore.b2clogin.com', 
 
-    signInPolitical: '', 
-    passwordResetPolitical: '', 
-    profileEditPolitical: '', 
+    signInPolitical: 'b2c_1_entradaEcadastro', 
+    passwordResetPolitical: 'b2c_1_password_reset', 
+    profileEditPolitical: 'b2c_1_profile_edit', 
 
     employeesJSONPath: '../../../../assets/dicionario/employees.json', 
 

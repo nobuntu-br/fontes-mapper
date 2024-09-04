@@ -1,6 +1,7 @@
 import { DbType } from "../adapters/createDb.adapter";
 import { TenantCredential } from "../models/tenantCredential.model";
 import InvoicesRepository from "../repository/invoices.repository";
+import { Invoices } from "../models/invoices.model"; 
 import BaseService from "./base.service";
 
 export class InvoicesService extends BaseService<Invoices>{

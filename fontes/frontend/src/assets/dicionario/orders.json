@@ -1,6 +1,6 @@
 {
     "config":{ 
-        "modified": "2024-08-26T20:53:50.676991Z", 
+        "modified": "2024-09-04T17:01:32.279129Z", 
         "description": "Orders",  
         "name": "Orders", 
         "apiUrl": "api/orders",
@@ -746,7 +746,7 @@
         },
         { 
             "name": "orderDetails", 
-            "type": "subForm", 
+            "type": "subform", 
             "many": true, 
             "className": "OrderDetails", 
             "apiUrl": "api/orderDetails",

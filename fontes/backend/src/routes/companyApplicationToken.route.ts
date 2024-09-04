@@ -1,25 +1,26 @@
 import { Application, Router } from 'express';
+import { verifyAccess } from '../middlewares/auth.middleware'; 
+import changeTenant from '../middlewares/tenant.middleware'; 
 import validateHeaders from './validators/index.validator';
 import { CompanyApplicationTokenController } from '../controllers/companyApplicationToken.controller';
-import { createNewCompanyApplicationTokenValidator, findAllCompanyApplicationTokenValidator } from './validators/companyApplicationToken.validator';
+import { createNewCompanyApplicationTokenValidator } from './validators/companyApplicationToken.validator';
 
 export default function defineRoute(app: Application){ 
   const controller : CompanyApplicationTokenController= new CompanyApplicationTokenController(); 
   const router: Router = Router(); 
     // Create a new CompanyApplicationToken 
-  router.post('/', [...createNewCompanyApplicationTokenValidator, validateHeaders] ,controller.create);
+  router.post('/', [verifyAccess, changeTenant, ...createNewCompanyApplicationTokenValidator, validateHeaders] ,controller.create);
 
     // Retrieve all companyApplicationToken 
-  router.get('/', [...findAllCompanyApplicationTokenValidator, validateHeaders], controller.findAll); 
+  router.get('/', [verifyAccess, changeTenant, validateHeaders], controller.findAll); 
     // Retrieve cout companyApplicationToken
-  router.get('/count', controller.getCount); 
+  router.get('/count', [verifyAccess, changeTenant], controller.getCount); 
     // Retrieve a single CompanyApplicationToken with id 
-  router.get('/:id', controller.findById); 
+  router.get('/:id', [verifyAccess, changeTenant], controller.findById); 
     // Update a CompanyApplicationToken with id 
-  router.put('/:id', controller.update);
-
+  router.put('/:id', [verifyAccess, changeTenant], controller.update); 
     // Delete a CompanyApplicationToken with id 
-  router.delete('/all', controller.delete); 
+  router.delete('/:id', [verifyAccess, changeTenant], controller.delete); 
 
     app.use('/api/companyApplicationToken', router); 
   }; 

@@ -3,34 +3,72 @@ import userRoutes from './user.route';
 import tenantRoutes from './tenant.route';
 import roleRoutes from './role.route';
 import tenantCredentialRoutes from './tenantCredential.route';
+import employeesRoutes from "./employees.route"; 
+import inventoryTransactionTypesRoutes from "./inventoryTransactionTypes.route"; 
+import inventoryTransactionsRoutes from "./inventoryTransactions.route"; 
+import invoicesRoutes from "./invoices.route"; 
+import orderDetailsRoutes from "./orderDetails.route"; 
+import orderDetailsStatusRoutes from "./orderDetailsStatus.route"; 
+import ordersRoutes from "./orders.route"; 
+import ordersStatusRoutes from "./ordersStatus.route"; 
+import ordersTaxStatusRoutes from "./ordersTaxStatus.route"; 
+import salesReportsRoutes from "./salesReports.route"; 
+import shippersRoutes from "./shippers.route"; 
+import productsRoutes from "./products.route"; 
+import purchaseOrderDetailsRoutes from "./purchaseOrderDetails.route"; 
+import purchaseOrderStatusRoutes from "./purchaseOrderStatus.route"; 
+import purchaseOrdersRoutes from "./purchaseOrders.route"; 
+import suppliersRoutes from "./suppliers.route"; 
+import companyRoutes from "./company.route"; 
+import applicationRoutes from "./application.route"; 
+import customersRoutes from "./customers.route"; 
+/** 
+ * Define as rotas da aplicação 
+ * @param app Instância do aplicação Express 
+ */ 
+export function setRoutes(app: Application) { 
 
-//TODO Essas importações precisarão ser geradas
+  roleRoutes(app); 
+  userRoutes(app); 
+  tenantCredentialRoutes(app); 
+  tenantRoutes(app); 
 
-import orderRoutes from './order.route';
+  employeesRoutes(app); 
 
-/**
- * Define as rotas da aplicação
- * @param app Instância do aplicação Express
- */
-export function setRoutes(app: Application) {
+  inventoryTransactionTypesRoutes(app); 
 
-  /**
-   * Chama função que irá definir quais rotas a aplicação terá
-   */
-  roleRoutes(app);
+  inventoryTransactionsRoutes(app); 
 
-  userRoutes(app);
+  invoicesRoutes(app); 
 
-  tenantCredentialRoutes(app);
+  orderDetailsRoutes(app); 
 
-  tenantRoutes(app);
+  orderDetailsStatusRoutes(app); 
 
-  //TODO serão gerados esses segmentos pelo mapper
+  ordersRoutes(app); 
 
-  orderRoutes(app);
+  ordersStatusRoutes(app); 
 
-  app.get('/', (req, res) => {
-    res.send('Hello World!')
-  })
+  ordersTaxStatusRoutes(app); 
+
+  salesReportsRoutes(app); 
+
+  shippersRoutes(app); 
+
+  productsRoutes(app); 
+
+  purchaseOrderDetailsRoutes(app); 
+
+  purchaseOrderStatusRoutes(app); 
+
+  purchaseOrdersRoutes(app); 
+
+  suppliersRoutes(app); 
+
+  companyRoutes(app); 
+
+  applicationRoutes(app); 
+
+  customersRoutes(app); 
 
 }

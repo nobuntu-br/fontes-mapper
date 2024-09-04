@@ -1,6 +1,7 @@
 import { DbType } from "../adapters/createDb.adapter";
 import { TenantCredential } from "../models/tenantCredential.model";
 import CompanyApplicationTokenRepository from "../repository/companyApplicationToken.repository";
+import { CompanyApplicationToken } from "../models/companyApplicationToken.model"; 
 import BaseService from "./base.service";
 
 export class CompanyApplicationTokenService extends BaseService<CompanyApplicationToken>{

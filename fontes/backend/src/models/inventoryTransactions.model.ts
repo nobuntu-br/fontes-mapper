@@ -1,27 +1,29 @@
-import { InventoryTransactionTypes } from "./transactionType.model"; 
-import { Products } from "./product.model"; 
-import { PurchaseOrders } from "./purchaseOrder.model"; 
-import { Orders } from "./customerOrder.model"; 
+import { BaseResourceModel } from "./base-resource.model" 
+import { InventoryTransactionTypes } from "./inventoryTransactionTypes.model"; 
+import { Products } from "./products.model"; 
+import { PurchaseOrders } from "./purchaseOrders.model"; 
+import { Orders } from "./orders.model"; 
 interface IInventoryTransactions { 
-  transactionType?: InventoryTransactionTypes,
-  transactionCreatedDate?: Date,
-  transactionModifiedDate?: Date,
-  product?: Products,
-  quantity?: number,
-  purchaseOrder?: PurchaseOrders,
-  customerOrder?: Orders,
+  transactionType?: InventoryTransactionTypes
+  transactionCreatedDate?: Date
+  transactionModifiedDate?: Date
+  product?: Products
+  quantity?: number
+  purchaseOrder?: PurchaseOrders
+  customerOrder?: Orders
   comments?: string
 } 
 export class InventoryTransactions extends BaseResourceModel implements IInventoryTransactions{ 
-  transactionType?: InventoryTransactionTypes,
-  transactionCreatedDate?: Date,
-  transactionModifiedDate?: Date,
-  product?: Products,
-  quantity?: number,
-  purchaseOrder?: PurchaseOrders,
-  customerOrder?: Orders,
+  transactionType?: InventoryTransactionTypes
+  transactionCreatedDate?: Date
+  transactionModifiedDate?: Date
+  product?: Products
+  quantity?: number
+  purchaseOrder?: PurchaseOrders
+  customerOrder?: Orders
   comments?: string
 
   static fromJson(jsonData: any) : InventoryTransactions { 
-    return Object.assign(new UserTenant(), jsonData); 
+    return Object.assign(new InventoryTransactions(), jsonData); 
   } 
+}

@@ -2,8 +2,8 @@
 cd ..
 rm -rf frontend
 rm -rf backend
-git clone https://github.com/JoaoVictorNobuntu/frontend
-git clone https://github.com/JoaoVictorNobuntu/backend
+git clone https://github.com/nobuntu-br/frontend
+git clone https://github.com/nobuntu-br/backend
 cd backend
 find . -type d -name ".git" -exec rm -rf {} +
 cd ..
@@ -158,6 +158,9 @@ ng g c ListStrings
 mkdir shared
 cd ..
 cd ../../../..
+mi g app mean indexSequelize > backend/src/models/sequelize/index.ts
+mi g app mean indexMongoose > backend/src/models/mongoose/index.ts
+mi g app mean index > backend/src/routes/index.ts
 mi g app angular appModule > frontend/src/app/app.module.ts
 mi g app angular appRouting > frontend/src/app/app-routing.module.ts
 mi g app angular appComponentHTML > frontend/src/app/app.component.html
@@ -184,27 +187,69 @@ mapperidea generate app mean validator entityName=Application > backend/src/rout
 mapperidea generate app mean validator entityName=Customers > backend/src/routes/validators/customers.validator.ts
 mapperidea generate app mean validator entityName=CompanyApplicationToken > backend/src/routes/validators/companyApplicationToken.validator.ts
 mapperidea generate app mean validator entityName=Strings > backend/src/routes/validators/strings.validator.ts
-mi g app json jsonClass entityName=Employees > frontend/src/assets/dicionario/employees.json
-mi g app json jsonClass entityName=InventoryTransactionTypes > frontend/src/assets/dicionario/inventoryTransactionTypes.json
-mi g app json jsonClass entityName=InventoryTransactions > frontend/src/assets/dicionario/inventoryTransactions.json
-mi g app json jsonClass entityName=Invoices > frontend/src/assets/dicionario/invoices.json
-mi g app json jsonClass entityName=OrderDetails > frontend/src/assets/dicionario/orderDetails.json
-mi g app json jsonClass entityName=OrderDetailsStatus > frontend/src/assets/dicionario/orderDetailsStatus.json
-mi g app json jsonClass entityName=Orders > frontend/src/assets/dicionario/orders.json
-mi g app json jsonClass entityName=OrdersStatus > frontend/src/assets/dicionario/ordersStatus.json
-mi g app json jsonClass entityName=OrdersTaxStatus > frontend/src/assets/dicionario/ordersTaxStatus.json
-mi g app json jsonClass entityName=SalesReports > frontend/src/assets/dicionario/salesReports.json
-mi g app json jsonClass entityName=Shippers > frontend/src/assets/dicionario/shippers.json
-mi g app json jsonClass entityName=Products > frontend/src/assets/dicionario/products.json
-mi g app json jsonClass entityName=PurchaseOrderDetails > frontend/src/assets/dicionario/purchaseOrderDetails.json
-mi g app json jsonClass entityName=PurchaseOrderStatus > frontend/src/assets/dicionario/purchaseOrderStatus.json
-mi g app json jsonClass entityName=PurchaseOrders > frontend/src/assets/dicionario/purchaseOrders.json
-mi g app json jsonClass entityName=Suppliers > frontend/src/assets/dicionario/suppliers.json
-mi g app json jsonClass entityName=Company > frontend/src/assets/dicionario/company.json
-mi g app json jsonClass entityName=Application > frontend/src/assets/dicionario/application.json
-mi g app json jsonClass entityName=Customers > frontend/src/assets/dicionario/customers.json
-mi g app json jsonClass entityName=CompanyApplicationToken > frontend/src/assets/dicionario/companyApplicationToken.json
-mi g app json jsonClass entityName=Strings > frontend/src/assets/dicionario/strings.json
+mapperidea generate app mean sequelizeModel entityName=Employees > backend/src/models/sequelize/employees.model.ts
+mapperidea generate app mean mongoModel entityName=Employees > backend/src/models/mongoose/employees.model.ts
+mapperidea generate app mean model entityName=Employees > backend/src/models/employees.model.ts
+mapperidea generate app mean sequelizeModel entityName=InventoryTransactionTypes > backend/src/models/sequelize/inventoryTransactionTypes.model.ts
+mapperidea generate app mean mongoModel entityName=InventoryTransactionTypes > backend/src/models/mongoose/inventoryTransactionTypes.model.ts
+mapperidea generate app mean model entityName=InventoryTransactionTypes > backend/src/models/inventoryTransactionTypes.model.ts
+mapperidea generate app mean sequelizeModel entityName=InventoryTransactions > backend/src/models/sequelize/inventoryTransactions.model.ts
+mapperidea generate app mean mongoModel entityName=InventoryTransactions > backend/src/models/mongoose/inventoryTransactions.model.ts
+mapperidea generate app mean model entityName=InventoryTransactions > backend/src/models/inventoryTransactions.model.ts
+mapperidea generate app mean sequelizeModel entityName=Invoices > backend/src/models/sequelize/invoices.model.ts
+mapperidea generate app mean mongoModel entityName=Invoices > backend/src/models/mongoose/invoices.model.ts
+mapperidea generate app mean model entityName=Invoices > backend/src/models/invoices.model.ts
+mapperidea generate app mean sequelizeModel entityName=OrderDetails > backend/src/models/sequelize/orderDetails.model.ts
+mapperidea generate app mean mongoModel entityName=OrderDetails > backend/src/models/mongoose/orderDetails.model.ts
+mapperidea generate app mean model entityName=OrderDetails > backend/src/models/orderDetails.model.ts
+mapperidea generate app mean sequelizeModel entityName=OrderDetailsStatus > backend/src/models/sequelize/orderDetailsStatus.model.ts
+mapperidea generate app mean mongoModel entityName=OrderDetailsStatus > backend/src/models/mongoose/orderDetailsStatus.model.ts
+mapperidea generate app mean model entityName=OrderDetailsStatus > backend/src/models/orderDetailsStatus.model.ts
+mapperidea generate app mean sequelizeModel entityName=Orders > backend/src/models/sequelize/orders.model.ts
+mapperidea generate app mean mongoModel entityName=Orders > backend/src/models/mongoose/orders.model.ts
+mapperidea generate app mean model entityName=Orders > backend/src/models/orders.model.ts
+mapperidea generate app mean sequelizeModel entityName=OrdersStatus > backend/src/models/sequelize/ordersStatus.model.ts
+mapperidea generate app mean mongoModel entityName=OrdersStatus > backend/src/models/mongoose/ordersStatus.model.ts
+mapperidea generate app mean model entityName=OrdersStatus > backend/src/models/ordersStatus.model.ts
+mapperidea generate app mean sequelizeModel entityName=OrdersTaxStatus > backend/src/models/sequelize/ordersTaxStatus.model.ts
+mapperidea generate app mean mongoModel entityName=OrdersTaxStatus > backend/src/models/mongoose/ordersTaxStatus.model.ts
+mapperidea generate app mean model entityName=OrdersTaxStatus > backend/src/models/ordersTaxStatus.model.ts
+mapperidea generate app mean sequelizeModel entityName=SalesReports > backend/src/models/sequelize/salesReports.model.ts
+mapperidea generate app mean mongoModel entityName=SalesReports > backend/src/models/mongoose/salesReports.model.ts
+mapperidea generate app mean model entityName=SalesReports > backend/src/models/salesReports.model.ts
+mapperidea generate app mean sequelizeModel entityName=Shippers > backend/src/models/sequelize/shippers.model.ts
+mapperidea generate app mean mongoModel entityName=Shippers > backend/src/models/mongoose/shippers.model.ts
+mapperidea generate app mean model entityName=Shippers > backend/src/models/shippers.model.ts
+mapperidea generate app mean sequelizeModel entityName=Products > backend/src/models/sequelize/products.model.ts
+mapperidea generate app mean mongoModel entityName=Products > backend/src/models/mongoose/products.model.ts
+mapperidea generate app mean model entityName=Products > backend/src/models/products.model.ts
+mapperidea generate app mean sequelizeModel entityName=PurchaseOrderDetails > backend/src/models/sequelize/purchaseOrderDetails.model.ts
+mapperidea generate app mean mongoModel entityName=PurchaseOrderDetails > backend/src/models/mongoose/purchaseOrderDetails.model.ts
+mapperidea generate app mean model entityName=PurchaseOrderDetails > backend/src/models/purchaseOrderDetails.model.ts
+mapperidea generate app mean sequelizeModel entityName=PurchaseOrderStatus > backend/src/models/sequelize/purchaseOrderStatus.model.ts
+mapperidea generate app mean mongoModel entityName=PurchaseOrderStatus > backend/src/models/mongoose/purchaseOrderStatus.model.ts
+mapperidea generate app mean model entityName=PurchaseOrderStatus > backend/src/models/purchaseOrderStatus.model.ts
+mapperidea generate app mean sequelizeModel entityName=PurchaseOrders > backend/src/models/sequelize/purchaseOrders.model.ts
+mapperidea generate app mean mongoModel entityName=PurchaseOrders > backend/src/models/mongoose/purchaseOrders.model.ts
+mapperidea generate app mean model entityName=PurchaseOrders > backend/src/models/purchaseOrders.model.ts
+mapperidea generate app mean sequelizeModel entityName=Suppliers > backend/src/models/sequelize/suppliers.model.ts
+mapperidea generate app mean mongoModel entityName=Suppliers > backend/src/models/mongoose/suppliers.model.ts
+mapperidea generate app mean model entityName=Suppliers > backend/src/models/suppliers.model.ts
+mapperidea generate app mean sequelizeModel entityName=Company > backend/src/models/sequelize/company.model.ts
+mapperidea generate app mean mongoModel entityName=Company > backend/src/models/mongoose/company.model.ts
+mapperidea generate app mean model entityName=Company > backend/src/models/company.model.ts
+mapperidea generate app mean sequelizeModel entityName=Application > backend/src/models/sequelize/application.model.ts
+mapperidea generate app mean mongoModel entityName=Application > backend/src/models/mongoose/application.model.ts
+mapperidea generate app mean model entityName=Application > backend/src/models/application.model.ts
+mapperidea generate app mean sequelizeModel entityName=Customers > backend/src/models/sequelize/customers.model.ts
+mapperidea generate app mean mongoModel entityName=Customers > backend/src/models/mongoose/customers.model.ts
+mapperidea generate app mean model entityName=Customers > backend/src/models/customers.model.ts
+mapperidea generate app mean sequelizeModel entityName=CompanyApplicationToken > backend/src/models/sequelize/companyApplicationToken.model.ts
+mapperidea generate app mean mongoModel entityName=CompanyApplicationToken > backend/src/models/mongoose/companyApplicationToken.model.ts
+mapperidea generate app mean model entityName=CompanyApplicationToken > backend/src/models/companyApplicationToken.model.ts
+mapperidea generate app mean sequelizeModel entityName=Strings > backend/src/models/sequelize/strings.model.ts
+mapperidea generate app mean mongoModel entityName=Strings > backend/src/models/mongoose/strings.model.ts
+mapperidea generate app mean model entityName=Strings > backend/src/models/strings.model.ts
 mi g app json jsonClass entityName=Employees > frontend/src/assets/dicionario/employees.json
 mi g app json jsonClass entityName=InventoryTransactionTypes > frontend/src/assets/dicionario/inventoryTransactionTypes.json
 mi g app json jsonClass entityName=InventoryTransactions > frontend/src/assets/dicionario/inventoryTransactions.json
@@ -268,27 +313,6 @@ mapperidea generate app mean apiService entityName=Application > backend/src/ser
 mapperidea generate app mean apiService entityName=Customers > backend/src/services/customers.service.ts
 mapperidea generate app mean apiService entityName=CompanyApplicationToken > backend/src/services/companyApplicationToken.service.ts
 mapperidea generate app mean apiService entityName=Strings > backend/src/services/strings.service.ts
-mapperidea generate app mean model entityName=Employees > backend/src/models/employees.model.ts
-mapperidea generate app mean model entityName=InventoryTransactionTypes > backend/src/models/inventoryTransactionTypes.model.ts
-mapperidea generate app mean model entityName=InventoryTransactions > backend/src/models/inventoryTransactions.model.ts
-mapperidea generate app mean model entityName=Invoices > backend/src/models/invoices.model.ts
-mapperidea generate app mean model entityName=OrderDetails > backend/src/models/orderDetails.model.ts
-mapperidea generate app mean model entityName=OrderDetailsStatus > backend/src/models/orderDetailsStatus.model.ts
-mapperidea generate app mean model entityName=Orders > backend/src/models/orders.model.ts
-mapperidea generate app mean model entityName=OrdersStatus > backend/src/models/ordersStatus.model.ts
-mapperidea generate app mean model entityName=OrdersTaxStatus > backend/src/models/ordersTaxStatus.model.ts
-mapperidea generate app mean model entityName=SalesReports > backend/src/models/salesReports.model.ts
-mapperidea generate app mean model entityName=Shippers > backend/src/models/shippers.model.ts
-mapperidea generate app mean model entityName=Products > backend/src/models/products.model.ts
-mapperidea generate app mean model entityName=PurchaseOrderDetails > backend/src/models/purchaseOrderDetails.model.ts
-mapperidea generate app mean model entityName=PurchaseOrderStatus > backend/src/models/purchaseOrderStatus.model.ts
-mapperidea generate app mean model entityName=PurchaseOrders > backend/src/models/purchaseOrders.model.ts
-mapperidea generate app mean model entityName=Suppliers > backend/src/models/suppliers.model.ts
-mapperidea generate app mean model entityName=Company > backend/src/models/company.model.ts
-mapperidea generate app mean model entityName=Application > backend/src/models/application.model.ts
-mapperidea generate app mean model entityName=Customers > backend/src/models/customers.model.ts
-mapperidea generate app mean model entityName=CompanyApplicationToken > backend/src/models/companyApplicationToken.model.ts
-mapperidea generate app mean model entityName=Strings > backend/src/models/strings.model.ts
 mapperidea generate app mean apiController entityName=Employees > backend/src/controllers/employees.controller.ts
 mapperidea generate app mean apiController entityName=InventoryTransactionTypes > backend/src/controllers/inventoryTransactionTypes.controller.ts
 mapperidea generate app mean apiController entityName=InventoryTransactions > backend/src/controllers/inventoryTransactions.controller.ts
@@ -505,12 +529,3 @@ mi g app angular environment > frontend/src/environments/environment.ts
 mi g app angular environment > frontend/src/environments/environment.development.ts
 mi g app json jsonMenu > frontend/src/assets/dicionario/menu/menu.json
 mi g app mean envBackend > backend/.env
-echo -e "\n\nQual o nome da sua Branch\n"
-read nomeFeature
-git flow feature start $nomeFeature
-git add --all
-echo -e "\n\nQual o comentario do seu commit?\n"
-read commit
-git commit -m "$commit"
-git status
-git push --set-upstream origin feature/$nomeFeature

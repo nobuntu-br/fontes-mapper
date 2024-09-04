@@ -1,3 +1,4 @@
+import { BaseResourceModel } from "./base-resource.model" 
 interface IPurchaseOrderStatus { 
   status?: string
 } 
@@ -5,5 +6,6 @@ export class PurchaseOrderStatus extends BaseResourceModel implements IPurchaseO
   status?: string
 
   static fromJson(jsonData: any) : PurchaseOrderStatus { 
-    return Object.assign(new UserTenant(), jsonData); 
+    return Object.assign(new PurchaseOrderStatus(), jsonData); 
   } 
+}

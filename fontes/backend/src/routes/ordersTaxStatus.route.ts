@@ -1,25 +1,26 @@
 import { Application, Router } from 'express';
+import { verifyAccess } from '../middlewares/auth.middleware'; 
+import changeTenant from '../middlewares/tenant.middleware'; 
 import validateHeaders from './validators/index.validator';
 import { OrdersTaxStatusController } from '../controllers/ordersTaxStatus.controller';
-import { createNewOrdersTaxStatusValidator, findAllOrdersTaxStatusValidator } from './validators/ordersTaxStatus.validator';
+import { createNewOrdersTaxStatusValidator } from './validators/ordersTaxStatus.validator';
 
 export default function defineRoute(app: Application){ 
   const controller : OrdersTaxStatusController= new OrdersTaxStatusController(); 
   const router: Router = Router(); 
     // Create a new OrdersTaxStatus 
-  router.post('/', [...createNewOrdersTaxStatusValidator, validateHeaders] ,controller.create);
+  router.post('/', [verifyAccess, changeTenant, ...createNewOrdersTaxStatusValidator, validateHeaders] ,controller.create);
 
     // Retrieve all ordersTaxStatus 
-  router.get('/', [...findAllOrdersTaxStatusValidator, validateHeaders], controller.findAll); 
+  router.get('/', [verifyAccess, changeTenant, validateHeaders], controller.findAll); 
     // Retrieve cout ordersTaxStatus
-  router.get('/count', controller.getCount); 
+  router.get('/count', [verifyAccess, changeTenant], controller.getCount); 
     // Retrieve a single OrdersTaxStatus with id 
-  router.get('/:id', controller.findById); 
+  router.get('/:id', [verifyAccess, changeTenant], controller.findById); 
     // Update a OrdersTaxStatus with id 
-  router.put('/:id', controller.update);
-
+  router.put('/:id', [verifyAccess, changeTenant], controller.update); 
     // Delete a OrdersTaxStatus with id 
-  router.delete('/all', controller.delete); 
+  router.delete('/:id', [verifyAccess, changeTenant], controller.delete); 
 
     app.use('/api/ordersTaxStatus', router); 
   }; 

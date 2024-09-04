@@ -1,25 +1,26 @@
 import { Application, Router } from 'express';
+import { verifyAccess } from '../middlewares/auth.middleware'; 
+import changeTenant from '../middlewares/tenant.middleware'; 
 import validateHeaders from './validators/index.validator';
 import { InventoryTransactionTypesController } from '../controllers/inventoryTransactionTypes.controller';
-import { createNewInventoryTransactionTypesValidator, findAllInventoryTransactionTypesValidator } from './validators/inventoryTransactionTypes.validator';
+import { createNewInventoryTransactionTypesValidator } from './validators/inventoryTransactionTypes.validator';
 
 export default function defineRoute(app: Application){ 
   const controller : InventoryTransactionTypesController= new InventoryTransactionTypesController(); 
   const router: Router = Router(); 
     // Create a new InventoryTransactionTypes 
-  router.post('/', [...createNewInventoryTransactionTypesValidator, validateHeaders] ,controller.create);
+  router.post('/', [verifyAccess, changeTenant, ...createNewInventoryTransactionTypesValidator, validateHeaders] ,controller.create);
 
     // Retrieve all inventoryTransactionTypes 
-  router.get('/', [...findAllInventoryTransactionTypesValidator, validateHeaders], controller.findAll); 
+  router.get('/', [verifyAccess, changeTenant, validateHeaders], controller.findAll); 
     // Retrieve cout inventoryTransactionTypes
-  router.get('/count', controller.getCount); 
+  router.get('/count', [verifyAccess, changeTenant], controller.getCount); 
     // Retrieve a single InventoryTransactionTypes with id 
-  router.get('/:id', controller.findById); 
+  router.get('/:id', [verifyAccess, changeTenant], controller.findById); 
     // Update a InventoryTransactionTypes with id 
-  router.put('/:id', controller.update);
-
+  router.put('/:id', [verifyAccess, changeTenant], controller.update); 
     // Delete a InventoryTransactionTypes with id 
-  router.delete('/all', controller.delete); 
+  router.delete('/:id', [verifyAccess, changeTenant], controller.delete); 
 
     app.use('/api/inventoryTransactionTypes', router); 
   }; 

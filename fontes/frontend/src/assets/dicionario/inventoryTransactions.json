@@ -1,6 +1,6 @@
 {
     "config":{ 
-        "modified": "2024-08-26T20:53:47.907158Z", 
+        "modified": "2024-09-04T17:01:29.475987Z", 
         "description": "inventoryTransaction",  
         "name": "InventoryTransactions", 
         "apiUrl": "api/inventoryTransaction",

@@ -1,6 +1,6 @@
 {
     "config":{ 
-        "modified": "2024-08-26T20:53:49.996106Z", 
+        "modified": "2024-09-04T17:01:31.588724Z", 
         "description": "Order Details Status",  
         "name": "OrderDetailsStatus", 
         "apiUrl": "api/orderDetailsStatus",

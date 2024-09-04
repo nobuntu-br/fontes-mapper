@@ -1,25 +1,26 @@
 import { Application, Router } from 'express';
+import { verifyAccess } from '../middlewares/auth.middleware'; 
+import changeTenant from '../middlewares/tenant.middleware'; 
 import validateHeaders from './validators/index.validator';
 import { ProductsController } from '../controllers/products.controller';
-import { createNewProductsValidator, findAllProductsValidator } from './validators/products.validator';
+import { createNewProductsValidator } from './validators/products.validator';
 
 export default function defineRoute(app: Application){ 
   const controller : ProductsController= new ProductsController(); 
   const router: Router = Router(); 
     // Create a new Products 
-  router.post('/', [...createNewProductsValidator, validateHeaders] ,controller.create);
+  router.post('/', [verifyAccess, changeTenant, ...createNewProductsValidator, validateHeaders] ,controller.create);
 
     // Retrieve all products 
-  router.get('/', [...findAllProductsValidator, validateHeaders], controller.findAll); 
+  router.get('/', [verifyAccess, changeTenant, validateHeaders], controller.findAll); 
     // Retrieve cout products
-  router.get('/count', controller.getCount); 
+  router.get('/count', [verifyAccess, changeTenant], controller.getCount); 
     // Retrieve a single Products with id 
-  router.get('/:id', controller.findById); 
+  router.get('/:id', [verifyAccess, changeTenant], controller.findById); 
     // Update a Products with id 
-  router.put('/:id', controller.update);
-
+  router.put('/:id', [verifyAccess, changeTenant], controller.update); 
     // Delete a Products with id 
-  router.delete('/all', controller.delete); 
+  router.delete('/:id', [verifyAccess, changeTenant], controller.delete); 
 
     app.use('/api/products', router); 
   }; 
