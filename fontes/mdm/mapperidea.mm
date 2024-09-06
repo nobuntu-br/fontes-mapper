@@ -6804,9 +6804,9 @@
 </node>
 </node>
 </node>
-<node CREATED="1658084023442" FOLDED="true" ID="ID_239109345" MODIFIED="1725651098832" TEXT="angular">
+<node CREATED="1658084023442" ID="ID_239109345" MODIFIED="1725651913897" TEXT="angular">
 <icon BUILTIN="element"/>
-<node CREATED="1638532674425" FOLDED="true" ID="ID_926807748" MODIFIED="1712609925998" TEXT="model">
+<node CREATED="1638532674425" FOLDED="true" ID="ID_926807748" MODIFIED="1725652088881" TEXT="model">
 <icon BUILTIN="element"/>
 <node CREATED="1559604105984" FOLDED="true" ID="ID_62660848" MODIFIED="1707335081170" TEXT="parameters">
 <font BOLD="true" NAME="Dialog" SIZE="14"/>
@@ -7127,7 +7127,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1642418082686" FOLDED="true" ID="ID_723127804" MODIFIED="1720461463263" TEXT="dataService">
+<node CREATED="1642418082686" FOLDED="true" ID="ID_723127804" MODIFIED="1725652090433" TEXT="dataService">
 <icon BUILTIN="element"/>
 <node CREATED="1559604105984" FOLDED="true" ID="ID_1623847310" MODIFIED="1720461463262" TEXT="parameters">
 <font BOLD="true" NAME="Dialog" SIZE="14"/>
@@ -7306,7 +7306,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1658500601077" FOLDED="true" ID="ID_286140192" MODIFIED="1716313027201" TEXT="add">
+<node CREATED="1658500601077" FOLDED="true" ID="ID_286140192" MODIFIED="1725652092065" TEXT="add">
 <icon BUILTIN="Descriptor.grouping"/>
 <node CREATED="1641817850147" FOLDED="true" ID="ID_545342822" MODIFIED="1707335081181" TEXT="addComponentHTML">
 <icon BUILTIN="element"/>
@@ -14414,7 +14414,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1665771103506" FOLDED="true" ID="ID_572701783" MODIFIED="1725649039906" TEXT="appRouting">
+<node CREATED="1665771103506" ID="ID_572701783" MODIFIED="1725652097212" TEXT="appRouting">
 <icon BUILTIN="element"/>
 <node CREATED="1638532918770" FOLDED="true" ID="ID_323857040" MODIFIED="1720461463270" TEXT="start">
 <font BOLD="true" NAME="Dialog" SIZE="16"/>
@@ -14483,7 +14483,7 @@
 <node CREATED="1638533266833" ID="ID_352639168" MODIFIED="1725649024500" TEXT="patterns">
 <font BOLD="true" NAME="Dialog" SIZE="16"/>
 <icon BUILTIN="element"/>
-<node CREATED="1665771295758" FOLDED="true" ID="ID_226858903" MODIFIED="1720461463270" TEXT="declaraImport">
+<node CREATED="1665771295758" ID="ID_226858903" MODIFIED="1725652802368" TEXT="declaraImport">
 <icon BUILTIN="element"/>
 <node CREATED="1708540467629" ID="ID_85467880" MODIFIED="1708540503834" TEXT="import { Route } from &apos;@angular/router&apos;; ">
 <icon BUILTIN="tag_green"/>
@@ -14495,6 +14495,18 @@
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1709060824938" ID="ID_1357377114" MODIFIED="1709060828349" TEXT="import { SideNavComponent } from &apos;./shared/components/side-nav/side-nav.component&apos;; ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1725652813806" ID="ID_1327146200" MODIFIED="1725652874686" TEXT="import { EditProfileComponent } from &apos;./shared/components/edit-profile/edit-profile.component&apos;;">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1725652829269" ID="ID_1693056807" MODIFIED="1725652874684" TEXT="import { ResetPasswordComponent } from &apos;./shared/components/reset-password/reset-password.component&apos;;">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1725652840034" ID="ID_79667605" MODIFIED="1725652874681" TEXT="import { CreateUserComponent } from &apos;./shared/components/create-user/create-user.component&apos;; ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1725652812381" ID="ID_1682284826" MODIFIED="1725652874680" TEXT="import { SigninComponent } from &apos;./core/pages/signin/signin.component&apos;;">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -14518,7 +14530,10 @@
 <node CREATED="1708540703007" ID="ID_1500263810" MODIFIED="1714629902889" TEXT="    {path: &apos;&apos;, pathMatch: &apos;full&apos;, component: SideNavComponent}, ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1708541521433" ID="ID_817912355" MODIFIED="1708541527267" TEXT="">
+<node CREATED="1708541521433" ID="ID_817912355" MODIFIED="1725652396860" TEXT="    {path: &apos;createuser&apos;, pathMatch: &apos;full&apos;, component: CreateUserComponent}, ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1725652403681" ID="ID_433717755" MODIFIED="1725652418771" TEXT="    {path: &apos;resetPassword&apos;, pathMatch: &apos;full&apos;, component: ResetPasswordComponent}, ">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -14527,31 +14542,7 @@
 <node CREATED="1708541451575" ID="ID_1521385169" MODIFIED="1708541535389" TEXT="    // Auth routes for guests ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1708541455982" ID="ID_47579592" MODIFIED="1708541535398" TEXT="    { ">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1708541465675" ID="ID_1512143404" MODIFIED="1708541535398" TEXT="        path: &apos;&apos;, ">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1708541468700" ID="ID_1444124809" MODIFIED="1708541535398" TEXT="        canMatch: [NoAuthGuard], ">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1708541473101" ID="ID_977011392" MODIFIED="1709060849836" TEXT="        component: SideNavComponent, ">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1708541489148" ID="ID_1054628721" MODIFIED="1708541535397" TEXT="        children: [ ">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1715622027111" ID="ID_1457556654" MODIFIED="1715622039036" TEXT="            {path: &apos;signin&apos;, loadChildren: () =&gt; import(&apos;app/core/pages/signin/signin.module&apos;).then(m =&gt; m.SigninModule)}, ">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1708541514529" ID="ID_106117682" MODIFIED="1708541535390" TEXT="        ] ">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1708541517932" ID="ID_1153196206" MODIFIED="1708541535389" TEXT="    }, ">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1716313048671" ID="ID_1085978055" MODIFIED="1716313055791" TEXT="">
+<node CREATED="1716313048671" ID="ID_1085978055" MODIFIED="1725652595537" TEXT="        {path: &apos;signin&apos;, loadChildren: () =&gt; import(&apos;app/core/pages/signin/signin.module&apos;).then(m =&gt; m.SigninModule)},">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1714630156248" ID="ID_39467868" MODIFIED="1716313091251" TEXT="        {path: &apos;404-not-found&apos;, loadChildren: () =&gt; import(&apos;app/core/pages/error/error-404/error-404.module&apos;).then(m =&gt; m.Error404Module)}, &#xa;">
@@ -14564,7 +14555,7 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1708542462694" FOLDED="true" ID="ID_1871401505" MODIFIED="1720461463270" TEXT="adminRoutes">
+<node CREATED="1708542462694" ID="ID_1871401505" MODIFIED="1725652104139" TEXT="adminRoutes">
 <icon BUILTIN="element"/>
 <node CREATED="1708542639023" ID="ID_1302163203" MODIFIED="1708542725921" TEXT="">
 <icon BUILTIN="tag_green"/>
@@ -14588,14 +14579,17 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1665859606821" FOLDED="true" ID="ID_657819424" MODIFIED="1720461463270" TEXT="declaraRotasList">
+<node CREATED="1665859606821" ID="ID_657819424" MODIFIED="1725652105500" TEXT="declaraRotasList">
 <icon BUILTIN="element"/>
 <node CREATED="1674504579077" ID="ID_1293342557" MODIFIED="1713283325818" TEXT="&#x9;{ path: &apos;{{ properties/frontPath/value }}&apos;, loadChildren: () =&gt; import(&apos;./modules/{{ mi:lower-case-add-hifen(@name,&apos;&apos;) }}/{{ mi:lower-case-add-hifen(@name,&apos;&apos;) }}.module&apos; ).then(m =&gt; m.{{ @name }}Module) },">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1666035468362" FOLDED="true" ID="ID_1039318457" MODIFIED="1720461463271" TEXT="fimRotas">
+<node CREATED="1666035468362" ID="ID_1039318457" MODIFIED="1725652106522" TEXT="fimRotas">
 <icon BUILTIN="element"/>
+<node CREATED="1725653107741" ID="ID_398204266" MODIFIED="1725653149111" TEXT="          {path: &apos;editProfile&apos;, pathMatch: &apos;full&apos;, component: EditProfileComponent},  ">
+<icon BUILTIN="tag_green"/>
+</node>
 <node CREATED="1716313113021" ID="ID_989702882" MODIFIED="1716313121871" TEXT="          {path: &apos;**&apos;, redirectTo: &apos;/404-not-found&apos;}, ">
 <icon BUILTIN="tag_green"/>
 </node>
