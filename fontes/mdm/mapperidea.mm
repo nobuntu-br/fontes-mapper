@@ -481,7 +481,7 @@
 </node>
 <node CREATED="1657542298359" ID="ID_648190111" MODIFIED="1720557790670" POSITION="right" TEXT="generators">
 <icon BUILTIN="element"/>
-<node CREATED="1638532646585" ID="ID_1972588312" MODIFIED="1725465757234" TEXT="mean">
+<node CREATED="1638532646585" ID="ID_1972588312" MODIFIED="1725651110115" TEXT="mean">
 <icon BUILTIN="element"/>
 <node CREATED="1638532674425" FOLDED="true" ID="ID_279417295" MODIFIED="1725465759950" TEXT="mongoModel">
 <icon BUILTIN="element"/>
@@ -2219,7 +2219,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1665022343343" FOLDED="true" ID="ID_1679303363" MODIFIED="1724964134377" TEXT="index">
+<node CREATED="1665022343343" ID="ID_1679303363" MODIFIED="1725651120623" TEXT="index">
 <icon BUILTIN="element"/>
 <node CREATED="1659305492723" ID="ID_1689843896" MODIFIED="1724963437788" TEXT="start">
 <icon BUILTIN="element"/>
@@ -2300,6 +2300,15 @@
 <node CREATED="1724963466193" ID="ID_577125988" MODIFIED="1724963469498" TEXT="import tenantCredentialRoutes from &apos;./tenantCredential.route&apos;;">
 <icon BUILTIN="tag_green"/>
 </node>
+<node CREATED="1725651222634" ID="ID_575706319" MODIFIED="1725651250778" TEXT="import tenantDirectoryRoutes from &apos;./tenantDirectory.route&apos; ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1725651229248" ID="ID_1365443307" MODIFIED="1725651250781" TEXT="import applicationRoutes from &apos;./application.route&apos;; ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1725651242728" ID="ID_327036380" MODIFIED="1725651250780" TEXT="import userDirectoryRoutes from &apos;./userDirectory.route&apos; ">
+<icon BUILTIN="tag_green"/>
+</node>
 </node>
 <node CREATED="1665023460767" ID="ID_390984213" MODIFIED="1724963520155" TEXT="declaraImport">
 <icon BUILTIN="element"/>
@@ -2337,6 +2346,15 @@
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1724963672557" ID="ID_663170757" MODIFIED="1724963680044" TEXT="  tenantRoutes(app); ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1725651127396" ID="ID_1128551782" MODIFIED="1725651286171" TEXT="  tenantDirectoryRoutes(app);">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1725651282979" ID="ID_72140353" MODIFIED="1725651396569" TEXT="  userDirectoryRoutes(app);">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1725651313412" ID="ID_979982634" MODIFIED="1725651393844" TEXT="  applicationRoutes(app); ">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -4112,7 +4130,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1706644403625" ID="ID_1935406017" MODIFIED="1725468807150" TEXT="envBackend">
+<node CREATED="1706644403625" FOLDED="true" ID="ID_1935406017" MODIFIED="1725651111615" TEXT="envBackend">
 <icon BUILTIN="element"/>
 <node CREATED="1659305492723" FOLDED="true" ID="ID_1421286075" MODIFIED="1720461463256" TEXT="start">
 <icon BUILTIN="element"/>
@@ -6786,7 +6804,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1658084023442" ID="ID_239109345" MODIFIED="1725649019282" TEXT="angular">
+<node CREATED="1658084023442" FOLDED="true" ID="ID_239109345" MODIFIED="1725651098832" TEXT="angular">
 <icon BUILTIN="element"/>
 <node CREATED="1638532674425" FOLDED="true" ID="ID_926807748" MODIFIED="1712609925998" TEXT="model">
 <icon BUILTIN="element"/>
@@ -14766,7 +14784,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1666126807813" ID="ID_1481341267" MODIFIED="1725649041112" TEXT="appModule">
+<node CREATED="1666126807813" FOLDED="true" ID="ID_1481341267" MODIFIED="1725651097634" TEXT="appModule">
 <icon BUILTIN="element"/>
 <node CREATED="1639135985370" FOLDED="true" ID="ID_1741884143" MODIFIED="1720461463273" TEXT="start">
 <icon BUILTIN="element"/>
