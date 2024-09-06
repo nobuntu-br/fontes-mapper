@@ -5324,7 +5324,7 @@
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1724960287581" ID="ID_1332247087" MODIFIED="1724960337742" TEXT="  const functionSystemRole = functionSystemRoleModel(sequelize); ">
-<font BOLD="true" NAME="Courier New" SIZE="16"/>
+<font BOLD="true" NAME="Dialog" SIZE="16"/>
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1724960290310" ID="ID_940832167" MODIFIED="1724960337742" TEXT="  const componentStructure = componentStructureModel(sequelize); ">
@@ -5826,7 +5826,7 @@
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1724960287581" ID="ID_1440016847" MODIFIED="1724964465022" TEXT="  const functionSystemRole = functionSystemRoleModel(mongooseConnection); ">
-<font BOLD="true" NAME="Courier New" SIZE="16"/>
+<font BOLD="true" NAME="Dialog" SIZE="16"/>
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1724960290310" ID="ID_276166191" MODIFIED="1724964466691" TEXT="  const componentStructure = componentStructureModel(mongooseConnection); ">
@@ -6786,7 +6786,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1658084023442" FOLDED="true" ID="ID_239109345" MODIFIED="1725465756318" TEXT="angular">
+<node CREATED="1658084023442" ID="ID_239109345" MODIFIED="1725649019282" TEXT="angular">
 <icon BUILTIN="element"/>
 <node CREATED="1638532674425" FOLDED="true" ID="ID_926807748" MODIFIED="1712609925998" TEXT="model">
 <icon BUILTIN="element"/>
@@ -14396,7 +14396,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1665771103506" FOLDED="true" ID="ID_572701783" MODIFIED="1716389793891" TEXT="appRouting">
+<node CREATED="1665771103506" FOLDED="true" ID="ID_572701783" MODIFIED="1725649039906" TEXT="appRouting">
 <icon BUILTIN="element"/>
 <node CREATED="1638532918770" FOLDED="true" ID="ID_323857040" MODIFIED="1720461463270" TEXT="start">
 <font BOLD="true" NAME="Dialog" SIZE="16"/>
@@ -14462,7 +14462,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1638533266833" FOLDED="true" ID="ID_352639168" MODIFIED="1720461463271" TEXT="patterns">
+<node CREATED="1638533266833" ID="ID_352639168" MODIFIED="1725649024500" TEXT="patterns">
 <font BOLD="true" NAME="Dialog" SIZE="16"/>
 <icon BUILTIN="element"/>
 <node CREATED="1665771295758" FOLDED="true" ID="ID_226858903" MODIFIED="1720461463270" TEXT="declaraImport">
@@ -14480,7 +14480,7 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1665859271285" FOLDED="true" ID="ID_1874592759" MODIFIED="1716389640645" TEXT="inicioRotas">
+<node CREATED="1665859271285" ID="ID_1874592759" MODIFIED="1725649030072" TEXT="inicioRotas">
 <icon BUILTIN="element"/>
 <node CREATED="1665859282373" ID="ID_162892198" MODIFIED="1665859319147" TEXT="">
 <icon BUILTIN="tag_green"/>
@@ -14504,7 +14504,7 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1708541439483" FOLDED="true" ID="ID_1734769697" MODIFIED="1720461463270" TEXT="callbackRotas">
+<node CREATED="1708541439483" ID="ID_1734769697" MODIFIED="1725649031513" TEXT="callbackRotas">
 <icon BUILTIN="element"/>
 <node CREATED="1708541451575" ID="ID_1521385169" MODIFIED="1708541535389" TEXT="    // Auth routes for guests ">
 <icon BUILTIN="tag_green"/>
@@ -14766,7 +14766,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1666126807813" FOLDED="true" ID="ID_1481341267" MODIFIED="1716903609689" TEXT="appModule">
+<node CREATED="1666126807813" ID="ID_1481341267" MODIFIED="1725649041112" TEXT="appModule">
 <icon BUILTIN="element"/>
 <node CREATED="1639135985370" FOLDED="true" ID="ID_1741884143" MODIFIED="1720461463273" TEXT="start">
 <icon BUILTIN="element"/>
@@ -14848,9 +14848,9 @@
 </node>
 </node>
 </node>
-<node CREATED="1639136120238" FOLDED="true" ID="ID_1160154340" MODIFIED="1720461463274" TEXT="patterns">
+<node CREATED="1639136120238" ID="ID_1160154340" MODIFIED="1725649042434" TEXT="patterns">
 <icon BUILTIN="element"/>
-<node CREATED="1665516573270" FOLDED="true" ID="ID_1090034304" MODIFIED="1720461463273" TEXT="declaraImport">
+<node CREATED="1665516573270" ID="ID_1090034304" MODIFIED="1725649048511" TEXT="declaraImport">
 <icon BUILTIN="element"/>
 <node CREATED="1666126897523" ID="ID_1386904111" MODIFIED="1666126905388" TEXT="import { NgModule } from &apos;@angular/core&apos;;">
 <icon BUILTIN="tag_green"/>
@@ -14886,7 +14886,7 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1666209247871" FOLDED="true" ID="ID_1682011042" MODIFIED="1720461463273" TEXT="importaMaterial">
+<node CREATED="1666209247871" ID="ID_1682011042" MODIFIED="1725649043696" TEXT="importaMaterial">
 <icon BUILTIN="element"/>
 <node CREATED="1666209285729" ID="ID_67407907" MODIFIED="1709061334995" TEXT="import { HttpClientModule } from &apos;@angular/common/http&apos;;">
 <icon BUILTIN="tag_green"/>
@@ -14898,7 +14898,7 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1666127551614" FOLDED="true" ID="ID_1884135062" MODIFIED="1720461463273" TEXT="declarations">
+<node CREATED="1666127551614" ID="ID_1884135062" MODIFIED="1725649045327" TEXT="declarations">
 <icon BUILTIN="element"/>
 <node CREATED="1708548725590" ID="ID_1624443880" MODIFIED="1708548730191" TEXT="">
 <icon BUILTIN="tag_green"/>
@@ -14940,16 +14940,13 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1666208657896" FOLDED="true" ID="ID_1693708121" MODIFIED="1720461463273" TEXT="inicioImportModule">
+<node CREATED="1666208657896" ID="ID_1693708121" MODIFIED="1725649052891" TEXT="inicioImportModule">
 <icon BUILTIN="element"/>
 <node CREATED="1666208674044" ID="ID_1834458868" MODIFIED="1666208684135" TEXT="  imports: [ ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1721103167094" ID="ID_631876019" MODIFIED="1721103186409" TEXT="{path: &apos;callback/:user&apos;,loadChildren: () =&gt; import(&apos;app/core/pages/callback/callback.module&apos;).then(m =&gt; m.CallbackModule)}, ">
-<icon BUILTIN="tag_green"/>
 </node>
-</node>
-<node CREATED="1666208717636" FOLDED="true" ID="ID_424087029" MODIFIED="1720461463273" TEXT="importaModule">
+<node CREATED="1666208717636" ID="ID_424087029" MODIFIED="1725649065383" TEXT="importaModule">
 <icon BUILTIN="element"/>
 <node CREATED="1666208746975" ID="ID_843732130" MODIFIED="1666208867122" TEXT="    BrowserModule, ">
 <icon BUILTIN="tag_green"/>
@@ -15008,7 +15005,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1707938366417" ID="ID_1835092214" MODIFIED="1725465751503" TEXT="environment">
+<node CREATED="1707938366417" FOLDED="true" ID="ID_1835092214" MODIFIED="1725649021251" TEXT="environment">
 <icon BUILTIN="element"/>
 <node CREATED="1638532918770" FOLDED="true" ID="ID_1514846485" MODIFIED="1720461463274" TEXT="start">
 <font BOLD="true" NAME="Dialog" SIZE="16"/>
