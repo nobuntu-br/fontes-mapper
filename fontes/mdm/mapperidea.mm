@@ -4130,7 +4130,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1706644403625" FOLDED="true" ID="ID_1935406017" MODIFIED="1725651111615" TEXT="envBackend">
+<node CREATED="1706644403625" ID="ID_1935406017" MODIFIED="1725654548282" TEXT="envBackend">
 <icon BUILTIN="element"/>
 <node CREATED="1659305492723" FOLDED="true" ID="ID_1421286075" MODIFIED="1720461463256" TEXT="start">
 <icon BUILTIN="element"/>
@@ -4160,7 +4160,19 @@
 <node CREATED="1715288968800" ID="ID_658783959" MODIFIED="1715289027013" TEXT="PORT = &quot;{{ package/properties/env/back/PORT/value }}&quot; ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1725388111174" ID="ID_1841497354" MODIFIED="1725388112729" TEXT="">
+<node CREATED="1725654594641" ID="ID_1084196988" MODIFIED="1725654610923" TEXT="//Fazer logica pra colocar automaticamente no mdm.mm">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1725654559295" ID="ID_1389166367" MODIFIED="1725654574840" TEXT="TENANT_ID = &quot;b46b5b87-a08e-487b-ae9b-fec172a9a90b&quot;">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1725654565523" ID="ID_1325326599" MODIFIED="1725654574841" TEXT="CLIENT_ID =&quot;c3965db2-c74a-4d13-8a85-cea18afbe9fa&quot;">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1725654569657" ID="ID_1067823702" MODIFIED="1725654574840" TEXT="CLIENT_SECRET =&quot;ZPz8Q~DxmSjUqYnjZf5Hkfv.gqbtD-j5w0HXlbih&quot;">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1725654582257" ID="ID_834645863" MODIFIED="1725654586472" TEXT="">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1725388067216" ID="ID_912622227" MODIFIED="1725388100884" TEXT="#Informa&#xe7;&#xf5;es de acesso ao email de servi&#xe7;o que ser&#xe1; usado para mandar emails para os usu&#xe1;rios da aplica&#xe7;&#xe3;o">
