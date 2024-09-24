@@ -6852,7 +6852,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1658084023442" FOLDED="true" ID="ID_239109345" MODIFIED="1725992695061" TEXT="angular">
+<node CREATED="1658084023442" ID="ID_239109345" MODIFIED="1727214281716" TEXT="angular">
 <icon BUILTIN="element"/>
 <node CREATED="1638532674425" FOLDED="true" ID="ID_926807748" MODIFIED="1725992694681" TEXT="model">
 <icon BUILTIN="element"/>
@@ -14462,47 +14462,47 @@
 </node>
 </node>
 </node>
-<node CREATED="1665771103506" FOLDED="true" ID="ID_572701783" MODIFIED="1725992694682" TEXT="appRouting">
+<node CREATED="1665771103506" ID="ID_572701783" MODIFIED="1727214284034" TEXT="appRouting">
 <icon BUILTIN="element"/>
-<node CREATED="1638532918770" FOLDED="true" ID="ID_323857040" MODIFIED="1725992694311" TEXT="start">
+<node CREATED="1638532918770" ID="ID_323857040" MODIFIED="1727214285338" TEXT="start">
 <font BOLD="true" NAME="Dialog" SIZE="16"/>
 <icon BUILTIN="element"/>
-<node CREATED="1638532989745" FOLDED="true" ID="ID_104436476" MODIFIED="1725992693881" TEXT="match">
+<node CREATED="1638532989745" ID="ID_104436476" MODIFIED="1727214286337" TEXT="match">
 <font BOLD="true" NAME="Dialog" SIZE="16"/>
 <icon BUILTIN="element"/>
 <node CREATED="1638533028623" ID="ID_1439812728" MODIFIED="1665857547227" TEXT="/classes">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1638533112349" FOLDED="true" ID="ID_1264211970" MODIFIED="1725992693881" TEXT="body">
+<node CREATED="1638533112349" ID="ID_1264211970" MODIFIED="1727214287213" TEXT="body">
 <font BOLD="true" NAME="Dialog" SIZE="16"/>
 <icon BUILTIN="element"/>
-<node CREATED="1638533152331" FOLDED="true" ID="ID_95696650" MODIFIED="1725992693799" TEXT="write-pattern">
+<node CREATED="1638533152331" ID="ID_95696650" MODIFIED="1727214289632" TEXT="write-pattern">
 <font BOLD="true" NAME="Dialog" SIZE="16"/>
 <icon BUILTIN="element"/>
 <node CREATED="1638533208562" ID="ID_41885911" MODIFIED="1665771312172" TEXT="declaraImport">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1665859515862" FOLDED="true" ID="ID_1494428145" MODIFIED="1725992693799" TEXT="write-pattern">
+<node CREATED="1665859515862" ID="ID_1494428145" MODIFIED="1727214290544" TEXT="write-pattern">
 <icon BUILTIN="element"/>
 <node CREATED="1665859523421" ID="ID_1546483214" MODIFIED="1665859532492" TEXT="inicioRotas">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1665859515862" FOLDED="true" ID="ID_1781260585" MODIFIED="1725992693799" TEXT="write-pattern">
+<node CREATED="1665859515862" ID="ID_1781260585" MODIFIED="1727214291296" TEXT="write-pattern">
 <icon BUILTIN="element"/>
 <node CREATED="1665859523421" ID="ID_1527167144" MODIFIED="1714630341279" TEXT="callbackRotas">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1665859515862" FOLDED="true" ID="ID_1933673629" MODIFIED="1725992693799" TEXT="write-pattern">
+<node CREATED="1665859515862" ID="ID_1933673629" MODIFIED="1727214291976" TEXT="write-pattern">
 <icon BUILTIN="element"/>
 <node CREATED="1665859523421" ID="ID_1047947920" MODIFIED="1708542892489" TEXT="adminRoutes">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1638534170704" FOLDED="true" ID="ID_1179820235" MODIFIED="1725992693799" TEXT="apply-templates">
+<node CREATED="1638534170704" ID="ID_1179820235" MODIFIED="1727214292618" TEXT="apply-templates">
 <font BOLD="true" NAME="Dialog" SIZE="16"/>
 <icon BUILTIN="element"/>
 <node CREATED="1638534190031" FOLDED="true" ID="ID_1381300363" MODIFIED="1725992691591" TEXT="select">
@@ -14520,7 +14520,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1665859515862" FOLDED="true" ID="ID_841870965" MODIFIED="1725992693799" TEXT="write-pattern">
+<node CREATED="1665859515862" ID="ID_841870965" MODIFIED="1727214293440" TEXT="write-pattern">
 <icon BUILTIN="element"/>
 <node CREATED="1665859523421" ID="ID_1015927483" MODIFIED="1666035551902" TEXT="fimRotas">
 <icon BUILTIN="tag_green"/>
@@ -14528,10 +14528,10 @@
 </node>
 </node>
 </node>
-<node CREATED="1638533266833" FOLDED="true" ID="ID_352639168" MODIFIED="1725992694311" TEXT="patterns">
+<node CREATED="1638533266833" ID="ID_352639168" MODIFIED="1727214294476" TEXT="patterns">
 <font BOLD="true" NAME="Dialog" SIZE="16"/>
 <icon BUILTIN="element"/>
-<node CREATED="1665771295758" FOLDED="true" ID="ID_226858903" MODIFIED="1725992693881" TEXT="declaraImport">
+<node CREATED="1665771295758" ID="ID_226858903" MODIFIED="1727214295432" TEXT="declaraImport">
 <icon BUILTIN="element"/>
 <node CREATED="1708540467629" ID="ID_85467880" MODIFIED="1708540503834" TEXT="import { Route } from &apos;@angular/router&apos;; ">
 <icon BUILTIN="tag_green"/>
@@ -14558,7 +14558,7 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1665859271285" FOLDED="true" ID="ID_1874592759" MODIFIED="1725992693882" TEXT="inicioRotas">
+<node CREATED="1665859271285" ID="ID_1874592759" MODIFIED="1727214319921" TEXT="inicioRotas">
 <icon BUILTIN="element"/>
 <node CREATED="1665859282373" ID="ID_162892198" MODIFIED="1665859319147" TEXT="">
 <icon BUILTIN="tag_green"/>
@@ -14575,7 +14575,7 @@
 <node CREATED="1708540708505" ID="ID_540179937" MODIFIED="1708540714167" TEXT="    // Redirect empty path to &apos;/example&apos; ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1708540703007" ID="ID_1500263810" MODIFIED="1714629902889" TEXT="    {path: &apos;&apos;, pathMatch: &apos;full&apos;, component: SideNavComponent}, ">
+<node CREATED="1708540703007" ID="ID_1500263810" MODIFIED="1727214385359" TEXT="    {path: &apos;signin&apos;, pathMatch: &apos;full&apos;, component: SigninComponent},  ">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1708541521433" ID="ID_817912355" MODIFIED="1725652396860" TEXT="    {path: &apos;createuser&apos;, pathMatch: &apos;full&apos;, component: CreateUserComponent}, ">
@@ -14585,7 +14585,7 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1708541439483" FOLDED="true" ID="ID_1734769697" MODIFIED="1725992693882" TEXT="callbackRotas">
+<node CREATED="1708541439483" ID="ID_1734769697" MODIFIED="1727214400930" TEXT="callbackRotas">
 <icon BUILTIN="element"/>
 <node CREATED="1708541451575" ID="ID_1521385169" MODIFIED="1708541535389" TEXT="    // Auth routes for guests ">
 <icon BUILTIN="tag_green"/>
@@ -14599,11 +14599,11 @@
 <node CREATED="1714630159975" ID="ID_1021846027" MODIFIED="1714630202102" TEXT="                    {path: &apos;500&apos;, loadChildren: () =&gt; import(&apos;app/core/pages/error/error-500/error-500.module&apos;).then(m =&gt; m.Error500Module)}, ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1716313049349" ID="ID_330771556" MODIFIED="1716313055791" TEXT="            {path: &apos;callback&apos;, loadChildren: () =&gt; import(&apos;app/core/pages/callback/callback.module&apos;).then(m =&gt; m.CallbackModule)}, ">
+<node CREATED="1716313049349" ID="ID_330771556" MODIFIED="1727214424543" TEXT="            //{path: &apos;callback&apos;, loadChildren: () =&gt; import(&apos;app/core/pages/callback/callback.module&apos;).then(m =&gt; m.CallbackModule)}, ">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1708542462694" FOLDED="true" ID="ID_1871401505" MODIFIED="1725992693882" TEXT="adminRoutes">
+<node CREATED="1708542462694" ID="ID_1871401505" MODIFIED="1727214426203" TEXT="adminRoutes">
 <icon BUILTIN="element"/>
 <node CREATED="1708542639023" ID="ID_1302163203" MODIFIED="1708542725921" TEXT="">
 <icon BUILTIN="tag_green"/>
@@ -14627,18 +14627,18 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1665859606821" FOLDED="true" ID="ID_657819424" MODIFIED="1725992693882" TEXT="declaraRotasList">
+<node CREATED="1665859606821" ID="ID_657819424" MODIFIED="1727214447631" TEXT="declaraRotasList">
 <icon BUILTIN="element"/>
 <node CREATED="1674504579077" ID="ID_1293342557" MODIFIED="1713283325818" TEXT="&#x9;{ path: &apos;{{ properties/frontPath/value }}&apos;, loadChildren: () =&gt; import(&apos;./modules/{{ mi:lower-case-add-hifen(@name,&apos;&apos;) }}/{{ mi:lower-case-add-hifen(@name,&apos;&apos;) }}.module&apos; ).then(m =&gt; m.{{ @name }}Module) },">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1666035468362" FOLDED="true" ID="ID_1039318457" MODIFIED="1725992693882" TEXT="fimRotas">
+<node CREATED="1666035468362" ID="ID_1039318457" MODIFIED="1727214466634" TEXT="fimRotas">
 <icon BUILTIN="element"/>
 <node CREATED="1725653107741" ID="ID_398204266" MODIFIED="1725653149111" TEXT="          {path: &apos;editProfile&apos;, pathMatch: &apos;full&apos;, component: EditProfileComponent},  ">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1716313113021" ID="ID_989702882" MODIFIED="1716313121871" TEXT="          {path: &apos;**&apos;, redirectTo: &apos;/404-not-found&apos;}, ">
+<node CREATED="1716313113021" ID="ID_989702882" MODIFIED="1727214472768" TEXT="          //{path: &apos;**&apos;, redirectTo: &apos;/404-not-found&apos;}, ">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1666035482134" ID="ID_748098259" MODIFIED="1708542681668" TEXT="        ] ">
@@ -15238,7 +15238,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1705684947385" ID="ID_1602823819" MODIFIED="1725992699775" TEXT="json">
+<node CREATED="1705684947385" FOLDED="true" ID="ID_1602823819" MODIFIED="1727214280806" TEXT="json">
 <icon BUILTIN="element"/>
 <node CREATED="1642422161038" ID="ID_277975724" MODIFIED="1725992703689" TEXT="jsonClass">
 <font NAME="SansSerif" SIZE="12"/>
